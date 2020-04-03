@@ -3213,14 +3213,20 @@ table .bold-heading {
   margin-bottom: 12px;
   display: flex;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   color: #776fff;
+  padding-top: 10px;
   text-decoration: underline;
 }
 
 .profile-box {
   display: flex;
   padding: 30px;
+
+}
+
+#nav-comments .profile-box {
+  padding-left: 8px;
 }
 
 .profile-picture {
@@ -3229,6 +3235,7 @@ table .bold-heading {
 
 .comments-text {
   margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .profile-comment-time-stamp-box {
@@ -3425,6 +3432,6 @@ table .bold-heading {
 
 
 .comments-left-scroll {
-  height: 450px;
+  height: 680px;
   overflow-y: scroll;
 }
