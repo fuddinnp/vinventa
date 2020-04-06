@@ -132,3 +132,24 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.scroll-div {
+    width: 100%;
+}
+
+.tree-list-div {
+    border: 1px solid #c2c3c7;
+    width: 700px;
+    overflow: auto;
+}
+
+.tree-list-div .device-tab-right-heading,
+.tree-list-div .device-tab-norman-txt {
+    font-size: 12px !important;
+}
+
+.tree-list-div .device-tab-detail-box {
+    padding: 0px !important;
+    width: 700px;
+    overflow: auto;
+}
