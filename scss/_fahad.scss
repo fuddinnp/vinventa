@@ -4,30 +4,36 @@
 }
 
 .intro {
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
-    height: 100vh;
-    padding: 20px 60px 80px;
+    height: auto;
+    padding: 90px;
 }
 
 .intro-inner-div {
-    display: flex;
-    align-items: center;
+    width: 960px;
+    min-height: 95vh;
     background: #fff;
-    position: relative;
-    border-radius: 20px;
-    width: 100%;
-    height: 98vh;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    /*! display:flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.19);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.19);
 }
 
 .slider {
-    float: left;
     position: relative;
     width: 50%;
-    height: 100%;
+    height: 100vh;
 }
 
 .slider li {
@@ -35,7 +41,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -43,7 +49,7 @@
     transition: clip .7s ease-in-out, z-index 0s .7s;
     clip: rect(0, 100vw, 100vh, 0);
     display: table;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .center-y {
@@ -134,8 +140,7 @@ li.prev {
     z-index: 10;
 }
 
-.right-section-div {
-    float: right;
+.right-panel-div {
     width: 50%;
 }
 
@@ -204,7 +209,7 @@ select {
 
 .LoginPanel .fieldsSection .userName {
     background: #fff url(../images/icon-user.png) no-repeat 12px center;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 .LoginPanel .fieldsSection .password {
@@ -226,6 +231,10 @@ select {
 	background: #fff;
 	width: 12px;*/
     display: none;
+}
+
+.remember {
+    margin-bottom: 15px;
 }
 
 .LoginPanel .fieldsBotSection label {
@@ -251,10 +260,10 @@ select {
 */
 .or-login-div {
     padding: 6px 0px;
+}
 
-    span {
-        padding: 8px;
-    }
+.or-login-div span {
+    padding: 8px 8px 20px;
 }
 
 .LoginPanel .fieldsBotSection .forgotLink {
