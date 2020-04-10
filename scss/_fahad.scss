@@ -596,38 +596,54 @@ input:checked+.sliders:before {
     vertical-align: middle !important;
 }
 
+.connectors-wrapper .table-innerbox {
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+
 .c-green {
-    padding: 8px;
+    padding: 6px;
     background: #70ff03;
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
 }
 
 .c-red {
-    padding: 8px;
+    padding: 6px;
     background: #f00f00;
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
 }
 
 .c-orange {
-    padding: 8px;
+    padding: 6px;
     background: #f9cc12;
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
 }
 
 .table-icon {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-icon span+span {
+    letter-spacing: 4px;
 }
 
 .table-icon img {
     width: 20px;
     height: 20px;
+    margin: 0px 10px;
 }

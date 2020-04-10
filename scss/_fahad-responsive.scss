@@ -115,6 +115,18 @@
     .Connectors-top-searchbar-div {
         flex-direction: column;
     }
+
+    .Connectors-top-searchbar-div .search-wrap {
+        width: 100%;
+    }
+
+    .toggle-btn-div {
+        margin-top: 15px;
+    }
+
+    .connectors-main-wrapper .inner-tab-right-section {
+        margin-top: 0px !important;
+    }
 }
 
 /*767 screen end here*/
