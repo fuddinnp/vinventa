@@ -3,6 +3,10 @@
     display: block;
 }
 
+.tab-right-column-container input[type="text"] {
+    padding-left: 40px;
+}
+
 .intro {
     display: flex;
     justify-content: center;
@@ -646,4 +650,27 @@ input:checked+.sliders:before {
     width: 20px;
     height: 20px;
     margin: 0px 10px;
+}
+
+.field-large {
+    width: 360px !important;
+}
+
+.adapter-modal-field-row label {
+    display: block;
+}
+
+.no-file-chisen-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.no-file-chisen-items .choose-file-modal {
+    width: 100%;
+}
+
+.role-to-txt {
+    font-size: 20px;
+    margin-top: 20px;
 }
