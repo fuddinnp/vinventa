@@ -132,7 +132,8 @@
         width: 100% !important;
     }
 
-    .adapter-modal-bottom-row {
+    .adapter-modal-bottom-row,
+    .modal-add-connections-wrapper .adapter-modal-bottom-row {
         justify-content: inherit;
     }
 
@@ -161,6 +162,9 @@
         text-align: center;
     }
 
+    .modal-add-connections-wrapper .theme-btn {
+        width: 100% !important;
+    }
 }
 
 /*767 screen end here*/

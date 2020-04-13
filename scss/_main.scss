@@ -1788,7 +1788,7 @@ th {
   display: flex;
 
   a {
-    background: hsla(0, 0%, 69%, 0.5);
+    background: #f4f4f4;
     color: black;
     padding: 8px 20px;
     border-radius: 20px;
@@ -1802,7 +1802,7 @@ th {
     }
 
     &:hover {
-      color: white;
+      color: black;
     }
   }
 }
