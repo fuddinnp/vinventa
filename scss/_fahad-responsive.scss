@@ -145,6 +145,22 @@
         padding: 0px !important;
     }
 
+    .modal-add-connections-wrapper .adapter-modal-content-box {
+        padding: 15px;
+    }
+
+    .modal-add-connections-wrapper .choose-file-modal {
+        width: 100%;
+    }
+
+    .tags {
+        flex-direction: column;
+    }
+
+    .tags a {
+        text-align: center;
+    }
+
 }
 
 /*767 screen end here*/
