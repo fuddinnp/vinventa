@@ -680,6 +680,32 @@ input:checked+.sliders:before {
 
 }
 
+.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-logo {
+    height: 55px !important;
+    width: 55px !important;
+}
+
+.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-name {
+    font-size: 20px !important;
+}
+
+.modal-add-connections-wrapper input[type="text"] {
+    padding: 9px 16px;
+}
+
+.modal-add-connections-wrapper .adapter-modal-bottom-row {
+    justify-content: right;
+    width: 100%;
+}
+
+.modal-add-connections-wrapper .adapter-modal-bottom-row div+div {
+    margin-right: 0px;
+}
+
+.modal-add-connections-wrapper .adapter-modal-content-box {
+    margin-bottom: 0px;
+}
+
 .modal-add-connections-wrapper .adding-adapter-modal-header {
     border-bottom: 1px solid #dcdde1;
     padding: 20px;
