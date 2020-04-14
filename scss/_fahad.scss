@@ -186,28 +186,35 @@ li.prev {
     color: #4c4c4c;
 }
 
-input[type="text"],
-input[type="password"],
-textarea {
-    border: 1px solid #cdcdd6;
-    padding: 16px;
-    font-size: 15px;
-    border-radius: 5px;
-    line-height: 1em;
-    width: 100%;
-    color: #cbc9c9;
-}
+.modal-add-connections-wrapper,
+.LoginPanel {
 
-select {
-    border: 1px solid #cdcdd6;
-    padding: 5.5px;
-    font-size: 15px;
-    line-height: 1em;
-    width: 100%;
-    -moz-appearance: none;
-    background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97% 13px;
-    box-sizing: border-box;
-    cursor: pointer;
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        border: 1px solid #cdcdd6;
+        padding: 16px;
+        font-size: 15px;
+        border-radius: 5px;
+        line-height: 1em;
+        width: 100%;
+        color: #4c4c4c;
+    }
+
+    select {
+        border: 1px solid #cdcdd6;
+        padding: 5.5px;
+        font-size: 15px;
+        line-height: 1em;
+        width: 100%;
+        -moz-appearance: none;
+        background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97% 13px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+
 }
 
 .LoginPanel .fieldsSection .userName {
@@ -650,6 +657,12 @@ input:checked+.sliders:before {
     height: 20px;
     margin: 0px 10px;
 }
+
+
+// .field-large {
+//     width: 360px !important;
+// }
+
 
 .field-large {
     width: 100% !important;
