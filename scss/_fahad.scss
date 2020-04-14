@@ -224,7 +224,7 @@ li.prev {
 
 .LoginPanel .fieldsSection .password {
     margin-bottom: 10px;
-    background: #fff url(../images/eye.png) no-repeat center right;
+    // background: #fff url(../images/eye.png) no-repeat center right;
 }
 
 .LoginPanel .fieldsSection .userName,
@@ -236,15 +236,20 @@ li.prev {
     -moz-box-sizing: border-box;
 }
 
-.LoginPanel .fieldsBotSection input[type="checkbox"] {
+.LoginPanel .fieldsBotSection input[type="checkbox"],
+.LoginPanel .login-pass-div input[type="checkbox"] {
     /*border: 1px solid #b9babd;
-	background: #fff;
-	width: 12px;*/
+    background: #fff;
+    width: 12px;*/
     display: none;
 }
 
 .remember {
     margin-bottom: 15px;
+}
+
+.login-pass-div {
+    position: relative;
 }
 
 .LoginPanel .fieldsBotSection label {
@@ -261,7 +266,23 @@ li.prev {
 
 .LoginPanel .fieldsBotSection input[type="checkbox"]:checked+label {
     background-image: url(../images/checkbox-img.png);
+
 }
+
+.LoginPanel .login-pass-div label.show-password-icon {
+    background: url(../images/eye.png) no-repeat 0px center;
+    cursor: pointer;
+    padding-left: 35px;
+    position: absolute;
+    top: 41px;
+    right: 22px;
+}
+
+.LoginPanel .login-pass-div input[type="checkbox"]:checked+label {
+    background-image: url(../images/eye-dark.png);
+
+}
+
 
 /*.LoginPanel .Btn{
 	margin-top: 11px;
@@ -752,4 +773,8 @@ input:checked+.sliders:before {
 
 .modal-add-connections-wrapper .choose-file-modal {
     width: 30%;
+}
+
+.td-wrapper {
+    margin-bottom: 20px;
 }
