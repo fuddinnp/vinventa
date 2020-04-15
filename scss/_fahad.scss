@@ -629,7 +629,7 @@ input:checked+.sliders:before {
 
 .connectors-wrapper .table-innerbox {
     display: flex;
-    margin-right: 25px;
+    margin-right: 5px;
     align-items: center;
 }
 
@@ -714,6 +714,14 @@ input:checked+.sliders:before {
 
 }
 
+.modal-add-connections-wrapper .mr-3 {
+    margin-right: 2.3rem !important;
+}
+
+.role-to-txt h2 {
+    padding-left: 35px;
+}
+
 .modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-logo {
     height: 55px !important;
     width: 55px !important;
@@ -772,7 +780,7 @@ input:checked+.sliders:before {
 }
 
 .modal-add-connections-wrapper .choose-file-modal {
-    width: 30%;
+    width: 45%;
 }
 
 .td-wrapper {
