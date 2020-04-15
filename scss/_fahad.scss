@@ -784,5 +784,24 @@ input:checked+.sliders:before {
 }
 
 .adapter-config-wrapper .parent-row .table-innerbox {
-    padding: 3px;
+    padding-bottom: 3px;
+}
+
+.head-input {
+    display: flex;
+    justify-content: center;
+    height: auto !important;
+    width: auto !important;
+}
+
+.connector-config-row {
+    border-radius: 15px;
+}
+
+.add-edit-connection-heading-row .add-edit-heading {
+    font-weight: normal !important;
+}
+
+.connector-config-row .form-control {
+    height: calc(1.5em + 0.50rem + 2px) !important;
 }

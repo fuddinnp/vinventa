@@ -190,6 +190,33 @@
     .modal-add-connections-wrapper .theme-btn {
         width: 100% !important;
     }
+
+    .adapter-config-wrapper .inner-tab-right-section {
+        margin-top: 10px;
+    }
+
+    .add-edit-connection-heading-row {
+        display: flex;
+        align-items: inherit;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .add-edit-connection-heading-row .add-edit-heading {
+        order: 2;
+        margin: 50px 0px 0px;
+    }
+
+    .add-edit-connection-heading-row .add-edit-connection-btns {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .last-td-p {
+        padding-right: 15px;
+    }
 }
 
 /*767 screen end here*/
