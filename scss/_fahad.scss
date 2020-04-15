@@ -788,10 +788,13 @@ input:checked+.sliders:before {
 }
 
 .head-input {
-    display: flex;
-    justify-content: center;
-    height: auto !important;
-    width: auto !important;
+    position: relative;
+
+    input {
+        top: -14px;
+        position: absolute;
+        left: 12px;
+    }
 }
 
 .connector-config-row {
