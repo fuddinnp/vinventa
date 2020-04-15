@@ -663,8 +663,10 @@ input:checked+.sliders:before {
     justify-content: center;
 }
 
+.table-icon span,
 .table-icon span+span {
     letter-spacing: 4px;
+    font-size: 18px;
 }
 
 .table-icon img {
