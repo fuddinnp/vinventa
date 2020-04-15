@@ -595,11 +595,11 @@ input[type="submit"] {
 }
 
 input:checked+.sliders {
-    background-color: #2196f3;
+    background-color: #776fff;
 }
 
 input:focus+.sliders {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #776fff;
 }
 
 input:checked+.sliders:before {
