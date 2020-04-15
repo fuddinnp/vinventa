@@ -814,6 +814,10 @@ input:checked+.sliders:before {
     padding: 8px 0px 8px 10px !important;
 }
 
+.connectors-main-wrapper .parent-row td:nth-child(2) {
+    padding-left: 0px !important;
+}
+
 .connectors-wrapper-full {
     margin-top: 0px !important;
 }
