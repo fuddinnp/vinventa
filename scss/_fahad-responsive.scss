@@ -143,14 +143,20 @@
 
     .Connectors-top-searchbar-div .search-wrap {
         width: 100%;
+        margin-bottom: 8px !important;
     }
 
     .toggle-btn-div {
         margin-top: 15px;
+        flex-basis: inherit;
     }
 
     .connectors-main-wrapper .inner-tab-right-section {
         margin-top: 0px !important;
+    }
+
+    .connectors-wrapper .table-innerbox {
+        margin-right: 5px !important;
     }
 
     .field-large {
