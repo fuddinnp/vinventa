@@ -3677,7 +3677,7 @@ table .bold-heading {
 .close-section {
 
   img {
-    width: 20px;
+    width: 30px;
   }
 
 }
@@ -3685,8 +3685,9 @@ table .bold-heading {
 
 .close-section {
   position: absolute;
-  left: -20px;
-  top: 0;
+  left: -30px;
+  top: 80px;
+  align-items: start;
   bottom: 0;
   margin: auto;
   display: flex;
