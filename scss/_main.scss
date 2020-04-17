@@ -281,8 +281,8 @@ header {
 
 
     .dashbord-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Dashboard_off.svg);
 
@@ -295,8 +295,8 @@ header {
 
 
     .devices-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Devices_off.svg);
 
@@ -306,8 +306,8 @@ header {
     }
 
     .users-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Users_off.svg);
 
@@ -317,8 +317,8 @@ header {
     }
 
     .policy-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Policy-Center_off.svg);
 
@@ -328,8 +328,8 @@ header {
     }
 
     .reports-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Reports_off.svg);
 
@@ -339,8 +339,8 @@ header {
     }
 
     .connectors-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Connectors_off.svg);
 
@@ -350,8 +350,8 @@ header {
     }
 
     .analytic-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       display: inline-block;
       background-image: url(../images/Analytic_off.svg);
 
@@ -3582,12 +3582,13 @@ table .bold-heading {
 .query-save-page-search-row {
   margin-top: 40px;
 }
+
 .rounded-search-bar-full {
 
   position: relative;
   flex: 1;
 
-&:before {
+  &:before {
     content: " ";
     position: absolute;
     width: 30px;
@@ -3599,7 +3600,7 @@ table .bold-heading {
     margin: auto;
     bottom: 0;
     left: 12px;
-}
+  }
 
 
   input {
@@ -3620,8 +3621,8 @@ table .bold-heading {
     margin: auto;
     display: flex;
     width: 20px;
-}
-   
+  }
+
 }
 
 
@@ -3635,12 +3636,12 @@ table .bold-heading {
     margin-left: 10px;
   }
 
-.theme-select {
-  width: 300px;
-  padding: 14px 10px;
-  border: 0px solid #bababa;
-  border-radius: 6px;
-}
+  .theme-select {
+    width: 300px;
+    padding: 14px 10px;
+    border: 0px solid #bababa;
+    border-radius: 6px;
+  }
 
 }
 
