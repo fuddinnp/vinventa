@@ -57,31 +57,33 @@
           </li>
 
           <li class="pushy-submenu pushy-link">
-            <a href="#">
+            <!-- <a href="#">
               <div class="menu-img active dashbord-icon"></div>
               <div class="active-menu-text">
                 Dashboard
               </div>
-            </a>
-            <!-- <button id="first-link">Dashboard</button> -->
-            <!-- <ul>
-                    <li class="pushy-submenu">
-                        <button>Sub-Submenu 1</button>
-                        <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Sub-Submenu 2</button>
-                        <ul>
-                            <li class="pushy-link"><a href="#">Item 1</a></li>
-                            <li class="pushy-link"><a href="#">Item 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="#">Item 1</a></li>
-                    <li class="pushy-link"><a href="#">Item 2</a></li>
-                </ul> -->
+            </a> -->
+            <button id="first-link">
+              Dashboard
+            </button>
+            <ul>
+              <li class="pushy-submenu">
+                <button>Sub-Submenu 1</button>
+                <ul>
+                  <li class="pushy-link"><a href="#">Item 1</a></li>
+                  <li class="pushy-link"><a href="#">Item 2</a></li>
+                </ul>
+              </li>
+              <li class="pushy-submenu">
+                <button>Sub-Submenu 2</button>
+                <ul>
+                  <li class="pushy-link"><a href="#">Item 1</a></li>
+                  <li class="pushy-link"><a href="#">Item 2</a></li>
+                </ul>
+              </li>
+              <li class="pushy-link"><a href="#">Item 1</a></li>
+              <li class="pushy-link"><a href="#">Item 2</a></li>
+            </ul>
           </li>
 
           <li class="pushy-link">
@@ -341,7 +343,18 @@
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <span class="heading-big">Dashboard</span>
+                        <span class="heading-big"
+                          >Dashboard
+                          <img
+                            src="images/down-arrow.svg"
+                            width="13"
+                            height="13"
+                            style="
+                              padding-bottom: 3px;
+                              height: 13px;
+                              width: 13px;
+                            "
+                        /></span>
                       </a>
                       <div
                         class="dropdown-menu"
@@ -723,8 +736,8 @@
         mobileFirst: true,
         columns: 1,
         margin: {
-          y: 16,
-          x: "2%",
+          y: 20,
+          x: 20,
         },
         breakAt: {
           1600: 4,
