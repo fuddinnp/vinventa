@@ -833,3 +833,19 @@ input:checked+.sliders:before {
 .dashboard-dropdown-menu {
     margin-bottom: 30px;
 }
+
+.dashboard-title-menu-dropdown a {
+    text-decoration: none !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dashboard-title-menu-dropdown a img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+.dashboard-title-menu-dropdown a:nth-child(1) {
+    border-bottom: 1px solid #a3a2a2;
+    margin-bottom: 10px;
+}
