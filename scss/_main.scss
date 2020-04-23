@@ -3516,8 +3516,6 @@ table .bold-heading {
   height: 96px;
 }
 
-
-
 .widget-add-module {
 
   a {
@@ -3529,11 +3527,12 @@ table .bold-heading {
     color: #4C4C4C;
 
     &:hover {
-      color: #4C4C4C;
+      color: #4C4C4C !important;
     }
 
     img {
       margin-right: 10px;
+
     }
 
   }
@@ -3678,7 +3677,8 @@ table .bold-heading {
 .close-section {
 
   img {
-    width: 30px;
+    width: 40px;
+    opacity: 0.8;
   }
 
 }
@@ -3686,8 +3686,8 @@ table .bold-heading {
 
 .close-section {
   position: absolute;
-  left: -30px;
-  top: 80px;
+  left: -39px;
+  top: 94px;
   align-items: start;
   bottom: 0;
   margin: auto;
