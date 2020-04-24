@@ -906,16 +906,17 @@ input:checked+.sliders:before {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
 
   .dropdown-with-img {
     margin-left: 10px !important;
     margin-right: 10px !important;
+    padding: 0px;
   }
 
   .query-wizard-exp-btn {
     position: relative;
-    padding-left: 30px;
+    padding-left: 18px;
 
     &::after {
       content: "";
@@ -923,8 +924,8 @@ input:checked+.sliders:before {
       height: 55px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -54px;
-      left: 49px;
+      top: -60px;
+      left: 38px;
     }
 
     a {
@@ -959,7 +960,7 @@ input:checked+.sliders:before {
       top: 50%;
       margin-left: -3px;
       top: 18px;
-      left: 55px;
+      left: 45px;
       width: 70%;
     }
 
@@ -996,11 +997,11 @@ input:checked+.sliders:before {
     &::after {
       content: "";
       width: 0;
-      height: 84px;
+      height: 62px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -55px;
-      left: 52px;
+      top: -59px;
+      left: 42px;
     }
 
     div {
@@ -1055,11 +1056,12 @@ input:checked+.sliders:before {
 }
 
 .togleBtnDisable {
-  background: #cfcfcf;
-  border: 2px solid #cfcfcf;
-  padding: 8px 2px 8px 8px;
+  background: #776fff;
+  border: 2px solid #776fff;
+  padding: 8px 8px 8px 2px;
   color: #fff;
   border-radius: 25px;
+  font-size: 12px;
 
   span {
     background: #fff;
@@ -1089,7 +1091,7 @@ input:checked+.sliders:before {
   &::after {
     content: "";
     width: 0;
-    height: 100px;
+    height: 92px;
     position: absolute;
     border: 1px solid #776fff;
     top: 0px;
