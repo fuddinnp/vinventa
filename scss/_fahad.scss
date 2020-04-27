@@ -916,6 +916,10 @@ input:checked+.sliders:before {
     padding: 0px;
   }
 
+  .dropdown-with-logos li::before {
+    display: none !important;
+  }
+
   .query-wizard-exp-btn {
     position: relative;
     padding-left: 18px;
