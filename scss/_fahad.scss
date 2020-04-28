@@ -1207,10 +1207,12 @@ input:checked+.sliders:before {
   ul {
     display: flex;
 
+
     li {
 
       span {
         background: #e0e0e1;
+        border: 1px solid #e0e0e1;
         margin: 0px 15px;
         padding: 15px 60px !important;
         border-radius: 8px;
@@ -1253,12 +1255,51 @@ input:checked+.sliders:before {
 
     .active-btn {
       background: #776fff;
+      border: 1px solid #776fff;
       padding: 20px 60px !important;
       color: #fff;
 
       &::before {
         content: "";
         border-left: 8px solid #776fff;
+      }
+    }
+
+    .sucess-active {
+      background: #fff;
+      border: 1px solid #776fff;
+      padding: 20px 60px !important;
+      color: #000;
+      position: relative;
+
+      &::before {
+        right: -5px;
+
+      }
+
+      img {
+        position: absolute;
+        width: 25px;
+        right: 13px;
+        top: 27%;
+
+      }
+    }
+  }
+}
+
+.process-button-level-tow {
+  ul {
+    li {
+      span {
+        background: transparent;
+        border: 1px solid #776fff;
+        color: #000;
+
+        &::before {
+          content: "";
+          border-left: 8px solid #776fff;
+        }
       }
     }
   }
@@ -1284,7 +1325,7 @@ input:checked+.sliders:before {
 .policy-accordions-wrapper {
 
   .policy-accordions-box {
-    margin: 12px 14px !important;
+    margin: 12px 0px !important;
 
     .collapse-heading-btn-row {
       font-size: 14px;
@@ -1294,5 +1335,11 @@ input:checked+.sliders:before {
   .p-selected {
     background: #f0f0f0;
     border: 1px solid #776fff;
+  }
+}
+
+.policy-btns-wrapper {
+  button {
+    margin-left: 15px;
   }
 }
