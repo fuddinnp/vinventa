@@ -257,8 +257,11 @@
     }
 
     .policy-btns-wrapper {
+        display: flex;
+        flex-direction: column;
+
         button {
-            margin-left: 0px;
+            margin: 10px 0px;
             font-size: 14px !important;
         }
     }
@@ -274,8 +277,9 @@
 
                 span {
                     margin: 6px 0px;
-                    padding: 15px 60px !important;
+                    padding: 12px 60px !important;
                     display: block;
+                    text-align: center;
 
                     &::before {
                         content: "";
@@ -286,7 +290,7 @@
                         border-top: 8px solid #e0e0e1;
                         position: absolute;
                         top: 45px;
-                        left: 50%;
+                        left: 48%;
                     }
                 }
 
@@ -298,8 +302,8 @@
                         border-left: 8px solid transparent;
                         border-right: 8px solid transparent;
                         border-top: 8px solid #776fff;
-                        top: 56px;
-                        left: 50%;
+                        top: 55px;
+                        left: 48%;
                     }
                 }
             }
@@ -319,7 +323,8 @@
                     &::before {
                         content: "";
                         border-top: 8px solid #776fff;
-                        top: 47px;
+                        top: 45px;
+                        left: 48%;
                     }
                 }
             }

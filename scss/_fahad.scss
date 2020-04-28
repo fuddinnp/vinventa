@@ -1214,7 +1214,7 @@ input:checked+.sliders:before {
         background: #e0e0e1;
         border: 1px solid #e0e0e1;
         margin: 0px 15px;
-        padding: 15px 60px !important;
+        padding: 12px 60px !important;
         border-radius: 8px;
         color: #c0c0c0;
         font-weight: bold;
@@ -1233,7 +1233,6 @@ input:checked+.sliders:before {
           right: -8px;
         }
       }
-
 
     }
 
@@ -1257,8 +1256,9 @@ input:checked+.sliders:before {
     .active-btn {
       background: #776fff;
       border: 1px solid #776fff;
-      padding: 20px 60px !important;
+      padding: 18px 60px !important;
       color: #fff;
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -1269,7 +1269,7 @@ input:checked+.sliders:before {
     .sucess-active {
       background: #fff;
       border: 1px solid #776fff;
-      padding: 20px 60px !important;
+      padding: 18px 60px !important;
       color: #000;
       position: relative;
 
@@ -1296,11 +1296,19 @@ input:checked+.sliders:before {
         background: transparent;
         border: 1px solid #776fff;
         color: #000;
+        cursor: pointer;
 
         &::before {
           content: "";
           border-left: 8px solid #776fff;
         }
+      }
+
+      .three-level-active-btn {
+        background: #776fff !important;
+        border: 1px solid #776fff !important;
+        color: #fff !important;
+
       }
     }
   }
