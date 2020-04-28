@@ -1244,7 +1244,7 @@ input:checked+.sliders:before {
     //     border-left: 8px solid #776fff;
     //   }
     // }
-    li:last-child {
+    .no-arrow {
       &::before {
         content: "";
         display: none;
