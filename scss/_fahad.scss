@@ -1212,9 +1212,9 @@ input:checked+.sliders:before {
 
       span {
         background: #e0e0e1;
-        border: 1px solid #e0e0e1;
+        border: 2px solid #e0e0e1;
         margin: 0px 15px;
-        padding: 12px 60px !important;
+        padding: 16px 80px !important;
         border-radius: 8px;
         color: #c0c0c0;
         font-weight: bold;
@@ -1255,8 +1255,8 @@ input:checked+.sliders:before {
 
     .active-btn {
       background: #776fff;
-      border: 1px solid #776fff;
-      padding: 18px 60px !important;
+      border: 2px solid #776fff;
+      padding: 26px 80px !important;
       color: #fff;
       cursor: pointer;
 
@@ -1268,8 +1268,8 @@ input:checked+.sliders:before {
 
     .sucess-active {
       background: #fff;
-      border: 1px solid #776fff;
-      padding: 18px 60px !important;
+      border: 2px solid #776fff;
+      padding: 26px 80px !important;
       color: #000;
       position: relative;
 
@@ -1286,6 +1286,28 @@ input:checked+.sliders:before {
 
       }
     }
+
+    .sucess-active-small {
+
+      background: #fff;
+      border: 2px solid #776fff;
+      color: #000;
+      position: relative;
+
+      &::before {
+        right: -5px;
+
+      }
+
+      img {
+        position: absolute;
+        width: 20px;
+        right: 13px;
+        top: 27%;
+
+      }
+
+    }
   }
 }
 
@@ -1294,7 +1316,7 @@ input:checked+.sliders:before {
     li {
       span {
         background: transparent;
-        border: 1px solid #776fff;
+        border: 2px solid #776fff;
         color: #000;
         cursor: pointer;
 
@@ -1306,7 +1328,7 @@ input:checked+.sliders:before {
 
       .three-level-active-btn {
         background: #776fff !important;
-        border: 1px solid #776fff !important;
+        border: 2px solid #776fff !important;
         color: #fff !important;
 
       }
@@ -1343,7 +1365,7 @@ input:checked+.sliders:before {
 
   .p-selected {
     background: #f0f0f0;
-    border: 1px solid #776fff;
+    border: 2px solid #776fff;
   }
 }
 
