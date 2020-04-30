@@ -903,6 +903,10 @@ input:checked+.sliders:before {
   }
 }
 
+.m-top {
+  margin-top: 25px;
+}
+
 .query-wizard-exp-contents .query-wizard-expension {
   display: flex !important;
   justify-content: space-between !important;
@@ -927,10 +931,10 @@ input:checked+.sliders:before {
     &::after {
       content: "";
       width: 0;
-      height: 50px;
+      height: 46px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -57px;
+      top: -52px;
       left: 38px;
     }
 
@@ -976,7 +980,7 @@ input:checked+.sliders:before {
 
     .disabled-input {
       background: #776fff;
-      border: 1px solid #776fff;
+      border: 2px solid #776fff;
       padding: 8px 10px;
       font-size: 12px;
       color: #fff;
@@ -1004,10 +1008,10 @@ input:checked+.sliders:before {
     &::after {
       content: "";
       width: 0;
-      height: 54px;
+      height: 43px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -33px;
+      top: -28px;
       left: 41px;
     }
 
@@ -1096,6 +1100,10 @@ input:checked+.sliders:before {
     left: 50%;
   }
 
+  .switch-btn {
+    width: 76px;
+  }
+
   .query-toggle-btn-div {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1112,7 +1120,6 @@ input:checked+.sliders:before {
     background: #776fff;
     z-index: -1;
   }
-
 }
 
 .horizontal .v-line-space::before {
@@ -1135,10 +1142,10 @@ input:checked+.sliders:before {
 
 .list-ic li {
   position: relative;
+  line-height: 11px;
 }
 
 .list-ic li span {
-
   position: relative;
 }
 
@@ -1207,9 +1214,7 @@ input:checked+.sliders:before {
   ul {
     display: flex;
 
-
     li {
-
       span {
         background: #e0e0e1;
         border: 2px solid #e0e0e1;
@@ -1233,7 +1238,6 @@ input:checked+.sliders:before {
           right: -8px;
         }
       }
-
     }
 
     // li:first-child {
@@ -1275,7 +1279,6 @@ input:checked+.sliders:before {
 
       &::before {
         right: -5px;
-
       }
 
       img {
@@ -1283,12 +1286,10 @@ input:checked+.sliders:before {
         width: 25px;
         right: 13px;
         top: 27%;
-
       }
     }
 
     .sucess-active-small {
-
       background: #fff;
       border: 2px solid #776fff;
       color: #000;
@@ -1296,7 +1297,6 @@ input:checked+.sliders:before {
 
       &::before {
         right: -5px;
-
       }
 
       img {
@@ -1304,9 +1304,7 @@ input:checked+.sliders:before {
         width: 20px;
         right: 13px;
         top: 27%;
-
       }
-
     }
   }
 }
@@ -1330,7 +1328,6 @@ input:checked+.sliders:before {
         background: #776fff !important;
         border: 2px solid #776fff !important;
         color: #fff !important;
-
       }
     }
   }
@@ -1343,18 +1340,15 @@ input:checked+.sliders:before {
     }
 
     input {
-
       border-radius: 5px;
       padding: 10px 10px;
       padding-left: 20px;
       border-radius: 5px;
-
     }
   }
 }
 
 .policy-accordions-wrapper {
-
   .policy-accordions-box {
     margin: 12px 0px !important;
 
@@ -1373,4 +1367,95 @@ input:checked+.sliders:before {
   button {
     margin-left: 15px;
   }
+}
+
+/*AND OR BTN CSS NEW*/
+.switch-btn {
+  position: relative;
+  display: inline-block;
+  width: 82px;
+  height: 31px;
+  margin-bottom: 0rem !important;
+}
+
+.switch-btn input {
+  display: none;
+}
+
+.sliderss {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #776fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sliderss:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.sliderss {
+  background-color: #776fff;
+}
+
+input:focus+.sliderss {
+  box-shadow: 0 0 1px #776fff;
+}
+
+input:checked+.sliderss:before {
+  -webkit-transform: translateX(44px);
+  -ms-transform: translateX(44px);
+  transform: translateX(44px);
+}
+
+/*------ ADDED CSS ---------*/
+.on {
+  display: none;
+}
+
+.on,
+.off {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 60%;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+
+}
+
+input:checked+.sliderss .on {
+  display: block;
+  font-size: 14px;
+  padding-left: 10px;
+  // top: 45%;
+  left: 30%;
+}
+
+input:checked+.sliderss .off {
+  display: none;
+}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.sliderss.round {
+  border-radius: 34px;
+}
+
+.sliderss.round:before {
+  border-radius: 50%;
 }
