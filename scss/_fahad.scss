@@ -1123,6 +1123,23 @@ input:checked+.sliders:before {
   left: -25px;
   width: 4em;
   height: 0.15em;
+
+
+}
+
+.horizontal {
+  select {
+    height: 33px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background-image: url(../images/select-dropdwon-icon.png);
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 13px;
+    /* Add custom arrow */
+  }
 }
 
 .list-ic {
