@@ -927,10 +927,10 @@ input:checked+.sliders:before {
     &::after {
       content: "";
       width: 0;
-      height: 45px;
+      height: 52px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -52px;
+      top: -57px;
       left: 38px;
     }
 
@@ -1004,10 +1004,10 @@ input:checked+.sliders:before {
     &::after {
       content: "";
       width: 0;
-      height: 43px;
+      height: 50px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -28px;
+      top: -33px;
       left: 41px;
     }
 
@@ -1155,7 +1155,6 @@ input:checked+.sliders:before {
 
 .list-ic li {
   position: relative;
-  line-height: 11px;
 }
 
 .list-ic li span {
