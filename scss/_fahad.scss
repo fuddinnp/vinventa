@@ -1471,3 +1471,99 @@ input:checked+.sliderss .off {
 .sliderss.round:before {
   border-radius: 50%;
 }
+
+/*NOT btn css*/
+/*AND OR BTN CSS NEW*/
+.switch-Not {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 31px;
+  margin-bottom: 0rem !important;
+  text-align: center;
+}
+
+.switch-Not input {
+  display: none;
+
+  .sliders-Not {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #776fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked+.sliders-Not {
+    background-color: #776fff;
+  }
+
+  input:focus+.sliders-Not {
+    box-shadow: 0 0 1px #776fff;
+  }
+
+}
+
+
+
+
+
+// input:checked+.sliderss:before {
+//   -webkit-transform: translateX(44px);
+//   -ms-transform: translateX(44px);
+//   transform: translateX(44px);
+// }
+
+/*------ ADDED CSS ---------*/
+.not-white-bg {
+  display: none;
+}
+
+.not-white-bg,
+.not-blue-bg {
+  color: #fff;
+  background-color: #776fff;
+  border: 2px solid #776fff;
+  padding: 8px;
+  border-radius: 25px;
+  // position: absolute;
+  // transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 60%;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+input:checked+.sliders-Not .not-white-bg {
+  display: block;
+  color: #776fff;
+  background-color: #fff;
+  border: 2px solid #776fff;
+  font-size: 12px;
+  // padding-left: 10px;
+  // top: 45%;
+  // left: 26%;
+}
+
+input:checked+.sliders-Not .not-blue-bg {
+  display: none;
+}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.sliders-Not.round {
+  border-radius: 34px;
+}
+
+.sliders-Not.round:before {
+  border-radius: 50%;
+}
