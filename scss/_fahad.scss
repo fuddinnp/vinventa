@@ -447,6 +447,7 @@ input[type="submit"] {
 
 .table-icons {
   height: 18px;
+  vertical-align: middle;
 }
 
 .icon-td {
@@ -1566,4 +1567,35 @@ input:checked+.sliders-Not .not-blue-bg {
 
 .sliders-Not.round:before {
   border-radius: 50%;
+}
+
+.device-select-div {
+
+  select {
+    border: 0px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
+
+.save-queries-wrapper {
+  .search-wrap {
+    flex: 1;
+  }
+
+  img {
+    margin-right: 15px;
+  }
+
+  select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url(../images/select-dropdwon-icon.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 20px;
+    height: 45px;
+    margin-right: 13px;
+  }
 }
