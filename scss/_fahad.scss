@@ -1581,6 +1581,10 @@ input:checked+.sliders-Not .not-blue-bg {
 .save-queries-wrapper {
   .search-wrap {
     flex: 1;
+
+    input {
+      margin-right: 0px;
+    }
   }
 
   img {
@@ -1617,4 +1621,8 @@ input:checked+.sliders-Not .not-blue-bg {
     width: 250px;
     padding: 10px 10px;
   }
+}
+
+.search-right-bar {
+  display: flex;
 }
