@@ -1649,16 +1649,21 @@ input:checked+.sliders-Not .not-blue-bg {
   position: relative;
 
   #checkboxes {
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     position: absolute;
-    width: 250px;
+    width: 226px;
     padding: 15px;
     background: #fff;
     z-index: 2;
+    top: 38px;
+    left: 6px;
   }
 
   .dropdown-search-bar {
     border-radius: 5px;
-    border: 1px solid #c2c3c7;
+    border: 1px #dadada solid;
     padding: 5px;
     width: 100%;
   }
@@ -1692,6 +1697,7 @@ input:checked+.sliders-Not .not-blue-bg {
 #checkboxes {
   display: none;
   border: 1px #dadada solid;
+  border-top: 0px solid #c2c3c7;
 }
 
 #checkboxes label {
