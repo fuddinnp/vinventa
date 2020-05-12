@@ -326,15 +326,52 @@
 
                                     </div>
                                     <div class="search-right-bar">
-                                        <div class="device-select-div">
-                                            <select name="" id="" class="theme-select">
-                                                <option>Filter By</option>
-                                                <option>Tag</option>
-                                                <option>Last Executed</option>
-                                                <option>Updated By </option>
+                                        <!-- jquery multi select dropdown -->
+                                        <form>
+                                            <div class="multiselect">
+                                                <div class="selectBox" onclick="showCheckboxes()">
+                                                    <select>
+                                                        <option>Filter By</option>
+                                                    </select>
+                                                    <div class="overSelect"></div>
+                                                </div>
+                                                <div id="checkboxes">
+                                                    <label class="check-container">Name
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="check-container">Query
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="check-container">Tags
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="check-container">Updated By
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="check-container">Description
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="check-container">Keyword
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
 
-                                            </select>
-                                        </div>
+                                                    <label for="seven">
+                                                        <input type="text" class="dropdown-search-bar"
+                                                            id="seven" /></label>
+
+                                                    <div class="done-btn">
+                                                        <button class="no-btn">Done</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
 
                                         <div>
                                             <button type="button" class="theme-button-small graydient-primary-btn">
@@ -1560,6 +1597,19 @@
         $("#myModal").on("shown.bs.modal", function () {
             $("#myInput").trigger("focus");
         });
+
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
     </script>
 
     <script src="js/custom.js"></script>
