@@ -797,6 +797,12 @@ input:checked+.sliders:before {
     position: absolute;
     left: 12px;
   }
+
+  .check-container {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+  }
 }
 
 .connector-config-row {
@@ -1737,21 +1743,21 @@ input:checked+.sliders-Not .not-blue-bg {
   height: 18px;
   width: 18px;
   background-color: #fff;
-  border: 2px solid #f4f4f4;
+  border: 1px solid #717171;
   border-radius: 6px;
 }
 
 /* On mouse-over, add a grey background color */
 .check-container:hover input~.checkmark {
   background-color: #fff;
-  border: 2px solid #f4f4f4;
+  border: 1px solid #717171;
   border-radius: 6px;
 }
 
 /* When the checkbox is checked, add a blue background */
 .check-container input:checked~.checkmark {
-  background-color: #000;
-  border: 2px solid #000;
+  background-color: #717171;
+  border: 1px solid #717171;
   border-radius: 6px;
 }
 
@@ -1769,8 +1775,8 @@ input:checked+.sliders-Not .not-blue-bg {
 
 /* Style the checkmark/indicator */
 .check-container .checkmark:after {
-  left: 4px;
-  top: 0px;
+  left: 5px;
+  top: 1px;
   width: 6px;
   height: 12px;
   border: solid white;
@@ -1778,4 +1784,11 @@ input:checked+.sliders-Not .not-blue-bg {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+td {
+  .check-container {
+    margin: 3px 0px 0px 0px;
+    padding: 0px;
+  }
 }
