@@ -1532,8 +1532,8 @@ input:checked+.sliderss .off {
 
 .not-white-bg,
 .not-blue-bg {
-  color: #fff;
-  background-color: #776fff;
+  color: #776fff;
+  background-color: #fff;
   border: 2px solid #776fff;
   padding: 8px;
   border-radius: 25px;
@@ -1551,8 +1551,8 @@ input:checked+.sliderss .off {
 
 input:checked+.sliders-Not .not-white-bg {
   display: block;
-  color: #776fff;
-  background-color: #fff;
+  color: #fff;
+  background-color: #776fff;
   border: 2px solid #776fff;
   font-size: 12px;
   // padding-left: 10px;
@@ -1790,5 +1790,11 @@ td {
   .check-container {
     margin: 3px 0px 0px 0px;
     padding: 0px;
+  }
+}
+
+.add-user-modal {
+  input[type="password"] {
+    padding: 9px 16px;
   }
 }

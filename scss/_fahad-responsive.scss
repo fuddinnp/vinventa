@@ -338,6 +338,24 @@
             }
         }
     }
+
+    .add-user-modal {
+        .adding-adapter-modal-header {
+            flex-direction: row-reverse;
+            margin-top: 2px;
+        }
+
+        .adapter-modal-name {
+            margin-top: 0px !important;
+            text-align: left !important;
+        }
+
+        .adapter-modal-help-box {
+            margin-bottom: 0px !important;
+        }
+    }
+
+
 }
 
 /*767 screen end here*/
