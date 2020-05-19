@@ -882,6 +882,16 @@ input:checked+.sliders:before {
 .query-wizard-exp-contents .query-wizard-expension {
   position: relative;
 
+  .full-panel-close-btn {
+    position: absolute;
+    top: -8px;
+    right: -18px;
+
+    img {
+      width: 13px;
+    }
+  }
+
   .exists-dropdown {
     padding: 6px 10px !important;
   }
