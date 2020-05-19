@@ -660,31 +660,37 @@ thead tr th {
     /******* Sub menu *********/
 
     .header-submenu {
+      display: none;
       position: absolute;
-      visibility: hidden;
-      height: 0;
-
+      // visibility: hidden;
+      // height: 0;
+      top: 56px;
+      left: 10px;
     }
 
     &:hover .header-submenu {
-      display: none;
+      display: block;
       background: black;
       position: absolute;
-      bottom: -60px;
-      width: 300px;
+      // bottom: -60px;
+      width: auto;
       flex-direction: column;
       visibility: visible;
       height: 100%;
 
-      li a {
-        background: black;
-        width: 100%;
-        padding: 20px;
+      li {
+        width: 130px;
 
-        &:hover {
-          background: #cacaca;
-          color: black;
-          cursor: pointer;
+        a {
+          background: white;
+          width: 100%;
+          padding: 20px;
+
+          &:hover {
+            background: #cacaca;
+            color: black;
+            cursor: pointer;
+          }
         }
       }
     }
