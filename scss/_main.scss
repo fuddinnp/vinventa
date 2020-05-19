@@ -634,6 +634,48 @@ thead tr th {
     height: 100%;
     position: relative;
     top: 5px;
+
+    li {
+      margin-bottom: -50px;
+
+      &:hover {
+        .header-submenu {
+          display: block;
+          background: white;
+          position: absolute;
+          // bottom: -60px;
+          width: auto;
+          flex-direction: column;
+          visibility: visible;
+          height: 100%;
+
+          li {
+            width: 130px;
+
+            a,
+            div {
+              background: white;
+              width: 100%;
+              padding: 20px;
+
+
+              &:hover {
+                background: #e3e4e8;
+                color: black;
+                cursor: pointer;
+              }
+            }
+
+            &:hover {
+              background: #e3e4e8;
+              color: black;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
   }
 
   ul li {
@@ -658,7 +700,6 @@ thead tr th {
     }
 
     /******* Sub menu *********/
-
     .header-submenu {
       display: none;
       position: absolute;
@@ -666,42 +707,9 @@ thead tr th {
       // height: 0;
       top: 48px;
       left: 10px;
+      padding-top: 15px;
     }
 
-    &:hover .header-submenu {
-      display: block;
-      background: black;
-      position: absolute;
-      // bottom: -60px;
-      width: auto;
-      flex-direction: column;
-      visibility: visible;
-      height: 100%;
-
-      li {
-        width: 130px;
-        line-height: 16px;
-
-        a,
-        div {
-          background: white;
-          width: 100%;
-          padding: 20px;
-
-          &:hover {
-            background: #e3e4e8;
-            color: black;
-            cursor: pointer;
-          }
-        }
-
-        &:hover {
-          background: #e3e4e8;
-          color: black;
-          cursor: pointer;
-        }
-      }
-    }
   }
 }
 

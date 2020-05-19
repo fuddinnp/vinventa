@@ -8036,6 +8036,32 @@ thead tr th .form-control {
     height: 100%;
     position: relative;
     top: 5px; }
+    .top-menu ul li {
+      margin-bottom: -50px; }
+      .top-menu ul li:hover .header-submenu {
+        display: block;
+        background: white;
+        position: absolute;
+        width: auto;
+        flex-direction: column;
+        visibility: visible;
+        height: 100%; }
+        .top-menu ul li:hover .header-submenu li {
+          width: 130px; }
+          .top-menu ul li:hover .header-submenu li a,
+          .top-menu ul li:hover .header-submenu li div {
+            background: white;
+            width: 100%;
+            padding: 20px; }
+            .top-menu ul li:hover .header-submenu li a:hover,
+            .top-menu ul li:hover .header-submenu li div:hover {
+              background: #e3e4e8;
+              color: black;
+              cursor: pointer; }
+          .top-menu ul li:hover .header-submenu li:hover {
+            background: #e3e4e8;
+            color: black;
+            cursor: pointer; }
   .top-menu ul li {
     height: 100%;
     position: relative;
@@ -8057,32 +8083,8 @@ thead tr th .form-control {
       display: none;
       position: absolute;
       top: 48px;
-      left: 10px; }
-    .top-menu ul li:hover .header-submenu {
-      display: block;
-      background: black;
-      position: absolute;
-      width: auto;
-      flex-direction: column;
-      visibility: visible;
-      height: 100%; }
-      .top-menu ul li:hover .header-submenu li {
-        width: 130px;
-        line-height: 16px; }
-        .top-menu ul li:hover .header-submenu li a,
-        .top-menu ul li:hover .header-submenu li div {
-          background: white;
-          width: 100%;
-          padding: 20px; }
-          .top-menu ul li:hover .header-submenu li a:hover,
-          .top-menu ul li:hover .header-submenu li div:hover {
-            background: #e3e4e8;
-            color: black;
-            cursor: pointer; }
-        .top-menu ul li:hover .header-submenu li:hover {
-          background: #e3e4e8;
-          color: black;
-          cursor: pointer; }
+      left: 10px;
+      padding-top: 15px; }
 
 .bg {
   background-color: #d6d6d6; }
@@ -8664,205 +8666,205 @@ th {
   visibility: hidden; }
 
 .child-row:nth-child(0) td:nth-child(2) .table-innerbox:after {
-  background: #73c7ba; }
+  background: #53f360; }
 .child-row:nth-child(1) td:nth-child(2) .table-innerbox:after {
-  background: #641520; }
+  background: #7f51c6; }
 .child-row:nth-child(2) td:nth-child(2) .table-innerbox:after {
-  background: #da0e9c; }
+  background: #ae9936; }
 .child-row:nth-child(3) td:nth-child(2) .table-innerbox:after {
-  background: #eb5e73; }
+  background: #59eb88; }
 .child-row:nth-child(4) td:nth-child(2) .table-innerbox:after {
-  background: #b8b402; }
+  background: #f5f1ce; }
 .child-row:nth-child(5) td:nth-child(2) .table-innerbox:after {
-  background: #ab7c1d; }
+  background: #9225eb; }
 .child-row:nth-child(6) td:nth-child(2) .table-innerbox:after {
-  background: #af5f0b; }
+  background: #3cbfbf; }
 .child-row:nth-child(7) td:nth-child(2) .table-innerbox:after {
-  background: #1d9fae; }
+  background: #03d55f; }
 .child-row:nth-child(8) td:nth-child(2) .table-innerbox:after {
-  background: #b4eeaa; }
+  background: #650a55; }
 .child-row:nth-child(9) td:nth-child(2) .table-innerbox:after {
-  background: #dcc2df; }
+  background: #a36585; }
 .child-row:nth-child(10) td:nth-child(2) .table-innerbox:after {
-  background: #9aa022; }
+  background: #680a0b; }
 .child-row:nth-child(11) td:nth-child(2) .table-innerbox:after {
-  background: #f40966; }
+  background: #a35f40; }
 .child-row:nth-child(12) td:nth-child(2) .table-innerbox:after {
-  background: #13c6d8; }
+  background: #f49fa2; }
 .child-row:nth-child(13) td:nth-child(2) .table-innerbox:after {
-  background: #e28fab; }
+  background: #07bbd1; }
 .child-row:nth-child(14) td:nth-child(2) .table-innerbox:after {
-  background: #171348; }
+  background: #5e09df; }
 .child-row:nth-child(15) td:nth-child(2) .table-innerbox:after {
-  background: #cbedbb; }
+  background: #f5a43a; }
 .child-row:nth-child(16) td:nth-child(2) .table-innerbox:after {
-  background: #a0dfbd; }
+  background: #7e6cfe; }
 .child-row:nth-child(17) td:nth-child(2) .table-innerbox:after {
-  background: #d8a08f; }
+  background: #4e1b7e; }
 .child-row:nth-child(18) td:nth-child(2) .table-innerbox:after {
-  background: #98f090; }
+  background: #1dea2b; }
 .child-row:nth-child(19) td:nth-child(2) .table-innerbox:after {
-  background: #ffe7f3; }
+  background: #453b69; }
 .child-row:nth-child(20) td:nth-child(2) .table-innerbox:after {
-  background: #dbd93c; }
+  background: #2b34aa; }
 .child-row:nth-child(21) td:nth-child(2) .table-innerbox:after {
-  background: #1ed7c2; }
+  background: #9a3984; }
 .child-row:nth-child(22) td:nth-child(2) .table-innerbox:after {
-  background: #01089b; }
+  background: #c079cd; }
 .child-row:nth-child(23) td:nth-child(2) .table-innerbox:after {
-  background: #0893b4; }
+  background: #1907ce; }
 .child-row:nth-child(24) td:nth-child(2) .table-innerbox:after {
-  background: #d8c8dd; }
+  background: #1948bb; }
 .child-row:nth-child(25) td:nth-child(2) .table-innerbox:after {
-  background: #9fa398; }
+  background: #6a7e41; }
 .child-row:nth-child(26) td:nth-child(2) .table-innerbox:after {
-  background: #fb2b65; }
+  background: #769abf; }
 .child-row:nth-child(27) td:nth-child(2) .table-innerbox:after {
-  background: #f99863; }
+  background: #94e725; }
 .child-row:nth-child(28) td:nth-child(2) .table-innerbox:after {
-  background: #3619f2; }
+  background: #b94880; }
 .child-row:nth-child(29) td:nth-child(2) .table-innerbox:after {
-  background: #3aeb2c; }
+  background: #2ec4bd; }
 .child-row:nth-child(30) td:nth-child(2) .table-innerbox:after {
-  background: #18fc2d; }
+  background: #ded389; }
 .child-row:nth-child(31) td:nth-child(2) .table-innerbox:after {
-  background: #5db024; }
+  background: #091f1b; }
 .child-row:nth-child(32) td:nth-child(2) .table-innerbox:after {
-  background: #6eddd5; }
+  background: #a56f58; }
 .child-row:nth-child(33) td:nth-child(2) .table-innerbox:after {
-  background: #96e403; }
+  background: #c2b82a; }
 .child-row:nth-child(34) td:nth-child(2) .table-innerbox:after {
-  background: #f314fe; }
+  background: #934fc3; }
 .child-row:nth-child(35) td:nth-child(2) .table-innerbox:after {
-  background: #268b85; }
+  background: #74b83b; }
 .child-row:nth-child(36) td:nth-child(2) .table-innerbox:after {
-  background: #808ebb; }
+  background: #478fc2; }
 .child-row:nth-child(37) td:nth-child(2) .table-innerbox:after {
-  background: #8c9093; }
+  background: #549b11; }
 .child-row:nth-child(38) td:nth-child(2) .table-innerbox:after {
-  background: #c945a0; }
+  background: #281864; }
 .child-row:nth-child(39) td:nth-child(2) .table-innerbox:after {
-  background: #64b29d; }
+  background: #1c91b6; }
 .child-row:nth-child(40) td:nth-child(2) .table-innerbox:after {
-  background: #77c68f; }
+  background: #e9756f; }
 .child-row:nth-child(41) td:nth-child(2) .table-innerbox:after {
-  background: #16c34a; }
+  background: #19f889; }
 .child-row:nth-child(42) td:nth-child(2) .table-innerbox:after {
-  background: #2a0ac8; }
+  background: #183954; }
 .child-row:nth-child(43) td:nth-child(2) .table-innerbox:after {
-  background: #1282cb; }
+  background: #5dd3ec; }
 .child-row:nth-child(44) td:nth-child(2) .table-innerbox:after {
-  background: #76654c; }
+  background: #c5f99e; }
 .child-row:nth-child(45) td:nth-child(2) .table-innerbox:after {
-  background: #6e0108; }
+  background: #f82fc6; }
 .child-row:nth-child(46) td:nth-child(2) .table-innerbox:after {
-  background: #4b4aec; }
+  background: #e43f7c; }
 .child-row:nth-child(47) td:nth-child(2) .table-innerbox:after {
-  background: #80e2c9; }
+  background: #ae47cf; }
 .child-row:nth-child(48) td:nth-child(2) .table-innerbox:after {
-  background: #0f1728; }
+  background: #e3014b; }
 .child-row:nth-child(49) td:nth-child(2) .table-innerbox:after {
-  background: #28cb52; }
+  background: #d6dcb7; }
 .child-row:nth-child(50) td:nth-child(2) .table-innerbox:after {
-  background: #073ed1; }
+  background: #41ddc3; }
 .child-row:nth-child(51) td:nth-child(2) .table-innerbox:after {
-  background: #be2bea; }
+  background: #2d53f0; }
 .child-row:nth-child(52) td:nth-child(2) .table-innerbox:after {
-  background: #526732; }
+  background: #406136; }
 .child-row:nth-child(53) td:nth-child(2) .table-innerbox:after {
-  background: #b01314; }
+  background: #f3efdd; }
 .child-row:nth-child(54) td:nth-child(2) .table-innerbox:after {
-  background: #dd61a6; }
+  background: #2d4c20; }
 .child-row:nth-child(55) td:nth-child(2) .table-innerbox:after {
-  background: #1b593a; }
+  background: #080799; }
 .child-row:nth-child(56) td:nth-child(2) .table-innerbox:after {
-  background: #05b8dc; }
+  background: #416f6a; }
 .child-row:nth-child(57) td:nth-child(2) .table-innerbox:after {
-  background: #4c8f7d; }
+  background: #708e65; }
 .child-row:nth-child(58) td:nth-child(2) .table-innerbox:after {
-  background: #b69d1c; }
+  background: #f8466d; }
 .child-row:nth-child(59) td:nth-child(2) .table-innerbox:after {
-  background: #2cae6c; }
+  background: #7bde18; }
 .child-row:nth-child(60) td:nth-child(2) .table-innerbox:after {
-  background: #46c74e; }
+  background: #9e0841; }
 .child-row:nth-child(61) td:nth-child(2) .table-innerbox:after {
-  background: #54dde8; }
+  background: #b2c23e; }
 .child-row:nth-child(62) td:nth-child(2) .table-innerbox:after {
-  background: #07d628; }
+  background: #9a1031; }
 .child-row:nth-child(63) td:nth-child(2) .table-innerbox:after {
-  background: #d48ca0; }
+  background: #24a366; }
 .child-row:nth-child(64) td:nth-child(2) .table-innerbox:after {
-  background: #66c159; }
+  background: #670a5b; }
 .child-row:nth-child(65) td:nth-child(2) .table-innerbox:after {
-  background: #d655d8; }
+  background: #424b6d; }
 .child-row:nth-child(66) td:nth-child(2) .table-innerbox:after {
-  background: #537106; }
+  background: #9ff690; }
 .child-row:nth-child(67) td:nth-child(2) .table-innerbox:after {
-  background: #075a96; }
+  background: #cf10eb; }
 .child-row:nth-child(68) td:nth-child(2) .table-innerbox:after {
-  background: #f7304d; }
+  background: #c4b263; }
 .child-row:nth-child(69) td:nth-child(2) .table-innerbox:after {
-  background: #44eeed; }
+  background: #5d8cef; }
 .child-row:nth-child(70) td:nth-child(2) .table-innerbox:after {
-  background: #02a1c9; }
+  background: #44c128; }
 .child-row:nth-child(71) td:nth-child(2) .table-innerbox:after {
-  background: #ea19d7; }
+  background: #e33671; }
 .child-row:nth-child(72) td:nth-child(2) .table-innerbox:after {
-  background: #85247c; }
+  background: #bd91cb; }
 .child-row:nth-child(73) td:nth-child(2) .table-innerbox:after {
-  background: #fd7796; }
+  background: #b6be37; }
 .child-row:nth-child(74) td:nth-child(2) .table-innerbox:after {
-  background: #63698b; }
+  background: #dd8e9c; }
 .child-row:nth-child(75) td:nth-child(2) .table-innerbox:after {
-  background: #55eff8; }
+  background: #f59707; }
 .child-row:nth-child(76) td:nth-child(2) .table-innerbox:after {
-  background: #053d96; }
+  background: #b018b9; }
 .child-row:nth-child(77) td:nth-child(2) .table-innerbox:after {
-  background: #49eaa9; }
+  background: #eeaebf; }
 .child-row:nth-child(78) td:nth-child(2) .table-innerbox:after {
-  background: #af544b; }
+  background: #1bcb79; }
 .child-row:nth-child(79) td:nth-child(2) .table-innerbox:after {
-  background: #ca1c12; }
+  background: #88e6e9; }
 .child-row:nth-child(80) td:nth-child(2) .table-innerbox:after {
-  background: #e64d6d; }
+  background: #c2b721; }
 .child-row:nth-child(81) td:nth-child(2) .table-innerbox:after {
-  background: #1bb24e; }
+  background: #28d301; }
 .child-row:nth-child(82) td:nth-child(2) .table-innerbox:after {
-  background: #e65be4; }
+  background: #ee878b; }
 .child-row:nth-child(83) td:nth-child(2) .table-innerbox:after {
-  background: #dfd7d9; }
+  background: #ccd287; }
 .child-row:nth-child(84) td:nth-child(2) .table-innerbox:after {
-  background: #22cbf2; }
+  background: #d1a825; }
 .child-row:nth-child(85) td:nth-child(2) .table-innerbox:after {
-  background: #070eef; }
+  background: #da1514; }
 .child-row:nth-child(86) td:nth-child(2) .table-innerbox:after {
-  background: #a127ca; }
+  background: #9b3b98; }
 .child-row:nth-child(87) td:nth-child(2) .table-innerbox:after {
-  background: #f895ed; }
+  background: #5f97c9; }
 .child-row:nth-child(88) td:nth-child(2) .table-innerbox:after {
-  background: #184796; }
+  background: #9a9537; }
 .child-row:nth-child(89) td:nth-child(2) .table-innerbox:after {
-  background: #7b5b53; }
+  background: #ad19d0; }
 .child-row:nth-child(90) td:nth-child(2) .table-innerbox:after {
-  background: #a90251; }
+  background: #d6ef64; }
 .child-row:nth-child(91) td:nth-child(2) .table-innerbox:after {
-  background: #f75ce5; }
+  background: #5c1d66; }
 .child-row:nth-child(92) td:nth-child(2) .table-innerbox:after {
-  background: #27cd3c; }
+  background: #8169de; }
 .child-row:nth-child(93) td:nth-child(2) .table-innerbox:after {
-  background: #a2a7d8; }
+  background: #7a29ca; }
 .child-row:nth-child(94) td:nth-child(2) .table-innerbox:after {
-  background: #0a49b0; }
+  background: #53c2df; }
 .child-row:nth-child(95) td:nth-child(2) .table-innerbox:after {
-  background: #bab3db; }
+  background: #e99243; }
 .child-row:nth-child(96) td:nth-child(2) .table-innerbox:after {
-  background: #e1cfe5; }
+  background: #ae85b5; }
 .child-row:nth-child(97) td:nth-child(2) .table-innerbox:after {
-  background: #25fc9e; }
+  background: #439269; }
 .child-row:nth-child(98) td:nth-child(2) .table-innerbox:after {
-  background: #98accd; }
+  background: #07379a; }
 .child-row:nth-child(99) td:nth-child(2) .table-innerbox:after {
-  background: #6c6cc7; }
+  background: #d8f281; }
 
 .child-row td:nth-child(2) .table-innerbox {
   position: relative; }
