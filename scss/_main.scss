@@ -664,7 +664,7 @@ thead tr th {
       position: absolute;
       // visibility: hidden;
       // height: 0;
-      top: 56px;
+      top: 52px;
       left: 10px;
     }
 
@@ -680,6 +680,7 @@ thead tr th {
 
       li {
         width: 130px;
+        line-height: 18px;
 
         a {
           background: white;
@@ -687,7 +688,7 @@ thead tr th {
           padding: 20px;
 
           &:hover {
-            background: #cacaca;
+            background: #e3e4e8;
             color: black;
             cursor: pointer;
           }
