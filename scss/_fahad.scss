@@ -549,7 +549,7 @@ input[type="submit"] {
 .toggle-btn-div {
   display: flex;
   align-items: center;
-  flex-basis: 250px;
+  flex-basis: 260px;
 }
 
 .toggle-btn-div .toggle-btn {
@@ -560,8 +560,8 @@ input[type="submit"] {
 .switch {
   position: relative;
   display: inline-block;
-  width: 45px;
-  height: 25px;
+  width: 60px;
+  height: 31px;
   margin-top: 8px;
 }
 
@@ -586,8 +586,8 @@ input[type="submit"] {
 .sliders:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
+  height: 23px;
+  width: 24px;
   left: 4px;
   bottom: 4px;
   background-color: white;
