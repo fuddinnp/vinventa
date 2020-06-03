@@ -355,6 +355,15 @@
         }
     }
 
+    .connectors-box-wrapper {
+        flex-wrap: wrap;
+
+        .connec-box-div {
+            flex-basis: inherit;
+            margin-bottom: 15px;
+        }
+    }
+
 
 }
 
