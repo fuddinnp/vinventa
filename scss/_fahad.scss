@@ -1360,6 +1360,27 @@ input:checked+.sliders:before {
   }
 }
 
+.full-search-row {
+  form {
+    width: 100%;
+
+    .search-icon-btn {
+      position: absolute;
+      background: none;
+      background-image: url(../images/search.svg);
+      background-repeat: no-repeat;
+      background-position-x: 12px;
+      background-position-y: 13px;
+      width: auto;
+      top: -2px;
+      left: 0px;
+      margin: 0px;
+      z-index: 3;
+
+    }
+  }
+}
+
 .policy-search {
   .search-wrap-standard {
     &::before {
@@ -1857,7 +1878,6 @@ td {
         vertical-align: middle;
         position: relative;
         margin-top: 15px;
-
 
         img {
           width: 30px;
