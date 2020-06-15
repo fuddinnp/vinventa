@@ -240,6 +240,10 @@ header {
         background-image: url(../images/Analytic_on.svg);
       }
 
+      .admin-icon {
+        background-image: url(../images/Admin_on.svg);
+      }
+
 
 
 
@@ -278,6 +282,9 @@ header {
       background-image: url(../images/Analytic_on.svg);
     }
 
+    .active.admin-icon {
+      background-image: url(../images/Admin_on.svg);
+    }
 
 
     .dashbord-icon {
@@ -357,6 +364,17 @@ header {
 
       &:hover {
         background-image: url(../images/Analytic_on.svg);
+      }
+    }
+
+    .admin-icon {
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      background-image: url(../images/Admin_off.svg);
+
+      &:hover {
+        background-image: url(../images/Admin_on.svg);
       }
     }
 
