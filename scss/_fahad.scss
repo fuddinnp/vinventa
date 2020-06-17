@@ -2087,6 +2087,8 @@ td {
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 20px;
 
+
+
   .right-part-item {
     display: flex;
 
@@ -2127,4 +2129,8 @@ td {
       }
     }
   }
+}
+
+.right-party-row:last-child .right-part-items-div {
+  border-bottom: 0px solid #d4d4d4;
 }
