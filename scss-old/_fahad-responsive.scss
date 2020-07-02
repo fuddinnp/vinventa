@@ -1,0 +1,413 @@
+@media screen and (max-width: 767px) {
+    .profile-box {
+        padding: 10px;
+    }
+
+    .total-comments-wraper {
+        padding-top: 30px;
+    }
+
+    .profile-name {
+        font-size: 16px;
+    }
+
+    .total-comments {
+        margin-bottom: 10px !important;
+    }
+
+    .inner-tab-content-right-col {
+        margin-top: 20px !important;
+    }
+
+    .add-comment-section {
+        margin-top: 15px !important;
+    }
+
+    .profile-comment-time-update {
+        margin-right: 0px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .profile-comment-time-stamp-box {
+        flex-direction: column;
+    }
+
+    .comments-text {
+        font-size: 14px !important;
+    }
+
+    .add-tags-left-col {
+        width: 100%;
+        order: 2;
+        overflow-x: auto;
+    }
+
+    .add-tags-container {
+        display: flex;
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .add-tags-right-col {
+        flex: 1;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .tags-field-box {
+        display: flex;
+        flex-direction: column;
+
+        input:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    .tree-list-div .device-tab-detail-box {
+        padding: 0px !important;
+        overflow-x: scroll;
+        width: 700px;
+    }
+
+    // login page css
+    .intro {
+        padding: 20px;
+    }
+
+    .right-panel-div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .slider {
+        display: none;
+        /*width: 100%;
+		height: 70%;*/
+    }
+
+    .LoginPanel {
+        padding: 0px;
+    }
+
+    .LoginPanel .fieldsBotSection label {
+        font-size: 13px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .LoginPanel .fieldsBotSection .forgotLink {
+        font-size: 13px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .LoginPanel .fieldsSection .userName {
+        margin-bottom: 40px;
+    }
+
+    .LoginPanel h1 {
+        font-size: 28px;
+        margin: 40px 0px 8px 0px;
+    }
+
+    .LoginPanel h3 {
+        font-size: 16px;
+    }
+
+    .LoginPanel .fieldsSection .userName {
+        margin-bottom: 40px;
+    }
+
+    .LoginPanel .fieldsBotSection label {
+        padding: 16px 0px;
+        padding-left: 25px;
+    }
+
+    .try-free-btn {
+        padding: 12px !important;
+        font-size: 13px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .Connectors-top-searchbar-div {
+        flex-direction: column;
+    }
+
+    .Connectors-top-searchbar-div .search-wrap {
+        width: 100%;
+        margin-bottom: 8px !important;
+    }
+
+    .toggle-btn-div {
+        margin-top: 15px;
+        flex-basis: inherit;
+    }
+
+    .connectors-main-wrapper .inner-tab-right-section {
+        margin-top: 0px !important;
+    }
+
+    .connectors-wrapper .table-innerbox {
+        margin-right: 5px !important;
+    }
+
+    .field-large {
+        width: 100% !important;
+    }
+
+    .adapter-modal-bottom-row,
+    .modal-add-connections-wrapper .adapter-modal-bottom-row {
+        justify-content: inherit;
+    }
+
+    .no-file-chisen-items {
+        flex-direction: column;
+    }
+
+    .adapter-modal-field-row .region-checkbox,
+    .adapter-three-col .adapter-modal-role-row-middle {
+        padding: 0px !important;
+    }
+
+    .modal-add-connections-wrapper .adapter-modal-content-box {
+        padding: 15px;
+    }
+
+    .modal-add-connections-wrapper .choose-file-modal {
+        width: 100%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+    }
+
+    .tags a {
+        text-align: center;
+    }
+
+    .modal-add-connections-wrapper .theme-btn {
+        width: 100% !important;
+    }
+
+    .adapter-config-wrapper .inner-tab-right-section {
+        margin-top: 10px;
+    }
+
+    .add-edit-connection-heading-row {
+        display: flex;
+        align-items: inherit;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .add-edit-connection-heading-row .add-edit-heading {
+        order: 2;
+        margin: 50px 0px 0px;
+    }
+
+    .add-edit-connection-heading-row .add-edit-connection-btns {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .last-td-p {
+        padding-right: 15px;
+    }
+
+    .dashboard-dropdown-menu {
+        margin-bottom: 30px;
+    }
+
+    .query-wizard-exp-contents {
+        overflow-x: auto;
+
+        .query-wizard-expension {
+            background: transparent;
+            white-space: nowrap;
+            padding: initial;
+
+            div {
+                margin: 0 3px;
+            }
+
+            .hidden {
+                display: block !important;
+                visibility: hidden;
+            }
+
+            .all-select,
+            .exists-dropdown {
+                width: 75px;
+            }
+
+            select.query-wizard-dropdown-large {
+                width: 300px;
+            }
+
+            .dropdown-with-img {
+                width: 106px;
+            }
+        }
+    }
+
+    .policy-btns-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            margin: 10px 0px;
+            font-size: 14px !important;
+        }
+    }
+
+    .process-button-wrapper {
+        margin: 15px 0px 6px;
+
+        ul {
+            flex-direction: column;
+
+            li {
+                height: auto;
+
+                span {
+                    margin: 6px 0px;
+                    padding: 16px 80px !important;
+                    display: block;
+                    text-align: center;
+
+                    &::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid #e0e0e1;
+                        position: absolute;
+                        top: 45px;
+                        left: 48%;
+                    }
+                }
+
+
+                .active-btn {
+
+                    &::before {
+                        content: "";
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid #776fff;
+                        top: 66px;
+                        left: 48%;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+    .process-button-level-tow {
+        ul {
+            li {
+                span {
+
+                    &::before {
+                        content: "";
+                        border-top: 8px solid #776fff;
+                        top: 46px;
+                        left: 48%;
+                    }
+                }
+            }
+        }
+    }
+
+    .save-queries-wrapper {
+        .search-wrap {
+            input {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .add-user-modal {
+        .adding-adapter-modal-header {
+            flex-direction: row-reverse;
+            margin-top: 2px;
+        }
+
+        .adapter-modal-name {
+            margin-top: 0px !important;
+            text-align: left !important;
+        }
+
+        .adapter-modal-help-box {
+            margin-bottom: 0px !important;
+        }
+    }
+
+    .connectors-box-wrapper {
+        flex-wrap: wrap;
+
+        .connec-box-div {
+            flex-basis: inherit;
+            margin-bottom: 15px;
+        }
+    }
+
+    .policy-routine-results-wrapper {
+        .inner-tab-content {
+            .col-lg-3 {
+                padding-right: 15px !important;
+            }
+        }
+
+        .policy-left-part {
+            .start-date-text {
+                padding-bottom: 2px;
+            }
+        }
+    }
+
+}
+
+/*767 screen end here*/
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    .query-wizard-exp-contents {
+        overflow-x: auto;
+
+        .query-wizard-expension {
+            background: transparent;
+            white-space: nowrap;
+            padding: initial;
+
+            .hidden {
+                display: block !important;
+                visibility: hidden;
+            }
+
+            .all-select,
+            .exists-dropdown {
+                width: 75px;
+            }
+
+            select.query-wizard-dropdown-large {
+                width: 300px;
+            }
+
+            .dropdown-with-img {
+                width: 106px;
+            }
+        }
+    }
+}
