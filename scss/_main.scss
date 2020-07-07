@@ -3713,10 +3713,12 @@ table .bold-heading {
 
   input {
     margin-right: 10px;
+
   }
 
   input[type='checkbox'] {
     margin-bottom: 10px;
+    height: auto;
   }
 }
 
