@@ -633,8 +633,8 @@ input:checked+.sliders:before {
   background: #70ff03;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -643,8 +643,8 @@ input:checked+.sliders:before {
   background: #f00f00;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -653,8 +653,18 @@ input:checked+.sliders:before {
   background: #ff8003;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+}
+
+.c-gray {
+  padding: 6px;
+  background: #808080;
+  border-radius: 100%;
+  display: block;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -2145,4 +2155,119 @@ td {
 .field-section {
   background-color: #f4f4f4;
   padding: 20px 30px;
+}
+
+.notification-dropdow-div {
+  min-width: auto !important;
+  border: 0px solid rgba(0, 0, 0, 0.15);
+  height: 300px;
+}
+
+.dropdown-menu1 {
+  top: 8px;
+  right: -34px;
+  left: unset;
+  width: 430px;
+  box-shadow: 0px 5px 7px -1px #c1c1c1;
+  padding-bottom: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+.notifi-scroll {
+  height: 280px;
+  overflow-y: auto;
+}
+
+.dropdown-menu1:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 12px;
+  border: 10px solid #56bcd9;
+  border-color: transparent transparent #56bcd9 transparent;
+}
+
+.head {
+  padding: 10px 15px;
+  border-radius: 3px 3px 0px 0px;
+  background: #56bcd9;
+}
+
+.notification-box {
+  background: #fff;
+  padding: 10px;
+
+  .row-info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+  margin: 0px 10px;
+  cursor: pointer;
+
+  .text-info {
+    color: #000 !important;
+    font-size: 14px;
+  }
+
+  .subline-text {
+    font-size: 13px;
+  }
+}
+
+
+.notification-box-gray {
+  color: #8c8c8c !important;
+
+  .text-info,
+  .subline-text {
+    color: #8c8c8c !important;
+  }
+}
+
+.footer {
+  padding: 5px 15px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.notification-red-circle {
+  background: #f00f00;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 100%;
+  font-size: 13px;
+  border: 1px solid white;
+  position: absolute;
+  right: 5px;
+  top: -5px;
+}
+
+.bg-gray {
+  background-color: #eee;
+}
+
+@media (max-width: 640px) {
+  .dropdown-menu1 {
+    top: 50px;
+    left: -16px;
+    width: 290px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav .nav-item,
+  .nav .nav-item a {
+    padding-left: 0px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
 }
