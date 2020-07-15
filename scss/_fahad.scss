@@ -2172,11 +2172,14 @@ td {
   padding-bottom: 0px;
   padding: 0px;
   position: absolute;
+  border-radius: 0px 0px 6px 6px;
+
 }
 
 .notifi-scroll {
-  height: 280px;
+  height: 390px;
   overflow-y: auto;
+  border-radius: 0px 0px 6px 6px;
 }
 
 .dropdown-menu1:before {
@@ -2195,6 +2198,7 @@ td {
 
   a {
     margin: 0px;
+    font-size: 14px;
   }
 }
 
@@ -2266,7 +2270,7 @@ td {
   padding: 3px 6px;
   border-radius: 100%;
   font-size: 13px;
-  border: 1px solid white;
+  border: 1px solid #f00f00;
   position: absolute;
   right: 5px;
   top: -5px;
