@@ -2305,3 +2305,50 @@ td {
     font-size: 13px;
   }
 }
+.notification-lists-wrapper {
+  table {
+    .parent-row-gray {
+      td {
+        color: rgb(80, 80, 80) !important;
+      }
+    }
+    .parent-row {
+      border-bottom: 1px solid #ecedf2;
+
+      td {
+        vertical-align: middle;
+        padding: 12px 8px 12px 8px !important;
+        color: #000;
+      }
+      .c-red {
+        padding: 4px;
+        background: #f00f00;
+        border-radius: 100%;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin-left: 6px;
+      }
+      .c-gray {
+        padding: 4px;
+        border-radius: 100%;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin-left: 6px;
+      }
+      .border-bottom-left {
+        border-bottom-left-radius: 0px;
+      }
+      .border-top-left {
+        border-top-left-radius: 0px;
+      }
+      .border-bottom-right {
+        border-bottom-right-radius: 0px;
+      }
+      .border-top-right {
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+}
