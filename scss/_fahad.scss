@@ -2353,3 +2353,15 @@ td {
     }
   }
 }
+
+.Notification-model-wrapper {
+  position: relative;
+  height: 310px;
+  .model-header-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .time-date-notify {
+    font-size: 12px;
+  }
+}
