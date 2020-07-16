@@ -2199,6 +2199,8 @@ td {
   padding: 13px 15px;
   border-radius: 6px 6px 0px 0px;
   background: #56bcd9;
+  z-index: 4000;
+  position: relative;
 
   a {
     margin: 0px;
