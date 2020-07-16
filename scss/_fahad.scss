@@ -2309,7 +2309,7 @@ td {
   table {
     .parent-row-gray {
       td {
-        color: rgb(80, 80, 80) !important;
+        color: #777 !important;
       }
     }
     .parent-row {
@@ -2317,7 +2317,7 @@ td {
 
       td {
         vertical-align: middle;
-        padding: 12px 8px 12px 8px !important;
+        padding: 15px 8px 15px 0px !important;
         color: #000;
       }
       .c-red {
@@ -2327,15 +2327,16 @@ td {
         display: block;
         width: 6px;
         height: 6px;
-        margin-left: 6px;
+        margin-left: 15px;
       }
       .c-gray {
+        background: #777;
         padding: 4px;
         border-radius: 100%;
         display: block;
         width: 6px;
         height: 6px;
-        margin-left: 6px;
+        margin-left: 15px;
       }
       .border-bottom-left {
         border-bottom-left-radius: 0px;
