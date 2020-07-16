@@ -2305,6 +2305,16 @@ td {
     font-size: 13px;
   }
 }
+.notification-main-wrapper {
+  padding-bottom: 15px !important;
+}
+.notification-model-header {
+  padding-bottom: 25px !important;
+  padding-top: 25px !important;
+  .adapter-modal-name {
+    margin-left: 18px !important;
+  }
+}
 .notification-lists-wrapper {
   table {
     .parent-row-gray {
