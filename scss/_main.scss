@@ -1749,7 +1749,7 @@ th {
   }
 
   select {
-    padding: 12px;
+    padding: 11px;
     border-radius: 0px;
     border: 1px solid #CCCCCC;
   }
@@ -2169,7 +2169,7 @@ th {
 }
 
 .theme-btn {
-  padding: 12px 22px;
+  padding: 10px 22px;
   font-size: 16px;
   background: #a57dff;
   border: 0px;
@@ -2179,6 +2179,12 @@ th {
     background: #8565d1;
   }
 }
+
+.theme-btn-small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
 
 .device-results {
   font-size: 16px;
@@ -2228,20 +2234,20 @@ th {
 }
 
 .border-top-left {
-  border-top-left-radius: 14px;
+  border-top-left-radius: 0px;
 }
 
 .border-bottom-left {
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 0px;
 }
 
 .border-top-right {
-  border-top-right-radius: 14px;
+  border-top-right-radius: 0px;
 
 }
 
 .border-bottom-right {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 0px;
 
 }
 
@@ -2271,10 +2277,10 @@ th {
 
   input {
     width: 100%;
-    padding: 13px 20px;
+    padding: 12px 40px 12px 20px;
     border: 0px solid #bababa;
     padding-right: 40px;
-    border-radius: 40px;
+    // border-radius: 40px;
   }
 }
 
@@ -3129,7 +3135,7 @@ table .bold-heading {
 
 
 .dashboard-top-section-query .search-field {
-  border-radius: 40px;
+  border-radius: 0px;
 }
 
 .result-pg {
@@ -3171,8 +3177,8 @@ table .bold-heading {
     padding: 10px 10px;
     border: 1px solid #bababa;
     padding-left: 40px;
-    border-radius: 40px;
-    outline: none !important;
+    // border-radius: 40px;
+    outline: 0px !important;
   }
 
   .search-query-dropdown-btn {
@@ -3353,7 +3359,7 @@ table .bold-heading {
   height: 230px;
   padding: 14px 12px;
   border: 1px solid #dcdde1;
-  border-radius: 6px;
+  // border-radius: 6px;
   margin-bottom: 20px;
   resize: none;
 }
@@ -3796,7 +3802,7 @@ table .bold-heading {
   padding: 10px 15px;
   margin: 4px 14px 0px;
   background-color: white;
-  border-radius: 13px;
+  border-radius: 8px;
   cursor: pointer;
   border: 1px solid #dcdde1;
 

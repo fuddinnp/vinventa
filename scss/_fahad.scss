@@ -195,7 +195,7 @@ li.prev {
     border: 1px solid #cdcdd6;
     padding: 16px;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 0px;
     line-height: 1em;
     width: 100%;
     color: #4c4c4c;
@@ -333,7 +333,7 @@ input[type="submit"] {
   padding: 18px !important;
   background: #8651ff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 
   &:hover {
     background: #5827c8;
@@ -475,10 +475,10 @@ input[type="submit"] {
 
 .tags-field-box input {
   width: 260px;
-  padding: 14px 10px;
+  padding: 10px 10px;
   border: 1px solid #c2c3c7;
   margin-bottom: 20px;
-  border-radius: 5px;
+  // border-radius: 5px;
 }
 
 .add-tags-right-col .graydient-primary-btn {
@@ -520,14 +520,15 @@ input[type="submit"] {
 
 .Connectors-top-searchbar-div .search-wrap input {
   width: 100%;
-  padding: 12px 10px;
+  padding: 10px;
   margin-right: 12px;
   border: 0px solid #bababa;
   padding-left: 40px;
 }
 
 .Connectors-top-searchbar-div .search-field {
-  border-radius: 40px;
+  // border-radius: 40px;
+  padding: 10px 10px 10px 20px;
 }
 
 .Connectors-top-searchbar-div .search-wrap::before {
@@ -829,7 +830,8 @@ input:checked+.sliders:before {
 }
 
 .connector-config-row .form-control {
-  height: calc(1.5em + 0.5rem + 2px) !important;
+  // height: calc(1.5em + 0.5rem + 2px) !important;
+  padding: 9px 16px;
 }
 
 .connectors-main-wrapper .parent-row td:nth-child(1) {
@@ -1402,10 +1404,9 @@ input:checked+.sliders:before {
     }
 
     input {
-      border-radius: 5px;
       padding: 10px 10px;
       padding-left: 20px;
-      border-radius: 5px;
+      border-radius: 0px;
     }
   }
 }
@@ -1426,8 +1427,10 @@ input:checked+.sliders:before {
 }
 
 .policy-btns-wrapper {
+  text-align: right;
+
   button {
-    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -1636,7 +1639,7 @@ input:checked+.sliders-Not .not-blue-bg {
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 20px;
-    height: 43px;
+    height: 40px;
     margin-right: 13px;
     color: #cdcdd6;
   }
@@ -2408,7 +2411,7 @@ td {
 
 .dashboard-search-select select {
   border: none;
-  padding: 12px 20px 15px 15px;
+  padding: 11px;
   height: 40px;
   -webkit-appearance: none;
   -moz-appearance: none;
