@@ -5,6 +5,7 @@
 
 .tab-right-column-container input[type="text"] {
   padding-left: 40px;
+  height: 40px;
 }
 
 .intro {
@@ -516,6 +517,7 @@ input[type="submit"] {
   justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 30px;
+
 }
 
 .Connectors-top-searchbar-div .search-wrap input {
@@ -524,6 +526,7 @@ input[type="submit"] {
   margin-right: 12px;
   border: 0px solid #bababa;
   padding-left: 40px;
+  height: 40px;
 }
 
 .Connectors-top-searchbar-div .search-field {
@@ -1279,7 +1282,7 @@ input:checked+.sliders:before {
           border-left: 8px solid #e0e0e1;
           position: absolute;
           top: 35%;
-          right: -8px;
+          right: -7px;
         }
       }
     }
@@ -1322,7 +1325,7 @@ input:checked+.sliders:before {
       position: relative;
 
       &::before {
-        right: -5px;
+        // right: -5px;
       }
 
       img {
@@ -1340,7 +1343,7 @@ input:checked+.sliders:before {
       position: relative;
 
       &::before {
-        right: -5px;
+        // right: -5px;
       }
 
       img {
@@ -1407,6 +1410,7 @@ input:checked+.sliders:before {
       padding: 10px 10px;
       padding-left: 20px;
       border-radius: 0px;
+      height: 40px !important;
     }
   }
 }
@@ -1826,6 +1830,7 @@ td {
   .check-container {
     margin: 3px 0px 0px 0px;
     padding: 0px;
+    width: 20px;
   }
 }
 
@@ -2435,4 +2440,20 @@ input:focus,
 select:focus {
   outline: 0px dotted !important;
   outline: 0px auto -webkit-focus-ring-color !important;
+}
+
+table .parent-row {
+  border-bottom: 1px solid #ecedf2;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding-left: 0px !important;
+}
+
+.result-dropdown {
+  margin-right: -8px;
+
 }

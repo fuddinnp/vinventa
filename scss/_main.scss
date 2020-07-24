@@ -583,7 +583,7 @@ body.menu-active #content .menu-trigger {
 
 .inner-tab-right-section {
   padding: 10px;
-  margin-top: 32px;
+  margin-top: 15px;
 }
 
 .table-top-options-row {
@@ -2016,7 +2016,7 @@ th {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   flex-direction: column;
 
   .search-wrap {
@@ -2043,6 +2043,7 @@ th {
       padding: 10px 10px;
       border: 0px solid #bababa;
       padding-left: 40px;
+      height: 40px;
     }
 
 
@@ -2061,7 +2062,7 @@ th {
 
   .search-section {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
 
     .search-section-box {
       margin: auto;
@@ -2218,7 +2219,7 @@ th {
 
 .device-result-export-row {
   display: flex;
-  padding: 0px 20px;
+  padding: 0px;
 }
 
 
@@ -2281,6 +2282,7 @@ th {
     border: 0px solid #bababa;
     padding-right: 40px;
     // border-radius: 40px;
+    height: 40px;
   }
 }
 
@@ -3179,6 +3181,7 @@ table .bold-heading {
     padding-left: 40px;
     // border-radius: 40px;
     outline: 0px !important;
+    height: 40px;
   }
 
   .search-query-dropdown-btn {
@@ -3284,6 +3287,14 @@ table .bold-heading {
   }
 
 
+}
+
+.results-per-page {
+  padding-right: 0px;
+}
+
+.result-dropdown {
+  margin-right: -8px;
 }
 
 
