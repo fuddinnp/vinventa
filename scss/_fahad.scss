@@ -2428,3 +2428,10 @@ td {
   -moz-appearance: none;
   appearance: none;
 }
+
+button:focus,
+input:focus,
+select:focus {
+  outline: 0px dotted !important;
+  outline: 0px auto -webkit-focus-ring-color !important;
+}
