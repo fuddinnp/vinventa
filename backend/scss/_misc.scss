@@ -173,6 +173,14 @@ a {
   background-image: linear-gradient(to right bottom, #a57dff, #9b79ff, #9076ff, #8472ff, #776fff);
 }
 
+.cancel-btn {
+  background: transparent;
+  color: #776fff;
+  padding: 14px 17px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 0px solid #ccc;
+  text-decoration: underline;
+}
 
 
 input[type="checkbox"] {
