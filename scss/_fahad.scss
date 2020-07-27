@@ -4,7 +4,7 @@
 }
 
 .tab-right-column-container input[type="text"] {
-  padding-left: 40px;
+  // padding-left: 40px;
   height: 40px;
 }
 
@@ -70,7 +70,7 @@
   margin: 1rem 0rem;
 }
 
-.center-y h3+a {
+.center-y h3 + a {
   font-size: 1.6rem;
   display: inline-block;
   color: #000;
@@ -100,7 +100,7 @@
 }
 
 h3,
-h3+a {
+h3 + a {
   // opacity: 0;
   // -webkit-transition: opacity 0.7s 0s, -webkit-transform 0.5s 0.2s;
   // transition: opacity 0.7s 0s, -webkit-transform 0.5s 0.2s;
@@ -111,7 +111,7 @@ h3+a {
 }
 
 li.current h3,
-li.current h3+a {
+li.current h3 + a {
   // opacity: 1;
   // -webkit-transition-delay: 1s;
   // transition-delay: 1s;
@@ -189,7 +189,6 @@ li.prev {
 
 .modal-add-connections-wrapper,
 .LoginPanel {
-
   input[type="text"],
   input[type="password"],
   textarea {
@@ -209,7 +208,8 @@ li.prev {
     line-height: 1em;
     width: 100%;
     -moz-appearance: none;
-    background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97% 13px;
+    background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97%
+      13px;
     box-sizing: border-box;
     cursor: pointer;
   }
@@ -262,7 +262,7 @@ li.prev {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.LoginPanel .fieldsBotSection input[type="checkbox"]:checked+label {
+.LoginPanel .fieldsBotSection input[type="checkbox"]:checked + label {
   background-image: url(../images/checkbox-img.png);
 }
 
@@ -275,7 +275,7 @@ li.prev {
   right: 22px;
 }
 
-.LoginPanel .login-pass-div input[type="checkbox"]:checked+label {
+.LoginPanel .login-pass-div input[type="checkbox"]:checked + label {
   background-image: url(../images/eye-dark.png);
 }
 
@@ -517,7 +517,6 @@ input[type="submit"] {
   justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 30px;
-
 }
 
 .Connectors-top-searchbar-div .search-wrap input {
@@ -603,15 +602,15 @@ input[type="submit"] {
   transition: 0.4s;
 }
 
-input:checked+.sliders {
+input:checked + .sliders {
   background-color: #776fff;
 }
 
-input:focus+.sliders {
+input:focus + .sliders {
   box-shadow: 0 0 1px #776fff;
 }
 
-input:checked+.sliders:before {
+input:checked + .sliders:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -683,7 +682,7 @@ input:checked+.sliders:before {
 }
 
 .table-icon span,
-.table-icon span+span {
+.table-icon span + span {
   letter-spacing: 4px;
   font-size: 18px;
 }
@@ -733,12 +732,16 @@ input:checked+.sliders:before {
   padding-left: 35px;
 }
 
-.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-logo {
+.modal-add-connections-wrapper
+  .adding-adapter-modal-header
+  .adapter-modal-logo {
   height: 55px !important;
   width: 55px !important;
 }
 
-.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-name {
+.modal-add-connections-wrapper
+  .adding-adapter-modal-header
+  .adapter-modal-name {
   font-size: 20px !important;
 }
 
@@ -751,7 +754,7 @@ input:checked+.sliders:before {
   width: 100%;
 }
 
-.modal-add-connections-wrapper .adapter-modal-bottom-row div+div {
+.modal-add-connections-wrapper .adapter-modal-bottom-row div + div {
   margin-right: 0px;
 }
 
@@ -930,8 +933,8 @@ input:checked+.sliders:before {
     font-size: 14px;
   }
 
-  .dropdown-with-img-select div+div,
-  .dropdown-with-logos div+div {
+  .dropdown-with-img-select div + div,
+  .dropdown-with-logos div + div {
     font-size: 12px;
   }
 
@@ -1247,11 +1250,11 @@ input:checked+.sliders:before {
   background: dodgerblue;
 }
 
-.list-ic .active~li {
+.list-ic .active ~ li {
   background: lightblue;
 }
 
-.list-ic .active~li::before {
+.list-ic .active ~ li::before {
   background: lightblue;
 }
 
@@ -1475,15 +1478,15 @@ input:checked+.sliders:before {
   transition: 0.4s;
 }
 
-input:checked+.sliderss {
+input:checked + .sliderss {
   background-color: #776fff;
 }
 
-input:focus+.sliderss {
+input:focus + .sliderss {
   box-shadow: 0 0 1px #776fff;
 }
 
-input:checked+.sliderss:before {
+input:checked + .sliderss:before {
   -webkit-transform: translateX(44px);
   -ms-transform: translateX(44px);
   transform: translateX(44px);
@@ -1505,7 +1508,7 @@ input:checked+.sliderss:before {
   font-family: Verdana, sans-serif;
 }
 
-input:checked+.sliderss .on {
+input:checked + .sliderss .on {
   display: block;
   font-size: 14px;
   padding-left: 10px;
@@ -1513,7 +1516,7 @@ input:checked+.sliderss .on {
   left: 26%;
 }
 
-input:checked+.sliderss .off {
+input:checked + .sliderss .off {
   display: none;
 }
 
@@ -1554,11 +1557,11 @@ input:checked+.sliderss .off {
     transition: 0.4s;
   }
 
-  input:checked+.sliders-Not {
+  input:checked + .sliders-Not {
     background-color: #776fff;
   }
 
-  input:focus+.sliders-Not {
+  input:focus + .sliders-Not {
     box-shadow: 0 0 1px #776fff;
   }
 }
@@ -1592,7 +1595,7 @@ input:checked+.sliderss .off {
   margin-right: 10px;
 }
 
-input:checked+.sliders-Not .not-white-bg {
+input:checked + .sliders-Not .not-white-bg {
   display: block;
   color: #fff;
   background-color: #776fff;
@@ -1603,7 +1606,7 @@ input:checked+.sliders-Not .not-white-bg {
   // left: 26%;
 }
 
-input:checked+.sliders-Not .not-blue-bg {
+input:checked + .sliders-Not .not-blue-bg {
   display: none;
 }
 
@@ -1788,14 +1791,14 @@ input:checked+.sliders-Not .not-blue-bg {
 }
 
 /* On mouse-over, add a grey background color */
-.check-container:hover input~.checkmark {
+.check-container:hover input ~ .checkmark {
   background-color: #fff;
   border: 1px solid #717171;
   border-radius: 6px;
 }
 
 /* When the checkbox is checked, add a blue background */
-.check-container input:checked~.checkmark {
+.check-container input:checked ~ .checkmark {
   background-color: #717171;
   border: 1px solid #717171;
   border-radius: 6px;
@@ -1809,7 +1812,7 @@ input:checked+.sliders-Not .not-blue-bg {
 }
 
 /* Show the checkmark when checked */
-.check-container input:checked~.checkmark:after {
+.check-container input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -1859,14 +1862,14 @@ td {
     font-family: Verdana, sans-serif;
   }
 
-  input:checked+.sliderss .on {
+  input:checked + .sliderss .on {
     display: block;
     font-size: 14px;
     padding-left: 10px;
     left: 10%;
   }
 
-  input:checked+.sliderss::before {
+  input:checked + .sliderss::before {
     -webkit-transform: translateX(57px);
     -ms-transform: translateX(57px);
     transform: translateX(57px);
@@ -2020,12 +2023,12 @@ td {
 /* Create a custom checkbox */
 
 /* On mouse-over, add a grey background color */
-.container-custom-checkbox:hover input~.checkmark {
+.container-custom-checkbox:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container-custom-checkbox input:checked~.checkmark {
+.container-custom-checkbox input:checked ~ .checkmark {
   background-color: #776fff;
   border: 1px solid #776fff;
 }
@@ -2033,7 +2036,7 @@ td {
 /* Create the checkmark/indicator (hidden when not checked) */
 
 /* Show the checkmark when checked */
-.container-custom-checkbox input:checked~.checkmark:after {
+.container-custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -2069,7 +2072,7 @@ td {
   margin-bottom: 0px !important;
 }
 
-.box-bottom-bar .field-check-box input[type="checkbox"]:checked+label {
+.box-bottom-bar .field-check-box input[type="checkbox"]:checked + label {
   background-image: url(../images/enable-check.png);
 }
 
@@ -2129,7 +2132,8 @@ td {
         font-size: 14px;
       }
 
-      h3 {}
+      h3 {
+      }
 
       .color-text {
         margin-top: 5px;
@@ -2483,5 +2487,4 @@ table .parent-row {
 
 .result-dropdown {
   margin-right: -8px;
-
 }
