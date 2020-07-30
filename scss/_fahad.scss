@@ -746,7 +746,7 @@ input:checked+.sliders:before {
 }
 
 .modal-add-connections-wrapper .adapter-modal-bottom-row {
-  justify-content: right;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -2431,7 +2431,7 @@ td {
 }
 
 .select-tag {
-  height: 33px;
+  // height: 33px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2439,9 +2439,10 @@ td {
   background-repeat: no-repeat;
   background-position-x: 96%;
   background-position-y: 13px;
-  padding: 5px;
+  padding: 10px !important;
   border-radius: 0px;
   border: 1px solid #d4d4d4;
+  min-width: 150px;
 }
 
 .dashboard-search-select select {
@@ -2485,4 +2486,18 @@ table .parent-row {
 
 .result-dropdown {
   margin-right: -8px;
+}
+
+.add-role-checklist-modal {
+  .add-role-list {
+    margin-bottom: 10px !important;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: bottom;
+  }
+
+  label {
+    margin: 0px !important;
+  }
 }
