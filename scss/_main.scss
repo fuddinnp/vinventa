@@ -214,34 +214,50 @@ header {
 
       .dashbord-icon {
         background-image: url(../images/Dashboard_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .devices-icon {
         background-image: url(../images/Devices_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .users-icon {
         background-image: url(../images/Users_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .policy-icon {
         background-image: url(../images/Policy-Center_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .reports-icon {
         background-image: url(../images/Reports_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .connectors-icon {
         background-image: url(../images/Connectors_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .analytic-icon {
         background-image: url(../images/Analytic_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .admin-icon {
         background-image: url(../images/Admin_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
 
@@ -256,42 +272,50 @@ header {
 
     .active.dashbord-icon {
       background-image: url(../images/Dashboard_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.devices-icon {
       background-image: url(../images/Devices_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.users-icon {
       background-image: url(../images/Users_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.policy-icon {
       background-image: url(../images/Policy-Center_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.reports-icon {
       background-image: url(../images/Connectors_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.connectors-icon {
       background-image: url(../images/Connectors_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.analytic-icon {
       background-image: url(../images/Analytic_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.admin-icon {
       background-image: url(../images/Admin_on.svg);
-      outline: none;
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
 
@@ -300,9 +324,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Dashboard_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Dashboard_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
     }
@@ -314,9 +342,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Devices_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Devices_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -325,9 +357,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Users_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Users_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -336,9 +372,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Policy-Center_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Policy-Center_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -347,9 +387,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Reports_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Reports_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -361,6 +405,8 @@ header {
 
       &:hover {
         background-image: url(../images/Connectors_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -369,9 +415,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Analytic_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Analytic_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -380,9 +430,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Admin_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Admin_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -1749,6 +1803,7 @@ th {
   .exists-dropdown {
     width: 86px;
     padding: 12px 10px;
+    font-size: 14px;
   }
 
   .medium-dropdown {
@@ -2377,7 +2432,7 @@ th {
 }
 
 .parent-row td:nth-child(2) {
-  padding: 8px 0px 8px 10px !important;
+  // padding: 8px 0px 8px 10px !important;
 }
 
 .parent-row td:nth-child(1) {
