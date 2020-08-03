@@ -19,7 +19,7 @@
   border: $input-border-width solid $input-border-color;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
-  @include border-radius($input-border-radius, 0);
+  // @include border-radius($input-border-radius, 0);
 
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
@@ -139,7 +139,7 @@ select.form-control {
   padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
   line-height: $input-line-height-sm;
-  @include border-radius($input-border-radius-sm);
+  // @include border-radius($input-border-radius-sm);
 }
 
 .form-control-lg {
@@ -147,11 +147,12 @@ select.form-control {
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
   line-height: $input-line-height-lg;
-  @include border-radius($input-border-radius-lg);
+  // @include border-radius($input-border-radius-lg);
 }
 
 // stylelint-disable-next-line no-duplicate-selectors
 select.form-control {
+
   &[size],
   &[multiple] {
     height: auto;
@@ -187,8 +188,8 @@ textarea.form-control {
   margin-right: -$form-grid-gutter-width / 2;
   margin-left: -$form-grid-gutter-width / 2;
 
-  > .col,
-  > [class*="col-"] {
+  >.col,
+  >[class*="col-"] {
     padding-right: $form-grid-gutter-width / 2;
     padding-left: $form-grid-gutter-width / 2;
   }
@@ -210,7 +211,7 @@ textarea.form-control {
   margin-top: $form-check-input-margin-y;
   margin-left: -$form-check-input-gutter;
 
-  &:disabled ~ .form-check-label {
+  &:disabled~.form-check-label {
     color: $text-muted;
   }
 }
@@ -242,7 +243,8 @@ textarea.form-control {
 // pseudo-classes but also includes `.is-invalid` and `.is-valid` classes for
 // server side validation.
 
-@each $state, $data in $form-validation-states {
+@each $state,
+$data in $form-validation-states {
   @include form-validation-state($state, map-get($data, color), map-get($data, icon));
 }
 
@@ -311,6 +313,7 @@ textarea.form-control {
       width: auto;
       padding-left: 0;
     }
+
     .form-check-input {
       position: relative;
       flex-shrink: 0;
@@ -323,6 +326,7 @@ textarea.form-control {
       align-items: center;
       justify-content: center;
     }
+
     .custom-control-label {
       margin-bottom: 0;
     }

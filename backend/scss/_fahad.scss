@@ -5,6 +5,7 @@
 
 .tab-right-column-container input[type="text"] {
   // padding-left: 40px;
+  height: 40px;
 }
 
 .intro {
@@ -13,7 +14,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding: 90px;
 }
 
@@ -27,7 +28,7 @@
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  /*! display:flex; */
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   //   align-items: center;
@@ -195,7 +196,7 @@ li.prev {
     border: 1px solid #cdcdd6;
     padding: 16px;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 0px;
     line-height: 1em;
     width: 100%;
     color: #4c4c4c;
@@ -216,7 +217,7 @@ li.prev {
 
 .LoginPanel .fieldsSection .userName {
   background: #fff url(../images/icon-user.png) no-repeat 12px center;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .LoginPanel .fieldsSection .password {
@@ -251,7 +252,7 @@ li.prev {
 
 .LoginPanel .fieldsBotSection label {
   color: #4c4c4c;
-  padding: 25px 0px;
+  padding: 0px 0px;
   font-size: 15px;
   transition: all 0.3s ease-in-out 0s;
   line-height: 1.1em;
@@ -292,7 +293,7 @@ li.prev {
 }
 
 .LoginPanel .fieldsBotSection .forgotLink {
-  color: #8e8e8e;
+  color: #776fff;
   font-size: 15px;
   transition: all 0.3s ease-in-out 0s;
   line-height: 1em;
@@ -333,7 +334,11 @@ input[type="submit"] {
   padding: 18px !important;
   background: #8651ff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+
+  &:hover {
+    background: #5827c8;
+  }
 }
 
 .try-free-btn {
@@ -471,10 +476,10 @@ input[type="submit"] {
 
 .tags-field-box input {
   width: 260px;
-  padding: 14px 10px;
+  padding: 10px 10px;
   border: 1px solid #c2c3c7;
   margin-bottom: 20px;
-  border-radius: 5px;
+  // border-radius: 5px;
 }
 
 .add-tags-right-col .graydient-primary-btn {
@@ -516,14 +521,16 @@ input[type="submit"] {
 
 .Connectors-top-searchbar-div .search-wrap input {
   width: 100%;
-  padding: 12px 10px;
+  padding: 10px;
   margin-right: 12px;
   border: 0px solid #bababa;
   padding-left: 40px;
+  height: 40px;
 }
 
 .Connectors-top-searchbar-div .search-field {
-  border-radius: 40px;
+  // border-radius: 40px;
+  padding: 10px 10px 10px 20px;
 }
 
 .Connectors-top-searchbar-div .search-wrap::before {
@@ -633,8 +640,8 @@ input:checked+.sliders:before {
   background: #70ff03;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -643,8 +650,8 @@ input:checked+.sliders:before {
   background: #f00f00;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -653,8 +660,18 @@ input:checked+.sliders:before {
   background: #ff8003;
   border-radius: 100%;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+}
+
+.c-gray {
+  padding: 6px;
+  background: #808080;
+  border-radius: 100%;
+  display: block;
+  width: 10px;
+  height: 10px;
   margin-left: 6px;
 }
 
@@ -729,7 +746,7 @@ input:checked+.sliders:before {
 }
 
 .modal-add-connections-wrapper .adapter-modal-bottom-row {
-  justify-content: right;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -815,7 +832,8 @@ input:checked+.sliders:before {
 }
 
 .connector-config-row .form-control {
-  height: calc(1.5em + 0.5rem + 2px) !important;
+  // height: calc(1.5em + 0.5rem + 2px) !important;
+  padding: 9px 16px;
 }
 
 .connectors-main-wrapper .parent-row td:nth-child(1) {
@@ -895,6 +913,7 @@ input:checked+.sliders:before {
 
   .exists-dropdown {
     padding: 6px 10px !important;
+    font-size: 14px;
   }
 
   .medium-dropdown {
@@ -948,7 +967,7 @@ input:checked+.sliders:before {
       height: 52px;
       position: absolute;
       border: 1px solid #776fff;
-      top: -57px;
+      top: -56px;
       left: 38px;
     }
 
@@ -1263,7 +1282,7 @@ input:checked+.sliders:before {
           border-left: 8px solid #e0e0e1;
           position: absolute;
           top: 35%;
-          right: -8px;
+          right: -7px;
         }
       }
     }
@@ -1306,7 +1325,7 @@ input:checked+.sliders:before {
       position: relative;
 
       &::before {
-        right: -5px;
+        // right: -5px;
       }
 
       img {
@@ -1324,7 +1343,7 @@ input:checked+.sliders:before {
       position: relative;
 
       &::before {
-        right: -5px;
+        // right: -5px;
       }
 
       img {
@@ -1373,7 +1392,7 @@ input:checked+.sliders:before {
       background-position-x: 12px;
       background-position-y: 13px;
       width: auto;
-      top: -2px;
+      top: -6px;
       left: 0px;
       margin: 0px;
       z-index: 3;
@@ -1388,10 +1407,10 @@ input:checked+.sliders:before {
     }
 
     input {
-      border-radius: 5px;
       padding: 10px 10px;
       padding-left: 20px;
-      border-radius: 5px;
+      border-radius: 0px;
+      height: 40px !important;
     }
   }
 }
@@ -1412,8 +1431,11 @@ input:checked+.sliders:before {
 }
 
 .policy-btns-wrapper {
+  text-align: right;
+  padding: 0px 33px;
+
   button {
-    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -1622,7 +1644,7 @@ input:checked+.sliders-Not .not-blue-bg {
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 20px;
-    height: 43px;
+    height: 40px;
     margin-right: 13px;
     color: #cdcdd6;
   }
@@ -1809,6 +1831,7 @@ td {
   .check-container {
     margin: 3px 0px 0px 0px;
     padding: 0px;
+    width: 20px;
   }
 }
 
@@ -2088,8 +2111,6 @@ td {
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 20px;
 
-
-
   .right-part-item {
     display: flex;
 
@@ -2142,16 +2163,9 @@ td {
   margin-right: 10px;
 }
 
-.notification-red-circle {
-  background: #f00f00;
-  color: #fff;
-  padding: 3px 6px;
-  border-radius: 100%;
-  font-size: 13px;
-  border: 1px solid white;
-  position: absolute;
-  right: 5px;
-  top: -5px;
+.field-section {
+  background-color: #f4f4f4;
+  padding: 20px 30px;
 }
 
 .notification-dropdow-div {
@@ -2174,13 +2188,9 @@ td {
   overflow: hidden;
 }
 
-.field-section {
-  background-color: #f4f4f4;
-  padding: 20px 30px;
-}
-
 .notifi-scroll {
-  height: 390px;
+  height: auto;
+  max-height: 390px;
   overflow-y: auto;
   border-radius: 0px 0px 6px 6px;
 }
@@ -2378,6 +2388,34 @@ td {
   }
 }
 
+//new css for table in listing page//
+.listing-table {
+  text-align: left;
+  border-spacing: 0 15px !important;
+  // background-color: #ecedf2;
+  border-collapse: separate;
+}
+
+.listing-table tr {
+  border-bottom: 1px solid #ecedf2;
+}
+
+.listing-table tr td {
+  background-color: white;
+}
+
+.listing-table tr td:first-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+}
+
+.listing-table tr td:last-child {
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .Notification-model-wrapper {
   position: relative;
   height: 310px;
@@ -2390,4 +2428,80 @@ td {
   .time-date-notify {
     font-size: 12px;
   }
+}
+
+.select-tag {
+  // height: 33px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/select-dropdwon-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: 13px;
+  padding: 10px !important;
+  border-radius: 0px;
+  border: 1px solid #d4d4d4;
+  min-width: 150px;
+}
+
+.dashboard-search-select select {
+  border: none;
+  padding: 11px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(assets/images/select-dropdwon-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 18px;
+  box-sizing: border-box;
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px !important;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: none !important;
+  outline: none -webkit-focus-ring-color !important;
+}
+
+table .parent-row {
+  border-bottom: 1px solid #ecedf2;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding-left: 0px !important;
+}
+
+.result-dropdown {
+  margin-right: -8px;
+}
+
+.add-role-checklist-modal {
+  .add-role-list {
+    margin-bottom: 10px !important;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: bottom;
+  }
+
+  label {
+    margin: 0px !important;
+  }
+}
+
+.col-icons div {
+  padding: 0px 4px !important;
 }

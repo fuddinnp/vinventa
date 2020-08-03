@@ -204,7 +204,7 @@ header {
     justify-content: center;
     margin: 0px 0px;
     /* border: 1px solid; */
-    width: 91px;
+    width: 93px;
     text-align: center;
     align-items: center;
 
@@ -214,34 +214,50 @@ header {
 
       .dashbord-icon {
         background-image: url(../images/Dashboard_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .devices-icon {
         background-image: url(../images/Devices_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .users-icon {
         background-image: url(../images/Users_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .policy-icon {
         background-image: url(../images/Policy-Center_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .reports-icon {
         background-image: url(../images/Reports_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .connectors-icon {
         background-image: url(../images/Connectors_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .analytic-icon {
         background-image: url(../images/Analytic_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
       .admin-icon {
         background-image: url(../images/Admin_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
 
@@ -256,34 +272,50 @@ header {
 
     .active.dashbord-icon {
       background-image: url(../images/Dashboard_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.devices-icon {
       background-image: url(../images/Devices_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.users-icon {
       background-image: url(../images/Users_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.policy-icon {
       background-image: url(../images/Policy-Center_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.reports-icon {
       background-image: url(../images/Connectors_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.connectors-icon {
       background-image: url(../images/Connectors_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.analytic-icon {
       background-image: url(../images/Analytic_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
     .active.admin-icon {
       background-image: url(../images/Admin_on.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
     }
 
 
@@ -292,9 +324,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Dashboard_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Dashboard_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
 
     }
@@ -306,9 +342,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Devices_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Devices_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -317,9 +357,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Users_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Users_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -328,9 +372,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Policy-Center_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Policy-Center_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -339,9 +387,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Reports_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Reports_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -353,6 +405,8 @@ header {
 
       &:hover {
         background-image: url(../images/Connectors_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -361,9 +415,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Analytic_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Analytic_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -372,9 +430,13 @@ header {
       height: 26px;
       display: inline-block;
       background-image: url(../images/Admin_off.svg);
+      outline: none !important;
+      outline: none -webkit-focus-ring-color !important;
 
       &:hover {
         background-image: url(../images/Admin_on.svg);
+        outline: none !important;
+        outline: none -webkit-focus-ring-color !important;
       }
     }
 
@@ -583,7 +645,7 @@ body.menu-active #content .menu-trigger {
 
 .inner-tab-right-section {
   padding: 10px;
-  margin-top: 32px;
+  margin-top: 15px;
 }
 
 .table-top-options-row {
@@ -1741,6 +1803,7 @@ th {
   .exists-dropdown {
     width: 86px;
     padding: 12px 10px;
+    font-size: 14px;
   }
 
   .medium-dropdown {
@@ -1749,7 +1812,7 @@ th {
   }
 
   select {
-    padding: 12px;
+    padding: 11px;
     border-radius: 0px;
     border: 1px solid #CCCCCC;
   }
@@ -2040,9 +2103,10 @@ th {
 
     input {
       width: 100%;
-      padding: 14px 10px;
+      padding: 10px 10px;
       border: 0px solid #bababa;
       padding-left: 40px;
+      height: 40px;
     }
 
 
@@ -2061,7 +2125,7 @@ th {
 
   .search-section {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
 
     .search-section-box {
       margin: auto;
@@ -2169,7 +2233,7 @@ th {
 }
 
 .theme-btn {
-  padding: 12px 22px;
+  padding: 10px 22px;
   font-size: 16px;
   background: #a57dff;
   border: 0px;
@@ -2179,6 +2243,16 @@ th {
     background: #8565d1;
   }
 }
+
+.theme-btn-big {
+  padding: 12px 22px;
+}
+
+.theme-btn-small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
 
 .device-results {
   font-size: 16px;
@@ -2212,7 +2286,7 @@ th {
 
 .device-result-export-row {
   display: flex;
-  padding: 0px 20px;
+  padding: 0px;
 }
 
 
@@ -2228,20 +2302,20 @@ th {
 }
 
 .border-top-left {
-  border-top-left-radius: 14px;
+  border-top-left-radius: 0px;
 }
 
 .border-bottom-left {
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 0px;
 }
 
 .border-top-right {
-  border-top-right-radius: 14px;
+  border-top-right-radius: 0px;
 
 }
 
 .border-bottom-right {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 0px;
 
 }
 
@@ -2271,10 +2345,11 @@ th {
 
   input {
     width: 100%;
-    padding: 13px 20px;
+    padding: 12px 40px 12px 20px;
     border: 0px solid #bababa;
     padding-right: 40px;
-    border-radius: 40px;
+    // border-radius: 40px;
+    height: 40px;
   }
 }
 
@@ -2357,7 +2432,7 @@ th {
 }
 
 .parent-row td:nth-child(2) {
-  padding: 8px 0px 8px 10px !important;
+  // padding: 8px 0px 8px 10px !important;
 }
 
 .parent-row td:nth-child(1) {
@@ -3129,7 +3204,7 @@ table .bold-heading {
 
 
 .dashboard-top-section-query .search-field {
-  border-radius: 40px;
+  border-radius: 0px;
 }
 
 .result-pg {
@@ -3171,8 +3246,9 @@ table .bold-heading {
     padding: 10px 10px;
     border: 1px solid #bababa;
     padding-left: 40px;
-    border-radius: 40px;
-    outline: none !important;
+    // border-radius: 40px;
+    outline: 0px !important;
+    height: 40px;
   }
 
   .search-query-dropdown-btn {
@@ -3280,6 +3356,14 @@ table .bold-heading {
 
 }
 
+.results-per-page {
+  padding-right: 0px;
+}
+
+.result-dropdown {
+  margin-right: -8px;
+}
+
 
 
 
@@ -3353,7 +3437,7 @@ table .bold-heading {
   height: 230px;
   padding: 14px 12px;
   border: 1px solid #dcdde1;
-  border-radius: 6px;
+  // border-radius: 6px;
   margin-bottom: 20px;
   resize: none;
 }
@@ -3713,10 +3797,12 @@ table .bold-heading {
 
   input {
     margin-right: 10px;
+
   }
 
   input[type='checkbox'] {
     margin-bottom: 10px;
+    height: auto;
   }
 }
 
@@ -3794,7 +3880,7 @@ table .bold-heading {
   padding: 10px 15px;
   margin: 4px 14px 0px;
   background-color: white;
-  border-radius: 13px;
+  border-radius: 8px;
   cursor: pointer;
   border: 1px solid #dcdde1;
 
