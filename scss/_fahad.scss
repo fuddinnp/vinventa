@@ -772,7 +772,7 @@ input:checked+.sliders:before {
 }
 
 .modal-add-connections-wrapper .adapter-modal-content-box {
-  padding: 40px;
+  padding: 40px 25px;
   padding-top: 11px;
 }
 
@@ -1275,17 +1275,21 @@ input:checked+.sliders:before {
 
         &::before {
           content: "";
-          width: 0;
-          height: 0;
-          border-top: 8px solid transparent;
-          border-bottom: 8px solid transparent;
-          border-left: 8px solid #e0e0e1;
+          width: 10px;
+          height: 16px;
+          // border-top: 8px solid transparent;
+          // border-bottom: 8px solid transparent;
+          // border-left: 8px solid #e0e0e1;
+          background: url(../images/right-arrow-light-gray.png) no-repeat;
+          width: 10px;
+          height: 16px;
           position: absolute;
-          top: 0;
-          right: -10px;
+          top: 0px;
           bottom: 0px;
           display: flex;
           margin: auto;
+          right: -8px;
+          // right: -8px;
         }
       }
     }
@@ -1316,7 +1320,10 @@ input:checked+.sliders:before {
 
       &::before {
         content: "";
-        border-left: 8px solid #776fff;
+        // border-left: 10px solid #776fff;
+        background: url(../images/right-arrow.png) no-repeat;
+        width: 10px;
+        height: 16px;
       }
     }
 
@@ -1370,7 +1377,11 @@ input:checked+.sliders:before {
 
         &::before {
           content: "";
-          border-left: 8px solid #776fff;
+          // border-left: 8px solid #776fff;
+          background: url(../images/right-arrow.png) no-repeat;
+          width: 10px;
+          height: 16px;
+          right: -10px;
         }
       }
 
@@ -1378,6 +1389,15 @@ input:checked+.sliders:before {
         background: #776fff !important;
         border: 2px solid #776fff !important;
         color: #fff !important;
+
+        &::before {
+          content: "";
+          // border-left: 8px solid #776fff;
+          background: url(../images/right-arrow.png) no-repeat;
+          width: 10px;
+          height: 16px;
+          right: -12px;
+        }
       }
     }
   }
