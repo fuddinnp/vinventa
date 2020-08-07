@@ -388,6 +388,10 @@
         }
     }
 
+    .role-to-txt h2 {
+        padding-left: 0px;
+    }
+
 }
 
 /*767 screen end here*/
@@ -395,6 +399,24 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .LoginPanel {
         padding: 20px;
+    }
+
+    .role-to-txt h2 {
+        padding-left: 0px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal-add-connections-wrapper {
+        .choose-file-modal {
+            margin-left: 15px;
+        }
+
+        .region-checkbox {
+            padding: 0px !important;
+        }
     }
 }
 
