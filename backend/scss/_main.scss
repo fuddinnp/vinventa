@@ -2179,7 +2179,7 @@ th {
     display: flex;
     flex-direction: column;
     background: white;
-    border-radius: 13px;
+    // border-radius: 13px;
     padding: 10px;
     margin-right: 35px;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
@@ -2507,7 +2507,7 @@ table .bold-heading {
   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1) !important;
   background: white;
-  border-radius: 13px;
+  // border-radius: 13px;
   display: flex;
   border: 0px solid #bababa !important;
 
@@ -2689,7 +2689,7 @@ table .bold-heading {
   margin-bottom: 100px;
   padding-bottom: 30px;
   background: #f3f4f9;
-  border-radius: 18px;
+  // border-radius: 18px;
 
   .nav-tabs {
 
@@ -2702,7 +2702,7 @@ table .bold-heading {
     .nav-tabs a {
       background: none;
       border: 0px;
-      padding: 25px 10px;
+      padding: 20px 10px;
       margin-right: 60px;
       color: #9a9a9a;
       text-decoration: none;
@@ -2751,7 +2751,7 @@ table .bold-heading {
 
 
     .nav-link.active {
-      border-radius: 15px;
+      // border-radius: 15px;
       background-color: white;
     }
 
@@ -2760,11 +2760,11 @@ table .bold-heading {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 19px;
+      font-size: 18px;
       line-height: 26px;
       text-decoration: none;
       color: #4c4c4c;
-      padding: 24px 24px;
+      padding: 20px;
 
 
 
@@ -2871,7 +2871,7 @@ table .bold-heading {
   padding: 10px 15px;
   margin: 4px 14px 0px;
   background-color: #f6f6f6;
-  border-radius: 13px;
+  // border-radius: 13px;
   cursor: pointer;
 
 
@@ -2921,7 +2921,7 @@ table .bold-heading {
 }
 
 .border-theme {
-  @include border-theme;
+  // @include border-theme;
 }
 
 .inner-tab-content-right-col {
@@ -3880,7 +3880,7 @@ table .bold-heading {
   padding: 10px 15px;
   margin: 4px 14px 0px;
   background-color: white;
-  border-radius: 8px;
+  // border-radius: 8px;
   cursor: pointer;
   border: 1px solid #dcdde1;
 
