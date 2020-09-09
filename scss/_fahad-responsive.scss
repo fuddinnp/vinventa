@@ -392,6 +392,41 @@
         padding-left: 0px;
     }
 
+    .list-view-hover-wrapper {
+        padding: 15px;
+
+        .content-wrapper {
+            flex-direction: column;
+
+            .dropdowns-wrapper {
+                margin-right: 0px;
+
+                .dropdown-main-div {
+                    flex-direction: column;
+
+                    .dropdwon-top {
+                        // min-width: 265px;
+
+                    }
+
+                    .dropdown-div {
+                        width: 100% !important;
+                    }
+
+                    .mr-4 {
+                        margin-right: 0rem !important;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-boxs-wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+
 }
 
 /*767 screen end here*/
