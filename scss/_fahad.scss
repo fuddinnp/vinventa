@@ -2604,13 +2604,12 @@ table .parent-row,
   .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     .dropdowns-wrapper {
       border: 1px solid #C4C4C4;
       padding: 20px;
       width: 100%;
-      margin-right: 50px;
+      margin-right: 27px;
 
       .dropdown-main-div {
 
@@ -2694,6 +2693,7 @@ table .parent-row,
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    cursor: pointer;
 
     div {
       margin-right: 10px;
@@ -2771,10 +2771,10 @@ table .parent-row,
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: white;
 }
