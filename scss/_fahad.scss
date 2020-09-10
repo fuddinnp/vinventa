@@ -676,7 +676,7 @@ input:checked+.sliders:before {
 }
 
 .orange-c {
-  background: #FF8A5B !important;
+  background: #ff8a5b !important;
 }
 
 .table-icon {
@@ -2593,52 +2593,76 @@ table .parent-row,
       border: 0px solid #000;
     }
   }
-
 }
 
 .list-view-hover-wrapper {
   background: #fff;
   padding: 35px 35px 35px 44px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 
   .content-wrapper {
     display: flex;
     justify-content: space-between;
 
     .dropdowns-wrapper {
-      border: 1px solid #C4C4C4;
+      border: 1px solid #c4c4c4;
       padding: 20px;
       width: 100%;
       margin-right: 27px;
 
       .dropdown-main-div {
-
         display: flex;
         justify-content: space-between;
-        align-items: center;
       }
 
       .box-btn {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
       }
+    }
+
+    .dropdown-container {
+      .dropdwon-contents-bottom {
+        .dropdown-connectors-list {
+          li {
+            padding: 3px 8px;
+            margin-bottom: 5px;
+
+            &:hover {
+              background: #f6f6f6 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .active-list {
+      background: #f6f6f6 !important;
     }
 
     .view-boxs-wrapper {
       width: 100%;
 
       .view-box {
-        border: 1px solid #C4C4C4;
+        border: 1px solid #c4c4c4;
         padding: 20px;
+        max-width: 270px;
 
         h3 {
           font-weight: bold;
           margin-bottom: 22px;
         }
 
+        p {
+          label {
+            font-size: 14px;
+            margin-bottom: 27px;
+          }
+        }
+
         .box-btn {
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
         }
       }
     }
@@ -2653,30 +2677,30 @@ table .parent-row,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #CDCDD6;
-
+  border: 1px solid #cdcdd6;
+  cursor: pointer;
   padding: 15px 12px;
-  min-width: 302px;
+  min-width: 260px;
   width: 100%;
 }
 
 .dropdwon-contents-top {
-  border: 1px solid #CDCDD6;
-  border-top: 0px solid #CDCDD6;
+  border: 1px solid #cdcdd6;
+  border-top: 0px solid #cdcdd6;
   padding: 15px;
 
   .filter-items-div {
     input {
       width: 100%;
       padding: 10px;
-      border: 1px solid #CDCDD6;
+      border: 1px solid #cdcdd6;
     }
   }
 }
 
 .dropdwon-contents-bottom {
-  border: 1px solid #CDCDD6;
-  border-top: 0px solid #CDCDD6;
+  border: 1px solid #cdcdd6;
+  border-top: 0px solid #cdcdd6;
   padding: 15px;
   position: relative;
   overflow: hidden;
@@ -2742,19 +2766,19 @@ table .parent-row,
   height: 18px;
   width: 18px;
   background-color: #fff;
-  border: 1px solid #A9B1B9;
+  border: 1px solid #a9b1b9;
   border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input~.checkmark {
   background-color: #fff;
-  border: 1px solid #A9B1B9;
+  border: 1px solid #a9b1b9;
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked~.checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
