@@ -426,10 +426,10 @@
     .view-boxs-wrapper {
         width: 100%;
         margin-top: 20px;
+    }
 
-        .view-box {
-            max-width: 100%;
-        }
+    .list-view-hover-wrapper .content-wrapper .view-boxs-wrapper .view-box {
+        max-width: 100% !important;
     }
 
 }
@@ -456,6 +456,21 @@
 
         .region-checkbox {
             padding: 0px !important;
+        }
+    }
+
+    .list-view-hover-wrapper .content-wrapper {
+        flex-direction: column;
+
+        .view-boxs-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+
+            .view-box {
+                max-width: 100%;
+
+            }
         }
     }
 }
