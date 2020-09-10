@@ -426,6 +426,10 @@
     .view-boxs-wrapper {
         width: 100%;
         margin-top: 20px;
+
+        .view-box {
+            max-width: 100%;
+        }
     }
 
 }

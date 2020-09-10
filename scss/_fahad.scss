@@ -2654,6 +2654,10 @@ table .parent-row,
         }
 
         p {
+          input {
+            margin-right: 5px !important;
+          }
+
           label {
             font-size: 14px;
             margin-bottom: 27px;
