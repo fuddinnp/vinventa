@@ -426,7 +426,23 @@
     .view-boxs-wrapper {
         width: 100%;
         margin-top: 20px;
+        flex-direction: column;
+
+        .view-box:first-child {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
     }
+
+    .move-arrow-div:last-child {
+        flex-direction: row;
+
+        a {
+            margin: 0px 10px;
+        }
+    }
+
 
     .list-view-hover-wrapper .content-wrapper .view-boxs-wrapper .view-box {
         max-width: 100% !important;

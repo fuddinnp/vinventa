@@ -2607,8 +2607,8 @@ table .parent-row,
     .dropdowns-wrapper {
       border: 1px solid #c4c4c4;
       padding: 20px;
+      // padding-right: 3px;
       width: 100%;
-      margin-right: 27px;
 
       .dropdown-main-div {
         display: flex;
@@ -2627,6 +2627,7 @@ table .parent-row,
           li {
             padding: 3px 8px;
             margin-bottom: 5px;
+            font-size: 14px;
 
             &:hover {
               background: #f6f6f6 !important;
@@ -2639,42 +2640,13 @@ table .parent-row,
     .active-list {
       background: #f6f6f6 !important;
     }
-
-    .view-boxs-wrapper {
-      width: 100%;
-
-      .view-box {
-        border: 1px solid #c4c4c4;
-        padding: 20px;
-        max-width: 270px;
-
-        h3 {
-          font-weight: bold;
-          margin-bottom: 22px;
-        }
-
-        p {
-          input {
-            margin-right: 5px !important;
-          }
-
-          label {
-            font-size: 14px;
-            margin-bottom: 27px;
-          }
-        }
-
-        .box-btn {
-          display: flex;
-          justify-content: flex-end;
-        }
-      }
-    }
   }
+
 }
 
 .dropdown-div {
   max-height: 358px;
+  width: 100%;
 }
 
 .dropdwon-top {
@@ -2684,8 +2656,19 @@ table .parent-row,
   border: 1px solid #cdcdd6;
   cursor: pointer;
   padding: 15px 12px;
-  min-width: 260px;
-  width: 100%;
+  // min-width: 260px;
+  // width: 100%;
+}
+
+.columns-order-title {
+  border-top: 0px solid #cdcdd6;
+  border-left: 0px solid #cdcdd6;
+  border-right: 0px solid #cdcdd6;
+
+  h3 {
+    font-weight: bold;
+    ;
+  }
 }
 
 .dropdwon-contents-top {
@@ -2736,75 +2719,75 @@ table .parent-row,
   }
 }
 
+.move-arrow-div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    flex-direction: column;
+
+    img {
+      margin: 10px 0px;
+    }
+  }
+
+  img {
+    border: 1px solid #776FFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 5px;
+
+  }
+}
+
 .scroll-div-height {
   height: 190px;
   position: relative;
 }
 
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 27px;
-  cursor: pointer;
-  font-size: 14px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.view-boxs-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .view-box {
+    border: 1px solid #c4c4c4;
+    padding: 20px;
+    width: 100%;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    h3 {
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    p {
+      input {
+        margin-right: 5px !important;
+      }
+
+      label {
+        font-size: 14px;
+        margin-bottom: 27px;
+      }
+    }
+
+    .box-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: -2px;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #fff;
-  border: 1px solid #a9b1b9;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
-  background-color: #fff;
-  border: 1px solid #a9b1b9;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
-  background-color: #2196f3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked~.checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 5px;
-  left: 5px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: white;
+.dropdown-connectors-list {
+  li {
+    font-size: 14px;
+  }
 }
