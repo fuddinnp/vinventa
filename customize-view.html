@@ -10,6 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/jquery.mCustomScrollbar.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
@@ -29,7 +34,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/perfect-scrollbar.js"></script>
+    <!-- <script src="js/perfect-scrollbar.js"></script> -->
 
     <title>Vinventa</title>
   </head>
@@ -133,7 +138,8 @@
                             <div class="dropdwon-contents-bottom">
                               <!-- <a class="select-all-btn">Select all</a> -->
                               <ul
-                                class="dropdown-connectors-list scroll-div-height"
+                                class="dropdown-connectors-list scroll-div-height mCustomScrollbar"
+                                data-mcs-theme="minimal-dark"
                               >
                                 <li class="active-list">
                                   <!-- <div class="">
@@ -328,7 +334,10 @@
                                                 </div> -->
                           <div class="dropdwon-contents-bottom">
                             <!-- <a class="select-all-btn">Select all</a> -->
-                            <ul class="dropdown-connectors-list">
+                            <ul
+                              class="dropdown-connectors-list mCustomScrollbar"
+                              data-mcs-theme="minimal-dark"
+                            >
                               <li>
                                 <div class="">
                                   <input type="checkbox" />
@@ -447,7 +456,10 @@
                                                 </div> -->
                           <div class="dropdwon-contents-bottom">
                             <!-- <a class="select-all-btn">Select all</a> -->
-                            <ul class="dropdown-connectors-list">
+                            <ul
+                              class="dropdown-connectors-list mCustomScrollbar"
+                              data-mcs-theme="minimal-dark"
+                            >
                               <li class="">
                                 <!-- <div class="">
                                                                     <input type="checkbox" />
@@ -703,7 +715,7 @@
     </script>
 
     <script src="js/custom.js"></script>
-
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
       /*
      Slidemenu
@@ -747,7 +759,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       // Initialize the plugin
       const demo = document.querySelector("#scroll");
       const ps = new PerfectScrollbar(demo);
@@ -765,6 +777,21 @@
         // Update Perfect Scrollbar
         ps.update();
       });
+    </script> -->
+    <!-- <script>
+      jQuery(".content").mCustomScrollbar({
+        axis: "x", // horizontal scrollbar
+      });
+    </script> -->
+
+    <script>
+      (function (jQuery) {
+        jQuery(window).on("load", function () {
+          jQuery(".content").mCustomScrollbar({
+            axis: "x",
+          });
+        });
+      })(jQuery);
     </script>
   </body>
 </html>
