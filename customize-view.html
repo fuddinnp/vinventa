@@ -1,703 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/jquery.mCustomScrollbar.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
 
-    <!-- <script src="js/perfect-scrollbar.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
-    <title>Vinventa</title>
-  </head>
+  <!-- <script src="js/perfect-scrollbar.js"></script> -->
 
-  <body class="">
-    <div class="container-fluid main-wrapper p-0">
-      <div class="main-container">
-        <div class="row m-0">
-          <div class="col-lg-10 mt-5">
-            <section id="content">
-              <div class="section-wrapper">
-                <div
-                  class="section-wrapper"
-                  style="display: flex; margin-top: 20px"
-                >
-                  <div>
-                    <h1>Model Links</h1>
-                    <div class="links-model">
-                      <br />
-                      <br />
-                      <br />
-                      <p>
-                        <a
-                          href="#"
-                          data-toggle="modal"
-                          data-target="#exampleModal"
-                          >Customize View</a
-                        >
-                      </p>
-                    </div>
+  <title>Vinventa</title>
+</head>
+
+<body class="">
+  <div class="container-fluid main-wrapper p-0">
+    <div class="main-container">
+      <div class="row m-0">
+        <div class="col-lg-10 mt-5">
+          <section id="content">
+            <div class="section-wrapper">
+              <div class="section-wrapper" style="display: flex; margin-top: 20px">
+                <div>
+                  <h1>Model Links</h1>
+                  <div class="links-model">
+                    <br />
+                    <br />
+                    <br />
+                    <p>
+                      <a href="#" data-toggle="modal" data-target="#exampleModal">Customize View</a>
+                    </p>
                   </div>
                 </div>
-                <!-- Section ends here -->
               </div>
-            </section>
-          </div>
+              <!-- Section ends here -->
+            </div>
+          </section>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Addaing a Adapter Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div
-          class="col-lg-10 modal-wrapper-xl mx-auto"
-          style="max-width: 999px"
-        >
-          <div class="modal-content">
-            <div class="modal-body">
-              <div
-                class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper"
-              >
-                <div class="adding-adapter-modal-header mb-0">
-                  <div class="adapter-modal-name ml-0">Customize View</div>
+  <!-- Addaing a Adapter Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="col-lg-10 modal-wrapper-xl mx-auto" style="max-width: 999px">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper">
+              <div class="adding-adapter-modal-header mb-0">
+                <div class="adapter-modal-name ml-0">Customize View</div>
 
-                  <div class="adapter-modal-help-box">
-                    <a href="#" class="question-icon hidden"> ? </a>
-                    <a href="#" class="adapter-modal-help-link hidden">
-                      Help
-                    </a>
-                    <button
-                      type="button"
-                      class="close no-btn modal-close-btn"
-                      data-dismiss="modal"
-                    >
-                      <span>
-                        <img src="images/modal-close.svg" />
-                      </span>
-                    </button>
-                  </div>
+                <div class="adapter-modal-help-box">
+                  <a href="#" class="question-icon hidden"> ? </a>
+                  <a href="#" class="adapter-modal-help-link hidden">
+                    Help
+                  </a>
+                  <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+                    <span>
+                      <img src="images/modal-close.svg" />
+                    </span>
+                  </button>
                 </div>
-                <div class="list-view-hover-wrapper">
-                  <div class="content-wrapper">
-                    <div class="dropdowns-wrapper">
-                      <div class="dropdown-main-div">
-                        <div class="dropdown-div mr-4 margin-b">
-                          <div class="dropdwon-top">
-                            <div>
-                              <h3>Connectors</h3>
-                            </div>
-                            <div class="dropdown-arrow">
-                              <img
-                                src="images/down-arrow.svg"
-                                class="table-heading-arrow"
-                              />
-                            </div>
+              </div>
+              <div class="list-view-hover-wrapper">
+                <div class="content-wrapper">
+                  <div class="dropdowns-wrapper">
+                    <div class="dropdown-main-div">
+                      <div class="dropdown-div mr-4 margin-b">
+                        <div class="dropdwon-top">
+                          <div>
+                            <h3>Connectors</h3>
                           </div>
-                          <div class="dropdown-container">
-                            <div class="dropdwon-contents-top">
-                              <div class="filter-items-div">
-                                <input type="text" placeholder="Filter Items" />
-                              </div>
-                            </div>
-                            <div class="dropdwon-contents-bottom">
-                              <!-- <a class="select-all-btn">Select all</a> -->
-                              <ul
-                                class="dropdown-connectors-list scroll-div-height mCustomScrollbar"
-                                data-mcs-theme="minimal-dark"
-                              >
-                                <li class="active-list">
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/absolute_adapter.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/azure_logo 1.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/aws_logo.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>AWS</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/absolute_adapter.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/azure_logo 1.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/aws_logo.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>AWS</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/absolute_adapter.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/azure_logo 1.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/aws_logo.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>AWS</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/absolute_adapter.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/azure_logo 1.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>Absolute</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                                <li>
-                                  <!-- <div class="">
-                                                                    <input type="checkbox" />
-                                                                </div> -->
-                                  <div>
-                                    <img
-                                      src="images/aws_logo.png"
-                                      class="dropdwon-connector-img"
-                                    />
-                                  </div>
-                                  <div>AWS</div>
-                                  <div>
-                                    <img src="images/Vector.png" class="" />
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
+                          <div class="dropdown-arrow">
+                            <img src="images/down-arrow.svg" class="table-heading-arrow" />
                           </div>
                         </div>
-
-                        <!-- select columns dropdown -->
-                        <div class="dropdown-div">
-                          <div class="dropdwon-top">
-                            <div>
-                              <h3>Select Columns</h3>
-                            </div>
-                            <div class="dropdown-arrow">
-                              <img
-                                src="images/down-arrow.svg"
-                                class="table-heading-arrow"
-                              />
+                        <div class="dropdown-container">
+                          <div class="dropdwon-contents-top">
+                            <div class="filter-items-div">
+                              <input type="text" placeholder="Filter Items" />
                             </div>
                           </div>
-                          <!-- <div class="dropdwon-contents-top">
-                                                    <div class="filter-items-div">
-                                                        <input type="text" placeholder="Filter Items" />
-                                                    </div>
-                                                </div> -->
                           <div class="dropdwon-contents-bottom">
                             <!-- <a class="select-all-btn">Select all</a> -->
-                            <ul
-                              class="dropdown-connectors-list mCustomScrollbar"
-                              data-mcs-theme="minimal-dark"
-                            >
-                              <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                            <ul class="dropdown-connectors-list scroll-div-height mCustomScrollbar"
+                              data-mcs-theme="minimal-dark">
+                              <li class="active-list">
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>IP Address</div>
+                                <div>Absolute</div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Device Type</div>
+                                <div>Absolute</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/aws_logo.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>AWS</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/aws_logo.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>AWS</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/aws_logo.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>AWS</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
+                                <div>Absolute</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
+                                </div>
                               </li>
                               <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <!-- <div class="">
+                                                                    <input type="checkbox" />
+                                                                </div> -->
+                                <div>
+                                  <img src="images/aws_logo.png" class="dropdwon-connector-img" />
                                 </div>
-                                <div>Column Name</div>
-                              </li>
-                              <li>
-                                <div class="">
-                                  <input type="checkbox" />
+                                <div>AWS</div>
+                                <div>
+                                  <img src="images/Vector.png" class="" />
                                 </div>
-                                <div>Column Name</div>
-                              </li>
-                              <li>
-                                <div class="">
-                                  <input type="checkbox" />
-                                </div>
-                                <div>Column Name</div>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div class="move-arrow-div">
-                          <!-- <img
+                      </div>
+
+                      <!-- select columns dropdown -->
+                      <div class="dropdown-div">
+                        <div class="dropdwon-top">
+                          <div>
+                            <h3>Select Columns</h3>
+                          </div>
+                          <div class="dropdown-arrow">
+                            <img src="images/down-arrow.svg" class="table-heading-arrow" />
+                          </div>
+                        </div>
+                        <!-- <div class="dropdwon-contents-top">
+                                                    <div class="filter-items-div">
+                                                        <input type="text" placeholder="Filter Items" />
+                                                    </div>
+                                                </div> -->
+                        <div class="dropdwon-contents-bottom">
+                          <!-- <a class="select-all-btn">Select all</a> -->
+                          <ul class="dropdown-connectors-list mCustomScrollbar" data-mcs-theme="minimal-dark">
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>IP Address</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Device Type</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                            <li>
+                              <div class="">
+                                <input type="checkbox" />
+                              </div>
+                              <div>Column Name</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="move-arrow-div">
+                        <!-- <img
                             src="images/move-right.svg"
                             class="table-heading-arrow"
                           /> -->
-                          <img
-                            src="images/move-right-grey.svg"
-                            class="table-heading-arrow"
-                            style="border: 0px solid #ccc"
-                          />
-                        </div>
-                        <!-- select columns dropdown -->
-                        <div class="dropdown-div columns-order-div">
-                          <div class="dropdwon-top columns-order-title">
-                            <div>
-                              <h3>Columns Order</h3>
-                            </div>
-                            <!-- <div class="dropdown-arrow">
+                        <img src="images/move-right-grey.svg" class="table-heading-arrow"
+                          style="border: 0px solid #ccc" />
+                      </div>
+                      <!-- select columns dropdown -->
+                      <div class="dropdown-div columns-order-div">
+                        <div class="dropdwon-top columns-order-title">
+                          <div>
+                            <h3>Columns Order</h3>
+                          </div>
+                          <!-- <div class="dropdown-arrow">
                               <img
                                 src="images/down-arrow.svg"
                                 class="table-heading-arrow"
                               />
                             </div> -->
-                          </div>
-                          <!-- <div class="dropdwon-contents-top">
+                        </div>
+                        <!-- <div class="dropdwon-contents-top">
                                                     <div class="filter-items-div">
                                                         <input type="text" placeholder="Filter Items" />
                                                     </div>
                                                 </div> -->
-                          <div class="dropdwon-contents-bottom">
-                            <!-- <a class="select-all-btn">Select all</a> -->
-                            <ul
-                              class="dropdown-connectors-list mCustomScrollbar"
-                              data-mcs-theme="minimal-dark"
-                            >
-                              <li class="">
-                                <!-- <div class="">
+                        <div class="dropdwon-contents-bottom">
+                          <!-- <a class="select-all-btn">Select all</a> -->
+                          <ul class="dropdown-connectors-list mCustomScrollbar" data-mcs-theme="minimal-dark">
+                            <li class="">
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/absolute_adapter.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 1</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 1</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/azure_logo 1.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 2</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 2</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/aws_logo.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 3</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 3</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/absolute_adapter.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 4</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 4</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/azure_logo 1.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 5</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 5</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/aws_logo.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 6</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 6</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/absolute_adapter.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 7</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 7</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/azure_logo 1.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 8</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 8</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/aws_logo.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 9</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 9</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/absolute_adapter.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 10</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 10</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/azure_logo 1.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 11</div>
-                              </li>
-                              <li>
-                                <!-- <div class="">
+                              <div>
+                                <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 11</div>
+                            </li>
+                            <li>
+                              <!-- <div class="">
                                                                     <input type="checkbox" />
                                                                 </div> -->
-                                <div>
-                                  <img
-                                    src="images/aws_logo.png"
-                                    class="dropdwon-connector-img"
-                                  />
-                                </div>
-                                <div>: Column 12</div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="move-arrow-div mr-0">
-                          <a href="#">
-                            <img
-                              src="images/arrow-up.svg"
-                              class="table-heading-arrow"
-                            />
-                          </a>
-                          <a href="#">
-                            <img
-                              src="images/trash.svg"
-                              class="table-heading-arrow"
-                            />
-                          </a>
-                          <a href="#">
-                            <img
-                              src="images/arrow-down.svg"
-                              class="table-heading-arrow"
-                            />
-                          </a>
+                              <div>
+                                <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                              </div>
+                              <div>: Column 12</div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <div class="mt-4 box-btn">
-                        <button
-                          type="button"
-                          class="theme-btn graydient-primary-btn"
-                        >
-                          Apply
-                        </button>
+                      <div class="move-arrow-div mr-0">
+                        <a href="#">
+                          <img src="images/arrow-up.svg" class="table-heading-arrow" />
+                        </a>
+                        <a href="#">
+                          <img src="images/trash.svg" class="table-heading-arrow" />
+                        </a>
+                        <a href="#">
+                          <img src="images/arrow-down.svg" class="table-heading-arrow" />
+                        </a>
                       </div>
+                    </div>
+                    <div class="mt-4 box-btn">
+                      <button type="button" class="theme-btn graydient-primary-btn">
+                        Apply
+                      </button>
                     </div>
                   </div>
-                  <!-- view box row -->
-                  <div class="view-boxs-wrapper">
-                    <div class="view-box">
-                      <h3>Save View</h3>
-                      <p>
-                        <input
-                          type="radio"
-                          id="male"
-                          name="gender"
-                          value="male"
-                        />
-                        <label for="male">Save as Inventa Default View</label>
-                      </p>
-                      <p>
-                        <input
-                          type="radio"
-                          id="male"
-                          name="gender"
-                          value="male"
-                        />
-                        <label for="male">Save as User Default View</label>
-                      </p>
-                      <div class="mt-3 box-btn">
-                        <button
-                          type="button"
-                          class="theme-btn graydient-primary-btn"
-                        >
-                          Apply
-                        </button>
-                      </div>
+                </div>
+                <!-- view box row -->
+                <div class="view-boxs-wrapper">
+                  <div class="view-box">
+                    <h3>Save View</h3>
+                    <p>
+                      <input type="radio" id="male" name="gender" value="male" />
+                      <label for="male">Save as Inventa Default View</label>
+                    </p>
+                    <p>
+                      <input type="radio" id="male" name="gender" value="male" />
+                      <label for="male">Save as User Default View</label>
+                    </p>
+                    <div class="mt-3 box-btn">
+                      <button type="button" class="theme-btn graydient-primary-btn">
+                        Apply
+                      </button>
                     </div>
+                  </div>
 
-                    <div class="view-box">
-                      <h3>Reset View</h3>
-                      <p>
-                        <input
-                          type="radio"
-                          id="male"
-                          name="gender"
-                          value="male"
-                        />
-                        <label for="male">Reset to Inventa Default View</label>
-                      </p>
-                      <p>
-                        <input
-                          type="radio"
-                          id="male"
-                          name="gender"
-                          value="male"
-                        />
-                        <label for="male">Reset to User Default View</label>
-                      </p>
-                      <div class="mt-3 box-btn">
-                        <button
-                          type="button"
-                          class="theme-btn graydient-primary-btn"
-                        >
-                          Apply
-                        </button>
-                      </div>
+                  <div class="view-box">
+                    <h3>Reset View</h3>
+                    <p>
+                      <input type="radio" id="male" name="gender" value="male" />
+                      <label for="male">Reset to Inventa Default View</label>
+                    </p>
+                    <p>
+                      <input type="radio" id="male" name="gender" value="male" />
+                      <label for="male">Reset to User Default View</label>
+                    </p>
+                    <div class="mt-3 box-btn">
+                      <button type="button" class="theme-btn graydient-primary-btn">
+                        Apply
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -707,59 +540,60 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      $("#myModal").on("shown.bs.modal", function () {
-        $("#myInput").trigger("focus");
-      });
-    </script>
+  <script>
+    $("#myModal").on("shown.bs.modal", function () {
+      $("#myInput").trigger("focus");
+    });
+  </script>
 
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-      /*
+  <script src="js/custom.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script>
+    /*
      Slidemenu
    */
-      (function () {
-        var $body = document.body,
-          $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
+    (function () {
+      var $body = document.body,
+        $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
 
-        if (typeof $menu_trigger !== "undefined") {
-          $menu_trigger.addEventListener("click", function () {
-            $body.className =
-              $body.className == "menu-active" ? "" : "menu-active";
-          });
-        }
-      }.call(this));
-    </script>
-
-    <script type="text/javascript">
-      function DropDown(el) {
-        this.dd = el;
-        this.initEvents();
-      }
-      DropDown.prototype = {
-        initEvents: function () {
-          var obj = this;
-
-          obj.dd.on("click", function (event) {
-            $(this).toggleClass("active");
-            event.stopPropagation();
-          });
-        },
-      };
-
-      $(function () {
-        var dd = new DropDown($("#dd"));
-
-        $(document).click(function () {
-          // all dropdowns
-          $(".wrapper-dropdown-2").removeClass("active");
+      if (typeof $menu_trigger !== "undefined") {
+        $menu_trigger.addEventListener("click", function () {
+          $body.className =
+            $body.className == "menu-active" ? "" : "menu-active";
         });
-      });
-    </script>
+      }
+    }.call(this));
+  </script>
 
-    <!-- <script>
+  <script type="text/javascript">
+    function DropDown(el) {
+      this.dd = el;
+      this.initEvents();
+    }
+    DropDown.prototype = {
+      initEvents: function () {
+        var obj = this;
+
+        obj.dd.on("click", function (event) {
+          $(this).toggleClass("active");
+          event.stopPropagation();
+        });
+      },
+    };
+
+    $(function () {
+      var dd = new DropDown($("#dd"));
+
+      $(document).click(function () {
+        // all dropdowns
+        $(".wrapper-dropdown-2").removeClass("active");
+      });
+    });
+  </script>
+
+  <!-- <script>
       // Initialize the plugin
       const demo = document.querySelector("#scroll");
       const ps = new PerfectScrollbar(demo);
@@ -778,20 +612,6 @@
         ps.update();
       });
     </script> -->
-    <!-- <script>
-      jQuery(".content").mCustomScrollbar({
-        axis: "x", // horizontal scrollbar
-      });
-    </script> -->
+</body>
 
-    <script>
-      (function (jQuery) {
-        jQuery(window).on("load", function () {
-          jQuery(".content").mCustomScrollbar({
-            axis: "x",
-          });
-        });
-      })(jQuery);
-    </script>
-  </body>
 </html>

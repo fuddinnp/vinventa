@@ -2523,15 +2523,15 @@ table .parent-row,
 }
 
 .c-gray-td {
-  padding: 8px;
+  padding: 6px;
   background: #bbb;
   border-radius: 50%;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
-  width: 33px;
-  height: 33px;
+  width: 24px;
+  height: 24px;
   display: inline-block;
 }
 
@@ -2572,6 +2572,7 @@ table .parent-row,
   display: flex;
   flex-direction: row !important;
   margin-top: 10px;
+  flex: 1;
 
   .search-right-bar {
     width: 250px;
@@ -2801,4 +2802,48 @@ table .parent-row,
   background: #f6f6f6 !important;
   padding: 3px 8px;
   margin-bottom: 5px;
+}
+
+.sliding-section {
+  position: relative;
+  display: flex;
+
+  .sliding-left-section {
+    width: 30%;
+  }
+
+  .sliding-right-section {
+    width: 100%;
+  }
+}
+
+.device-list-main-top {
+  display: flex;
+}
+
+.device-list-top-left {
+  min-width: 232px;
+}
+
+.right-assets-inventory-div {
+  width: 100%;
+}
+
+.total-assets-number {
+  font-size: 22px;
+
+  .total-assets-title {
+    font-size: 48px;
+    font-weight: 300;
+    color: #4C4C4C;
+  }
+}
+
+.device-table-main {
+  .table-logos {
+    a {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
