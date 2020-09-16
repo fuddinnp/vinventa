@@ -448,6 +448,41 @@
         max-width: 100% !important;
     }
 
+    .field-section-wrapper {
+        padding: 20px 15px;
+
+        .form-group {
+            width: 100%;
+
+            .frequency-dropdown-div {
+                flex-direction: column;
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+
+            .week-check-boxs-wrapper {
+                a {
+                    min-width: 29px;
+                    height: 29px;
+                    font-size: 14px;
+                    padding: 8px;
+                }
+            }
+
+            .hrs-select-group {
+                flex-direction: column;
+
+                .custom-select {
+                    width: 100%;
+                    margin: 5px 0px;
+                }
+            }
+        }
+
+    }
+
 }
 
 /*767 screen end here*/
