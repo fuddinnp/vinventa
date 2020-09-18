@@ -70,7 +70,7 @@
   margin: 1rem 0rem;
 }
 
-.center-y h3 + a {
+.center-y h3+a {
   font-size: 1.6rem;
   display: inline-block;
   color: #000;
@@ -104,7 +104,7 @@ select {
 }
 
 h3,
-h3 + a {
+h3+a {
   // opacity: 0;
   // -webkit-transition: opacity 0.7s 0s, -webkit-transform 0.5s 0.2s;
   // transition: opacity 0.7s 0s, -webkit-transform 0.5s 0.2s;
@@ -115,7 +115,7 @@ h3 + a {
 }
 
 li.current h3,
-li.current h3 + a {
+li.current h3+a {
   // opacity: 1;
   // -webkit-transition-delay: 1s;
   // transition-delay: 1s;
@@ -193,6 +193,7 @@ li.prev {
 
 .modal-add-connections-wrapper,
 .LoginPanel {
+
   input[type="text"],
   input[type="password"],
   textarea {
@@ -212,8 +213,7 @@ li.prev {
     line-height: 1em;
     width: 100%;
     -moz-appearance: none;
-    background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97%
-      13px;
+    background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 97% 13px;
     box-sizing: border-box;
     cursor: pointer;
   }
@@ -266,7 +266,7 @@ li.prev {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.LoginPanel .fieldsBotSection input[type="checkbox"]:checked + label {
+.LoginPanel .fieldsBotSection input[type="checkbox"]:checked+label {
   background-image: url(../images/checkbox-img.png);
 }
 
@@ -279,7 +279,7 @@ li.prev {
   right: 22px;
 }
 
-.LoginPanel .login-pass-div input[type="checkbox"]:checked + label {
+.LoginPanel .login-pass-div input[type="checkbox"]:checked+label {
   background-image: url(../images/eye-dark.png);
 }
 
@@ -606,15 +606,15 @@ input[type="submit"] {
   transition: 0.4s;
 }
 
-input:checked + .sliders {
+input:checked+.sliders {
   background-color: #776fff;
 }
 
-input:focus + .sliders {
+input:focus+.sliders {
   box-shadow: 0 0 1px #776fff;
 }
 
-input:checked + .sliders:before {
+input:checked+.sliders:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -690,7 +690,7 @@ input:checked + .sliders:before {
 }
 
 .table-icon span,
-.table-icon span + span {
+.table-icon span+span {
   letter-spacing: 4px;
   font-size: 18px;
 }
@@ -740,16 +740,12 @@ input:checked + .sliders:before {
   padding-left: 35px;
 }
 
-.modal-add-connections-wrapper
-  .adding-adapter-modal-header
-  .adapter-modal-logo {
+.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-logo {
   height: 55px !important;
   width: 55px !important;
 }
 
-.modal-add-connections-wrapper
-  .adding-adapter-modal-header
-  .adapter-modal-name {
+.modal-add-connections-wrapper .adding-adapter-modal-header .adapter-modal-name {
   font-size: 20px !important;
 }
 
@@ -762,7 +758,7 @@ input:checked + .sliders:before {
   width: 100%;
 }
 
-.modal-add-connections-wrapper .adapter-modal-bottom-row div + div {
+.modal-add-connections-wrapper .adapter-modal-bottom-row div+div {
   margin-right: 0px;
 }
 
@@ -942,8 +938,8 @@ input:checked + .sliders:before {
     font-size: 14px;
   }
 
-  .dropdown-with-img-select div + div,
-  .dropdown-with-logos div + div {
+  .dropdown-with-img-select div+div,
+  .dropdown-with-logos div+div {
     font-size: 12px;
   }
 
@@ -1259,11 +1255,11 @@ input:checked + .sliders:before {
   background: dodgerblue;
 }
 
-.list-ic .active ~ li {
+.list-ic .active~li {
   background: lightblue;
 }
 
-.list-ic .active ~ li::before {
+.list-ic .active~li::before {
   background: lightblue;
 }
 
@@ -1528,15 +1524,15 @@ ul li:last-child {
   transition: 0.4s;
 }
 
-input:checked + .sliderss {
+input:checked+.sliderss {
   background-color: #776fff;
 }
 
-input:focus + .sliderss {
+input:focus+.sliderss {
   box-shadow: 0 0 1px #776fff;
 }
 
-input:checked + .sliderss:before {
+input:checked+.sliderss:before {
   -webkit-transform: translateX(44px);
   -ms-transform: translateX(44px);
   transform: translateX(44px);
@@ -1558,7 +1554,7 @@ input:checked + .sliderss:before {
   font-family: Verdana, sans-serif;
 }
 
-input:checked + .sliderss .on {
+input:checked+.sliderss .on {
   display: block;
   font-size: 14px;
   padding-left: 10px;
@@ -1566,7 +1562,7 @@ input:checked + .sliderss .on {
   left: 26%;
 }
 
-input:checked + .sliderss .off {
+input:checked+.sliderss .off {
   display: none;
 }
 
@@ -1607,11 +1603,11 @@ input:checked + .sliderss .off {
     transition: 0.4s;
   }
 
-  input:checked + .sliders-Not {
+  input:checked+.sliders-Not {
     background-color: #776fff;
   }
 
-  input:focus + .sliders-Not {
+  input:focus+.sliders-Not {
     box-shadow: 0 0 1px #776fff;
   }
 }
@@ -1645,7 +1641,7 @@ input:checked + .sliderss .off {
   margin-right: 10px;
 }
 
-input:checked + .sliders-Not .not-white-bg {
+input:checked+.sliders-Not .not-white-bg {
   display: block;
   color: #fff;
   background-color: #776fff;
@@ -1656,7 +1652,7 @@ input:checked + .sliders-Not .not-white-bg {
   // left: 26%;
 }
 
-input:checked + .sliders-Not .not-blue-bg {
+input:checked+.sliders-Not .not-blue-bg {
   display: none;
 }
 
@@ -1841,14 +1837,14 @@ input:checked + .sliders-Not .not-blue-bg {
 }
 
 /* On mouse-over, add a grey background color */
-.check-container:hover input ~ .checkmark {
+.check-container:hover input~.checkmark {
   background-color: #fff;
   border: 1px solid #717171;
   border-radius: 6px;
 }
 
 /* When the checkbox is checked, add a blue background */
-.check-container input:checked ~ .checkmark {
+.check-container input:checked~.checkmark {
   background-color: #717171;
   border: 1px solid #717171;
   border-radius: 6px;
@@ -1862,7 +1858,7 @@ input:checked + .sliders-Not .not-blue-bg {
 }
 
 /* Show the checkmark when checked */
-.check-container input:checked ~ .checkmark:after {
+.check-container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -1912,14 +1908,14 @@ td {
     font-family: Verdana, sans-serif;
   }
 
-  input:checked + .sliderss .on {
+  input:checked+.sliderss .on {
     display: block;
     font-size: 14px;
     padding-left: 10px;
     left: 10%;
   }
 
-  input:checked + .sliderss::before {
+  input:checked+.sliderss::before {
     -webkit-transform: translateX(57px);
     -ms-transform: translateX(57px);
     transform: translateX(57px);
@@ -2073,12 +2069,12 @@ td {
 /* Create a custom checkbox */
 
 /* On mouse-over, add a grey background color */
-.container-custom-checkbox:hover input ~ .checkmark {
+.container-custom-checkbox:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container-custom-checkbox input:checked ~ .checkmark {
+.container-custom-checkbox input:checked~.checkmark {
   background-color: #776fff;
   border: 1px solid #776fff;
 }
@@ -2086,7 +2082,7 @@ td {
 /* Create the checkmark/indicator (hidden when not checked) */
 
 /* Show the checkmark when checked */
-.container-custom-checkbox input:checked ~ .checkmark:after {
+.container-custom-checkbox input:checked~.checkmark:after {
   display: block;
 }
 
@@ -2122,7 +2118,7 @@ td {
   margin-bottom: 0px !important;
 }
 
-.box-bottom-bar .field-check-box input[type="checkbox"]:checked + label {
+.box-bottom-bar .field-check-box input[type="checkbox"]:checked+label {
   background-image: url(../images/enable-check.png);
 }
 
@@ -2182,8 +2178,7 @@ td {
         font-size: 14px;
       }
 
-      h3 {
-      }
+      h3 {}
 
       .color-text {
         margin-top: 5px;
@@ -2240,8 +2235,7 @@ td {
   }
 
   .custom-select {
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 6'%3e%3cpath fill='%23343a40' d='M2 0L0 0h4zm0 5L0 2h4z'/%3e%3c/svg%3e")
-      no-repeat right 0.75rem center/10px 20px;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 6'%3e%3cpath fill='%23343a40' d='M2 0L0 0h4zm0 5L0 2h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/10px 20px;
     background-color: #fff;
     font-family: "proxima-regular" !important;
   }
@@ -2904,10 +2898,7 @@ table .parent-row,
   margin-bottom: 5px;
 }
 
-.columns-order-div
-  .dropdwon-contents-bottom
-  .dropdown-connectors-list
-  li:hover {
+.columns-order-div .dropdwon-contents-bottom .dropdown-connectors-list li:hover {
   background: #f6f6f6 !important;
   padding: 3px 8px;
   margin-bottom: 5px;
@@ -3021,11 +3012,9 @@ table .parent-row,
   .child-row {
     td {
       background: #f6f6f6;
-      background-image: linear-gradient(
-        to right,
-        #e2e2e2 70%,
-        rgba(255, 255, 255, 0) 0%
-      );
+      background-image: linear-gradient(to right,
+          #e2e2e2 70%,
+          rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
       background-size: 1px 1px;
       background-repeat: repeat-x;
@@ -3050,4 +3039,83 @@ textarea,
 select,
 option {
   font-family: "proxima-regular";
+}
+
+.poclicy-center-main-warpper {
+  padding-top: 35px;
+
+  h2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .custom-select {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 6'%3e%3cpath fill='%23343a40' d='M2 0L0 0h4zm0 5L0 2h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    font-family: "proxima-regular" !important;
+  }
+
+  .gray-border-bottom {
+    display: flex;
+    width: 100%;
+    border-bottom: 0.5px solid #9a9a9a;
+    margin: 0px 15px 10px;
+    padding-bottom: 20px;
+    align-items: center;
+
+    .form-group {
+      width: 100%;
+      padding: 0px 15px;
+      margin-bottom: 0px;
+    }
+
+
+  }
+
+  .gray-border-bottom-actions {
+    width: 100%;
+    border-bottom: 0.5px solid #9a9a9a;
+    margin: 0px 15px 10px;
+    padding-bottom: 20px;
+
+    .form-group {
+      width: 100%;
+      padding: 0px 15px;
+      margin-bottom: 0px;
+    }
+
+    .actions-field-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      width: 100%;
+
+      .min-filed-width {
+        min-width: 400px;
+      }
+    }
+  }
+
+  .icons-circle-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
 }

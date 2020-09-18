@@ -483,6 +483,47 @@
 
     }
 
+    .poclicy-center-main-warpper {
+        h2 {
+            margin-top: 20px;
+        }
+
+        .gray-border-bottom {
+            flex-direction: column;
+
+            .form-group {
+                padding: 0px 0px 10px;
+
+                label {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+
+        .actions-field-wrapper {
+            flex-direction: column;
+        }
+
+        .gray-border-bottom-actions {
+            .form-group {
+                padding: 0px 0px 8px;
+
+
+
+                .custom-select {
+                    padding-bottom: 6px;
+                }
+            }
+
+            .actions-field-wrapper {
+                .min-filed-width {
+                    min-width: 100%;
+                }
+            }
+
+        }
+    }
+
 }
 
 /*767 screen end here*/
