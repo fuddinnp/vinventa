@@ -412,11 +412,40 @@
 
                                         <div class="search-right-bar">
 
-                                            <select class="">
+                                            <!-- <select class="">
                                                 <option>Select</option>
                                                 <option>1</option>
                                                 <option>1</option>
-                                            </select>
+                                            </select> -->
+
+                                            <!-- jquery multi select dropdown -->
+                                            <form>
+                                                <div class="multiselect">
+                                                    <div class="selectBox" onclick="showCheckboxes()">
+                                                        <select>
+                                                            <option>All</option>
+                                                        </select>
+                                                        <div class="overSelect"></div>
+                                                    </div>
+                                                    <div id="checkboxes">
+                                                        <label class="check-container">All
+                                                            <input type="checkbox" checked="checked">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="check-container">Device Type
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="check-container">Host Name
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                            </form>
+
+
                                         </div>
 
                                         <div class="search-wrap">
@@ -424,9 +453,9 @@
                                                 placeholder="Search by Host Name, User Name, Manufacturer Serial MAC or IP..."
                                                 class="search-field">
 
-                                            <!-- <a href="#" class="search-query-dropdown-btn">
+                                            <a href="#" class="search-query-dropdown-btn">
                                                 <img src="images/down-arrow.svg">
-                                            </a> -->
+                                            </a>
 
 
                                         </div>
@@ -439,24 +468,542 @@
 
                             <div class="sliding-section">
                                 <div class="sliding-left-section">
-                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                        aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                                    <div class="nav flex-column nav-pills device-filterleft-bar" id="v-pills-tab"
+                                        role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link activea" id="v-pills-home-tab" data-toggle="pill"
                                             href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                            aria-selected="true">Home</a>
+                                            aria-selected="true"><img src="images/filter-by-icon.svg"
+                                                class="filter-icon-group"> Filter by <img
+                                                src="images/icon-ios-arrow-left.png" class="filter-arrow-left-icon"></a>
                                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
                                             href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                            aria-selected="false">Profile</a>
+                                            aria-selected="false"><img src="images/perform-task-icon.svg"
+                                                class="filter-icon-group"> Perform Task <img
+                                                src="images/icon-ios-arrow-left.png" class="filter-arrow-left-icon"></a>
                                         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
                                             href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                            aria-selected="false">Messages</a>
+                                            aria-selected="false"><img src="images/customize-view-icon.svg"
+                                                class="filter-icon-group"> Customize View <img
+                                                src="images/icon-ios-arrow-left.png" class="filter-arrow-left-icon"></a>
                                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
                                             href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                            aria-selected="false">Settings</a>
+                                            aria-selected="false"><img src="images/export-options-icon.svg"
+                                                class="filter-icon-group"> Export Options <img
+                                                src="images/icon-ios-arrow-left.png" class="filter-arrow-left-icon"></a>
                                     </div>
                                     <div class="tab-content" id="v-pills-tabContent">
-                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                            aria-labelledby="v-pills-home-tab">1</div>
+                                        <div class="tab-pane fade showa activea" id="v-pills-home" role="tabpanel"
+                                            aria-labelledby="v-pills-home-tab">
+
+
+                                            <div class="list-view-hover-wrapper">
+                                                <div class="content-wrapper">
+                                                    <div class="dropdowns-wrapper">
+                                                        <div class="dropdown-main-div">
+                                                            <div class="dropdown-div mr-4 margin-b">
+                                                                <div class="dropdwon-top">
+                                                                    <div>
+                                                                        <h3>Connectors</h3>
+                                                                    </div>
+                                                                    <div class="dropdown-arrow">
+                                                                        <img src="images/down-arrow.svg"
+                                                                            class="table-heading-arrow" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-container">
+                                                                    <div class="dropdwon-contents-top">
+                                                                        <div class="filter-items-div">
+                                                                            <input type="text"
+                                                                                placeholder="Filter Items" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdwon-contents-bottom">
+                                                                        <!-- <a class="select-all-btn">Select all</a> -->
+                                                                        <ul class="dropdown-connectors-list scroll-div-height mCustomScrollbar"
+                                                                            data-mcs-theme="minimal-dark">
+                                                                            <li class="active-list">
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/absolute_adapter.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/azure_logo 1.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/aws_logo.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>AWS</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/absolute_adapter.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/azure_logo 1.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/aws_logo.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>AWS</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/absolute_adapter.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/azure_logo 1.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/aws_logo.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>AWS</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/absolute_adapter.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/azure_logo 1.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>Absolute</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                                <div>
+                                                                                    <img src="images/aws_logo.png"
+                                                                                        class="dropdwon-connector-img" />
+                                                                                </div>
+                                                                                <div>AWS</div>
+                                                                                <div>
+                                                                                    <img src="images/Vector.png"
+                                                                                        class="" />
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- select columns dropdown -->
+                                                            <div class="dropdown-div">
+                                                                <div class="dropdwon-top">
+                                                                    <div>
+                                                                        <h3>Select Columns</h3>
+                                                                    </div>
+                                                                    <div class="dropdown-arrow">
+                                                                        <img src="images/down-arrow.svg"
+                                                                            class="table-heading-arrow" />
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="dropdwon-contents-top">
+                                                                                    <div class="filter-items-div">
+                                                                                        <input type="text" placeholder="Filter Items" />
+                                                                                    </div>
+                                                                                </div> -->
+                                                                <div class="dropdwon-contents-bottom">
+                                                                    <!-- <a class="select-all-btn">Select all</a> -->
+                                                                    <ul class="dropdown-connectors-list mCustomScrollbar"
+                                                                        data-mcs-theme="minimal-dark">
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>IP Address</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Device Type</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="">
+                                                                                <input type="checkbox" />
+                                                                            </div>
+                                                                            <div>Column Name</div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="move-arrow-div">
+                                                                <!-- <img
+                                                            src="images/move-right.svg"
+                                                            class="table-heading-arrow"
+                                                          /> -->
+                                                                <img src="images/move-right-grey.svg"
+                                                                    class="table-heading-arrow"
+                                                                    style="border: 0px solid #ccc" />
+                                                            </div>
+                                                            <!-- select columns dropdown -->
+                                                            <div class="dropdown-div columns-order-div">
+                                                                <div class="dropdwon-top columns-order-title">
+                                                                    <div>
+                                                                        <h3>Columns Order</h3>
+                                                                    </div>
+                                                                    <!-- <div class="dropdown-arrow">
+                                                              <img
+                                                                src="images/down-arrow.svg"
+                                                                class="table-heading-arrow"
+                                                              />
+                                                            </div> -->
+                                                                </div>
+                                                                <!-- <div class="dropdwon-contents-top">
+                                                                                    <div class="filter-items-div">
+                                                                                        <input type="text" placeholder="Filter Items" />
+                                                                                    </div>
+                                                                                </div> -->
+                                                                <div class="dropdwon-contents-bottom">
+                                                                    <!-- <a class="select-all-btn">Select all</a> -->
+                                                                    <ul class="dropdown-connectors-list mCustomScrollbar"
+                                                                        data-mcs-theme="minimal-dark">
+                                                                        <li class="">
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/absolute_adapter.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 1</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/azure_logo 1.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 2</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/aws_logo.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 3</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/absolute_adapter.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 4</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/azure_logo 1.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 5</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/aws_logo.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 6</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/absolute_adapter.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 7</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/azure_logo 1.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 8</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/aws_logo.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 9</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/absolute_adapter.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 10</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/azure_logo 1.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 11</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <!-- <div class="">
+                                                                                                    <input type="checkbox" />
+                                                                                                </div> -->
+                                                                            <div>
+                                                                                <img src="images/aws_logo.png"
+                                                                                    class="dropdwon-connector-img" />
+                                                                            </div>
+                                                                            <div>: Column 12</div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="move-arrow-div mr-0">
+                                                                <a href="#">
+                                                                    <img src="images/arrow-up.svg"
+                                                                        class="table-heading-arrow" />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="images/trash.svg"
+                                                                        class="table-heading-arrow" />
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="images/arrow-down.svg"
+                                                                        class="table-heading-arrow" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-4 box-btn">
+                                                            <button type="button"
+                                                                class="theme-btn graydient-primary-btn">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- view box row -->
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box">
+                                                        <h3>Save View</h3>
+                                                        <p>
+                                                            <input type="radio" id="male" name="gender" value="male" />
+                                                            <label for="male">Save as Inventa Default View</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="male" name="gender" value="male" />
+                                                            <label for="male">Save as User Default View</label>
+                                                        </p>
+                                                        <div class="mt-3 box-btn">
+                                                            <button type="button"
+                                                                class="theme-btn graydient-primary-btn">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="view-box">
+                                                        <h3>Reset View</h3>
+                                                        <p>
+                                                            <input type="radio" id="male" name="gender" value="male" />
+                                                            <label for="male">Reset to Inventa Default View</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="male" name="gender" value="male" />
+                                                            <label for="male">Reset to User Default View</label>
+                                                        </p>
+                                                        <div class="mt-3 box-btn">
+                                                            <button type="button"
+                                                                class="theme-btn graydient-primary-btn">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                             aria-labelledby="v-pills-profile-tab">2</div>
                                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
@@ -466,12 +1013,15 @@
                                     </div>
                                 </div>
                                 <div class="sliding-right-section">
+                                    <a href="javascript:" class="slide-btn"><img src="images/silde-icon.png"
+                                            class="scren-slide-icon"></a>
                                     <div class="row m-0">
 
                                         <div class="col-lg-12 inner-tab-right-section p-0">
                                             <div class="grid-table-flow">
                                                 <div class="table-full-scroll">
                                                     <div class="wrapper">
+
                                                         <table class="device-table-main">
                                                             <tbody>
                                                                 <tr>
@@ -1927,9 +2477,29 @@
         })
     </script>
 
+    <script>
+        $("#myModal").on("shown.bs.modal", function () {
+            $("#myInput").trigger("focus");
+        });
+
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+    </script>
+
 
 
     <script src="js/custom.js"> </script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
     <script>
@@ -1939,6 +2509,9 @@
         });
     </script>
 
+    <script>
+        jQuery(".collapse, .collapse1 ").collapse();
+    </script>
 
     <script type="text/javascript">
         function DropDown(el) {
@@ -1972,6 +2545,10 @@
             e.preventDefault()
             jQuery(this).tab('show')
         })
+
+        jQuery('.slide-btn').click(function () {
+            jQuery(".sliding-section").toggleClass("slid-screen-wrapper");
+        });
     </script>
 
 
