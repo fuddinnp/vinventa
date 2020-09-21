@@ -500,10 +500,6 @@
             }
         }
 
-        .actions-field-wrapper {
-            flex-direction: column;
-        }
-
         .gray-border-bottom-actions {
             .form-group {
                 padding: 0px 0px 8px;
@@ -516,11 +512,42 @@
             }
 
             .actions-field-wrapper {
+                flex-direction: column;
+
+                .dropdown-with-img {
+                    min-width: 100% !important;
+                }
+
+                .dropdown-with-logos {
+                    li {
+                        min-width: 100%;
+                    }
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+
                 .min-filed-width {
                     min-width: 100%;
                 }
             }
 
+        }
+
+        .conditions-select-boxs {
+            .multiselect {
+                min-width: 100%;
+            }
+
+            .selectBox {
+                margin-right: 0px;
+            }
+
+            select {
+                min-width: 100%;
+                margin-right: 0px;
+            }
         }
     }
 
