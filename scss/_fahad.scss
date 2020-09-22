@@ -3079,7 +3079,9 @@ option {
 
   h2 {
     font-size: 18px;
-    margin-top: 15px;
+    font-weight: 600;
+    color: #4C4C4C;
+    margin-top: 25px;
   }
 
   label {
@@ -3127,6 +3129,10 @@ option {
       align-items: center;
       margin-bottom: 25px;
       width: 100%;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
 
       .min-filed-width {
         min-width: 450px;
