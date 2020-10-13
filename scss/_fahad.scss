@@ -3447,3 +3447,25 @@ option {
 .form-control[readonly] {
   background-color: #d7d7d7 !important;
 }
+
+.default-password-modal-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .checkbox-with-text-row {
+    .label-div {
+      margin-bottom: 0px;
+    }
+  }
+}
+.note-alert-mesg {
+  padding: 10px;
+  color: #776FFF;
+  border: 1px solid #776FFF;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  .alert-heading {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+}
