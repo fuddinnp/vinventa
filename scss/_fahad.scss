@@ -3452,8 +3452,11 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 50px;
   .checkbox-with-text-row {
+    input[type="checkbox"] {
+      margin-bottom: 0px;
+    }
     .label-div {
       margin-bottom: 0px;
     }
