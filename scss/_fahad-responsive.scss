@@ -551,7 +551,17 @@
         }
     }
 
+    .default-password-modal-bottom-row {
+        flex-direction: column;
+
+        .default-pass-btn-div {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
 }
+
 
 /*767 screen end here*/
 /*768 to 1023 screen css*/
