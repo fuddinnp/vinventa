@@ -3452,6 +3452,7 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 60px;
   .checkbox-with-text-row {
     .label-div {
       margin-bottom: 0px;
@@ -3464,8 +3465,12 @@ option {
   border: 1px solid #776FFF;
   margin-bottom: 25px;
   letter-spacing: 1px;
+  font-size: 14px;
   .alert-heading {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
+}
+.default-password-small-width-modal {
+  max-width: 546px !important;
 }
