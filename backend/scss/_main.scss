@@ -192,6 +192,8 @@ header {
 
 
   .logo {
+    width: 138px;
+
     img {
       height: 60px;
       margin: 0px 20px;
@@ -1377,7 +1379,7 @@ footer {
 
   td {
     font-size: 14px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 0px !important;
     vertical-align: inherit;
     color: #4C4C4C;
   }
@@ -1705,12 +1707,12 @@ th {
   width: 0;
   height: 0;
   position: absolute;
-  right: 7px;
+  right: 10px;
   top: 50%;
   margin-top: -3px;
-  border-width: 6px 6px 0 6px;
+  border-width: 5px 5px 0 5px;
   border-style: solid;
-  border-color: grey transparent;
+  border-color: #a4a4a4 transparent;
 }
 
 .dropdown-with-img .dropdown {

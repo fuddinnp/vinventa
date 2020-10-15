@@ -3477,6 +3477,11 @@ option {
 .default-password-small-width-modal {
   max-width: 546px !important;
 }
+.lets-get-width-modal  {
+  .modal-content {
+    border-radius: 0px;
+  }
+}
 .lets-get-started-modal-wrapper {
   padding: 20px;
   .lets-get-modal-header {
@@ -3485,6 +3490,7 @@ option {
     font-weight: 600;
     position: relative;
     p {
+      color: #4C4C4C;
       font-size: 13px;
 font-weight: normal;
 margin-top: 12px;
@@ -3496,4 +3502,9 @@ margin-top: 12px;
         top: -28px;
   }
 }
+}
+.btn-continue {
+  background: transparent;
+  border: 0px solid #c4c4c4;
+  color: #776FFF;
 }

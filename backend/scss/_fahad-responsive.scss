@@ -392,7 +392,176 @@
         padding-left: 0px;
     }
 
+    .list-view-hover-wrapper {
+        padding: 15px;
+
+        .content-wrapper {
+            flex-direction: column;
+
+            .dropdowns-wrapper {
+                margin-right: 0px;
+
+                .dropdown-main-div {
+                    flex-direction: column;
+
+                    .dropdwon-top {
+                        // min-width: 265px;
+                        min-width: 100% !important;
+
+                    }
+
+                    .dropdown-div {
+                        width: 100% !important;
+                    }
+
+                    .mr-4 {
+                        margin-right: 0rem !important;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-boxs-wrapper {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+
+        .view-box:first-child {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .move-arrow-div:last-child {
+        flex-direction: row;
+
+        a {
+            margin: 0px 10px;
+        }
+    }
+
+
+    .list-view-hover-wrapper .content-wrapper .view-boxs-wrapper .view-box {
+        max-width: 100% !important;
+    }
+
+    .field-section-wrapper {
+        padding: 20px 15px;
+
+        .form-group {
+            width: 100%;
+
+            .frequency-dropdown-div {
+                flex-direction: column;
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+
+            .week-check-boxs-wrapper {
+                a {
+                    min-width: 29px;
+                    height: 29px;
+                    font-size: 14px;
+                    padding: 8px;
+                }
+            }
+
+            .hrs-select-group {
+                flex-direction: column;
+
+                .custom-select {
+                    width: 100%;
+                    margin: 5px 0px;
+                }
+            }
+        }
+
+    }
+
+    .poclicy-center-main-warpper {
+        h2 {
+            margin-top: 20px;
+        }
+
+        .gray-border-bottom {
+            flex-direction: column;
+
+            .form-group {
+                padding: 0px 0px 10px;
+
+                label {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+
+        .gray-border-bottom-actions {
+            .form-group {
+                padding: 0px 0px 8px;
+
+
+
+                .custom-select {
+                    padding-bottom: 6px;
+                }
+            }
+
+            .actions-field-wrapper {
+                flex-direction: column;
+
+                .dropdown-with-img {
+                    min-width: 100% !important;
+                }
+
+                .dropdown-with-logos {
+                    li {
+                        min-width: 100%;
+                    }
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+
+                .min-filed-width {
+                    min-width: 100%;
+                }
+            }
+
+        }
+
+        .conditions-select-boxs {
+            .multiselect {
+                min-width: 100%;
+            }
+
+            .selectBox {
+                margin-right: 0px;
+            }
+
+            select {
+                min-width: 100%;
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .default-password-modal-bottom-row {
+        flex-direction: column;
+
+        .default-pass-btn-div {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
 }
+
 
 /*767 screen end here*/
 /*768 to 1023 screen css*/
@@ -416,6 +585,21 @@
 
         .region-checkbox {
             padding: 0px !important;
+        }
+    }
+
+    .list-view-hover-wrapper .content-wrapper {
+        flex-direction: column;
+
+        .view-boxs-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+
+            .view-box {
+                max-width: 100%;
+
+            }
         }
     }
 }
