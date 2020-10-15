@@ -3477,3 +3477,23 @@ option {
 .default-password-small-width-modal {
   max-width: 546px !important;
 }
+.lets-get-started-modal-wrapper {
+  padding: 20px;
+  .lets-get-modal-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    p {
+      font-size: 13px;
+font-weight: normal;
+margin-top: 12px;
+    }
+
+    .lets-get-close {
+        position: absolute;
+        right: -28px;
+        top: -28px;
+  }
+}
+}

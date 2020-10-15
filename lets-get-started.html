@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="js/perfect-scrollbar.js"></script>
+
+    <title>Vinventa</title>
+</head>
+
+<body class="">
+    <div class="container-fluid main-wrapper p-0">
+        <div class="main-container">
+            <div class="row m-0">
+                <div class="col-lg-12">
+                    <section id="content">
+                        <div class="section-wrapper">
+                            <div class="section-wrapper" style="display: flex; margin-top: 20px;">
+                                <div>
+                                    <h1>Model Links</h1>
+                                    <div class="links-model">
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <p>
+                                            <a href="#" data-toggle="modal" data-target="#exampleModal">Lets Get Started</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section ends here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Addaing a Adapter Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="col-lg-5 modal-wrapper-xl lets-get-width-modal  mx-auto">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div
+                            class="lets-get-started-modal-wrapper">
+                            <div class="lets-get-modal-header">
+                                <div class="adapter-modal-name ">
+                                    Lets Get Started
+                                    <p>Please find some helpful hints below to get you started</p>
+                                </div>
+
+                                <div class="lets-get-close">
+                                    <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+                                        <span>
+                                            <img src="images/modal-close.svg" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="adapter-modal-content-box pb-4">
+
+                                <div class="adapter-modal-field-row mt-1">
+                                    <div class="note-alert-mesg" >
+                                        <h4 class="alert-heading">NOTE</h4>
+                                        <p>Using default admin password is not recommended and is a security risk. Please Configure new password for Admin user.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="checkbox-with-text-row mb-4">
+                                    <div><input type="radio" name="a" value="a"></div>
+                                    <div class="label-div mr-3 mb-3">
+                                        Change Default Password
+                                    </div>
+                                    <div><input type="radio" name="a" value="b"></div>
+                                    <div class="label-div mr-3 mb-3">
+                                        Keep Default Password
+                                    </div>
+                                    <!-- <div><input type="radio" name="a" value="c"></div>
+                                    <div class="label-div mb-3 ">
+                                        Monthly
+                                    </div> -->
+                                </div>
+
+                                <div class="adapter-modal-field-row">
+                                    <div class="">
+                                        <label>New Password</label>
+                                        <input type="text" class="field-large" placeholder="" />
+                                    </div>
+                                </div>
+                                <div class="adapter-modal-field-row mt-3">
+                                    <div class="">
+                                        <label>Confirm Password</label>
+                                        <input type="text" class="field-large" placeholder="" />
+                                    </div>
+                                </div>
+
+                                <div class="default-password-modal-bottom-row">
+                                    <div class="checkbox-with-text-row">
+                                        <div><input type="checkbox"></div>
+                                        <div class="label-div">
+                                            Do not show this warning again
+                                        </div>
+                                        
+
+                                    </div>
+                                    <div class="default-pass-btn-div">
+                                        <button type="button" class="theme-btn graydient-primary-btn">
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#myModal").on("shown.bs.modal", function () {
+            $("#myInput").trigger("focus");
+        });
+    </script>
+
+    <script src="js/custom.js"></script>
+
+    <script>
+        /*
+     Slidemenu
+   */
+        (function () {
+            var $body = document.body,
+                $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
+
+            if (typeof $menu_trigger !== "undefined") {
+                $menu_trigger.addEventListener("click", function () {
+                    $body.className =
+                        $body.className == "menu-active" ? "" : "menu-active";
+                });
+            }
+        }.call(this));
+    </script>
+
+    <script type="text/javascript">
+        function DropDown(el) {
+            this.dd = el;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents: function () {
+                var obj = this;
+
+                obj.dd.on("click", function (event) {
+                    $(this).toggleClass("active");
+                    event.stopPropagation();
+                });
+            },
+        };
+
+        $(function () {
+            var dd = new DropDown($("#dd"));
+
+            $(document).click(function () {
+                // all dropdowns
+                $(".wrapper-dropdown-2").removeClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        // Initialize the plugin
+        const demo = document.querySelector("#scroll");
+        const ps = new PerfectScrollbar(demo);
+
+        // Handle size change
+        document.querySelector("#resize").addEventListener("click", () => {
+            // Get updated values
+            width = document.querySelector("#width").value;
+            height = document.querySelector("#height").value;
+
+            // Set demo sizes
+            demo.style.width = `${width}px`;
+            demo.style.height = `${height}px`;
+
+            // Update Perfect Scrollbar
+            ps.update();
+        });
+    </script>
+</body>
+
+</html>
