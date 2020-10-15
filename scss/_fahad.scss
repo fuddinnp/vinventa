@@ -3478,12 +3478,13 @@ option {
   max-width: 546px !important;
 }
 .lets-get-width-modal  {
+  max-width: 900px !important;
   .modal-content {
     border-radius: 0px;
   }
 }
 .lets-get-started-modal-wrapper {
-  padding: 20px;
+  padding: 30px;
   .lets-get-modal-header {
     text-align: center;
     font-size: 26px;
@@ -3507,4 +3508,21 @@ margin-top: 12px;
   background: transparent;
   border: 0px solid #c4c4c4;
   color: #776FFF;
+}
+.tow-boxs-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+ 
+  .box-div {
+    text-align: center;
+    border: 1px solid #CACACA;
+    padding: 12px;
+    font-size: 14px;
+    color: #4C4C4C;
+    .box-img {
+      margin-bottom: 20px;
+    }
+  }
 }
