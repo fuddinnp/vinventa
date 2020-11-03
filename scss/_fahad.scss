@@ -3532,9 +3532,54 @@ margin-top: 12px;
 .lets-get-modal-content-box {
   h6 {
     text-align: center;
-margin: 26px auto;
-font-size: 16px;
-font-weight: 600;
-color: #4c4c4c;
+    margin: 26px auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4c4c4c;
+  }
+}
+//New css start here
+.system-settings-wrapper {
+  .sliding-left-section {
+    .device-filterleft-bar {
+      margin-top: 0px;
+  }
+  .nav-pills {
+    .nav-link {
+      margin: 0px !important;
+    }
+  }
+  }
+}
+.system-settings-content-wrapper {
+  padding: 40px 50px;
+  height: calc(100% - 160px);
+  .tab-title {
+    font-size: 24px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+}
+.field-section {
+  .d-flex {
+    div {
+      width: 100% !important;
+      .plus-minus-icons {
+        // width: 50%;
+      }
+      &:nth-child(1) {
+        margin-right: 15px;
+      }
+      &:nth-child(4){
+        margin-left: 15px;
+        margin-top: 32px;
+        flex: 1;
+        flex-basis: 300px;       
+      }
+      &:nth-child(2) {
+        margin-right: 15px;
+        
+      }
+    }
   }
 }
