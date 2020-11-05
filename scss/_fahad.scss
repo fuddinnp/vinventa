@@ -3540,6 +3540,7 @@ margin-top: 12px;
 }
 //New css start here
 .system-settings-wrapper {
+
   .sliding-left-section {
     .device-filterleft-bar {
       margin-top: 0px;
@@ -3550,6 +3551,18 @@ margin-top: 12px;
     }
   }
   }
+  .field-section {
+    padding: 20px 0px;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .tabs-aggre {
+    button {
+      margin: 6px 0px;
+    }
+  }
+
 }
 .system-settings-content-wrapper {
   padding: 40px 50px;
