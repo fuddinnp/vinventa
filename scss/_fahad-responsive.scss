@@ -2,6 +2,18 @@
 @media screen and (max-width: 767px) {
     // new css start here
     .system-settings-wrapper {
+        flex-direction: column;
+        .sliding-left-section {
+            position: inherit;
+            a {
+                display: none;
+            }
+        }
+        .sliding-right-section {
+            position: inherit;
+left: inherit;
+width: auto;
+        }
         .inner-tab-content-right-col {
           padding: 20px 12px 30px;
         }
@@ -18,9 +30,13 @@
                 display: none;
             }
         }
+        .d-flex {
+            flex-direction: column;
+        }
         .field-section {
 
             .d-flex {
+                flex-direction: column;
                 div:nth-child(4) {
                     margin-top: 10px; 
                     margin-left: 0px;
