@@ -3539,17 +3539,31 @@ margin-top: 12px;
   }
 }
 //New css start here
+.sec-system-settings-wrapper {
+  .page-heading {
+    font-family: 'proxima-regular' !important;
+color: #4c4c4c !important;
+  }
+}
 .system-settings-wrapper {
 
   .sliding-left-section {
     .device-filterleft-bar {
       margin-top: 0px;
+      .filter-icon-group {
+        width: 25px;
+      }
   }
   .nav-pills {
     .nav-link {
       margin: 0px !important;
     }
   }
+  }
+  .tabs-aggre {
+    button {
+      padding-left: 8px !important;
+    }
   }
   .field-section {
     padding: 20px 0px;
@@ -3567,10 +3581,16 @@ margin-top: 12px;
 .system-settings-content-wrapper {
   padding: 40px 50px;
   height: calc(100% - 160px);
+
   .tab-title {
     font-size: 24px;
     color: #4c4c4c;
     margin-bottom: 20px;
+}
+.summary-details-row {
+  .col-lg-6 {
+    padding-left: 0px;
+  }
 }
 }
 .field-section {

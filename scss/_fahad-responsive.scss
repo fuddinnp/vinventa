@@ -11,8 +11,8 @@
         }
         .sliding-right-section {
             position: inherit;
-left: inherit;
-width: auto;
+            left: inherit;
+            width: auto;
         }
         .inner-tab-content-right-col {
           padding: 20px 12px 30px;
@@ -46,6 +46,13 @@ width: auto;
                 } 
             }  
         }
+    }
+    .system-settings-content-wrapper {
+        .summary-details-row {
+            .col-lg-6 {
+              padding-left: 15px;
+            }
+          }
     }
     //new css end here
 
