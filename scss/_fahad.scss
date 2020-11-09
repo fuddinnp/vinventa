@@ -3544,7 +3544,7 @@ margin-top: 12px;
   grid-template-columns: auto 1fr;
   align-items: center;
   text-align: left;
-  grid-gap: 10px; 
+  grid-gap: 14px; 
 
 .dropdown-toggle {
   display: flex;
@@ -3582,8 +3582,8 @@ margin-bottom: 0px;
   }
   a:last-child {
     border: 1px solid #776FFF;
-padding: 10px 9px;
-margin: 0px auto;
+padding: 8px 9px;
+margin: 0 0 6px 24px;
 width: 136px;
 text-align: center;
 border-radius: 4px;
@@ -3613,7 +3613,11 @@ background: #fff;
 border: 1px solid #CDCDD6;
   }
 }
+.dashboard-icons-div {
+  display: flex;
+  justify-content: space-between;
 
+}
 .sec-system-settings-wrapper {
   .page-heading {
     font-family: 'proxima-regular' !important;
