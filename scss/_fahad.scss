@@ -3539,6 +3539,36 @@ margin-top: 12px;
   }
 }
 //New css start here
+.widget-box {
+  position: relative;
+  overflow: visible;
+  .widget-icons-div {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 6px;
+    align-items: center;
+    
+    .pointer-top-img {
+      position: absolute;
+top: -12px;
+right: 19px;
+    }
+    .dropdown-menu {
+      border-radius: 0px;
+      margin-left:-120px;
+      top: 6px !important;
+      
+      a {
+        font-size: 12px;
+        text-decoration: none;
+        margin: 5px 0px;
+      }
+    }
+  }
+}
 .dashoard-dropdwon-btns-div {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -3583,7 +3613,7 @@ margin-bottom: 0px;
   a:last-child {
     border: 1px solid #776FFF;
 padding: 8px 9px;
-margin: 0 0 6px 24px;
+margin: 10px 0 6px 24px;
 width: 136px;
 text-align: center;
 border-radius: 4px;
