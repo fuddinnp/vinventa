@@ -3546,6 +3546,11 @@ display: grid;
 grid-template-columns: 315px 1fr!important;
 grid-gap: 5px !important;
 }
+.dropdown-menu
+ {
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.31); 
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.31);
+ }
 .widget-box {
   position: relative;
   overflow: visible;
@@ -3576,6 +3581,13 @@ right: 19px;
     }
   }
 }
+.dashboard-search-with-dropdown {
+  .dropdown-menu
+ {
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.0); 
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.0);
+ }
+}
 .dashoard-dropdwon-btns-div {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -3597,6 +3609,8 @@ right: 19px;
   }
   .dropdown-menu {
     border-radius: 0px;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.31); 
+box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.31);
     a {
       text-decoration: none;
     }

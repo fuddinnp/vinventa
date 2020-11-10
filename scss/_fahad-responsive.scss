@@ -54,6 +54,15 @@
             }
           }
     }
+    .dashboard-top-sec-new {
+        grid-template-columns: repeat(1, 1fr) !important;
+        .dashoard-dropdwon-btns-div {
+            margin-bottom: 15px;
+        }
+        .dashboard-dropdown-menu {
+            margin-bottom: 0px !important;
+        }
+    }
     //new css end here
 
     .profile-box {
