@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="js/perfect-scrollbar.js"></script>
 
@@ -38,7 +38,8 @@
                                         <br />
                                         <br />
                                         <p>
-                                            <a href="#" data-toggle="modal" data-target="#exampleModal">Create Widget</a>
+                                            <a href="#" data-toggle="modal" data-target="#exampleModal">Create
+                                                Widget</a>
                                         </p>
                                     </div>
                                 </div>
@@ -55,7 +56,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="col-lg-4 modal-wrapper-xl max-small-width-modals  mx-auto">
+            <div class="col-lg-5 modal-wrapper-xl max-small-width-modals  mx-auto">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div
@@ -82,28 +83,196 @@
 
                             <div class="adapter-modal-content-box pb-3">
 
-                                <div class="adapter-modal-field-row">
-                                    <div class="">
-                                        <label>Dashboard Name</label>
-                                        <input type="text" class="field-large" placeholder="" />
+                                <div class="adapter-modal-field-row flex-column  ">
+
+                                    <div class="two-col-grid">
+                                        <div class="flex-50">Widget Title</div>
+                                        <div>
+                                            <input id="input_hostName" type="text" class="form-control"
+                                                placeholder="New Dashboard">
+                                        </div>
                                     </div>
+
+                                    <div class="two-col-grid">
+                                        <div class="flex-50">Widget Type</div>
+                                        <div>
+                                            <!-- <input id="input_hostName" type="text" class="form-control"
+                                                placeholder="Query Comparision"> -->
+                                                <select name="" class="custom-select" id="">
+                                                    <option value="">Query Comparision</option>
+                                                    <option value="">Query Comparision 1</option>
+                                                    <option value="">Query Comparision 2</option>
+                                                </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="two-col-grid">
+                                        <div class="flex-50">Widget Presentation</div>
+                                        <div>
+                                            <div id="dd" class="dropdown-with-img" tabindex="1">
+                                                <div class="dropdown-with-img-select v-line-space">
+                                                  <div class="select-top-header">
+                                                    <div class="dropdown-logo">
+                                                        <img src="images/icon-pie-chart.svg">
+                                                      </div>
+                                                      <div>
+                                                        Pie
+                                                      </div>
+                                                  </div>
+                
+                                                  <ul class="dropdown dropdown-with-logos">
+                                                    <li>
+                                                      <a href="#">
+                                                        <div class="dropdown-logo">
+                                                            <img src="images/icon-pie-chart.svg">
+                                                        </div>
+                                                        <div>
+                                                          Pie
+                                                        </div>
+                                                      </a>
+                                                    </li>
+                
+                                                    <li>
+                                                        <a href="#">
+                                                          <div class="dropdown-logo">
+                                                              <img src="images/icon-pie-chart.svg">
+                                                          </div>
+                                                          <div>
+                                                            Pie
+                                                          </div>
+                                                        </a>
+                                                      </li>
+                
+                                                      <li>
+                                                        <a href="#">
+                                                          <div class="dropdown-logo">
+                                                              <img src="images/icon-pie-chart.svg">
+                                                          </div>
+                                                          <div>
+                                                            Pie
+                                                          </div>
+                                                        </a>
+                                                      </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="two-col-grid">
+                                        <div class="flex-50">Query Selection</div>
+                                        <div>
+                                            <div class="checkbox-with-text-row ">
+                                                <div class="width-auto">
+                                                    <input id="chk_use_DHCP" type="radio" name="a" value="a">
+                                                </div>
+                                                <div class="label-div mr-3 width-auto">
+                                                    Assets
+                                                </div>
+                                                <div class="width-auto">
+                                                    <input id="chk_use_Select" checked="" type="radio" name="a"
+                                                        value="b"></div>
+                                                <div class="label-div ">
+                                                    Users
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-select-query-row">
+                                        
+                                        <select name="" class="custom-select" id="">
+                                            <option value="">Select Query</option>
+                                            <option value="">Select Query 1</option>
+                                            <option value="">Select Query 2</option>
+                                        </select>
+                                        <!-- <input id="input_hostName" type="text" class="form-control"
+                                            placeholder="Select querySelector"> -->
+
+                                        <!-- <input id="input_hostName" type="text" class="form-control"
+                                            placeholder="Yellow Dropdown"> -->
+
+                                            <div id="ddd" class="dropdown-with-img" tabindex="1">
+                                                <div class="dropdown-with-img-select v-line-space" style="height: 33px;">
+                                                    <div class="select-top-header">
+                                                        <div class="dropdown-logo">
+                                                            <span class="yellow-box">&nbsp;</span>
+                                                          </div>
+                                                          
+                                                    </div>                                                    
+                
+                                                  <ul class="dropdown dropdown-with-logos">
+                                                    <li>
+                                                      <a href="#">
+                                                        <div class="dropdown-logo">
+                                                            <span class="green-box">&nbsp;</span>
+                                                        </div>
+                                                       
+                                                      </a>
+                                                    </li>
+                
+                                                    <li>
+                                                      <a href="#">
+                                                        <div class="dropdown-logo">
+                                                            <span class="blue-box">&nbsp;</span>
+                                                        </div>
+                                                       
+                                                      </a>
+                                                    </li>
+                
+                                                    <li>
+                                                      <a href="#">
+                                                        <div class="dropdown-logo">
+                                                            <span class="red-box">&nbsp;</span>
+                                                        </div>
+                                                        
+                                                      </a>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            
+                                            <!-- <select name="" class="custom-select" id="">
+                                                <option value="">Dropdown</option>
+                                                <option value="">Select Query 1</option>
+                                                <option value="">Select Query 2</option>
+                                            </select> -->
+
+                                        <a href="#"><img src="images/plus-icon-circle.svg" alt="Plus"></a>
+                                    </div>
+
+
+                                    <div class="device-seen-row-box mb-2">
+
+                                        <div class="device-seen-row-grid">
+                                            <div>Devices seen in last 30 days</div>
+                                            <div> <span class="status-green"> </span> </div>
+                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                        </div>
+
+                                        <div class="device-seen-row-grid">
+                                            <div>Devices seen in last 7 days</div>
+                                            <div> <span class="status-red"> </span> </div>
+                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                        </div>
+
+                                        <div class="device-seen-row-grid">
+                                            <div>All installed software on devices</div>
+                                            <div> <span class="status-blue"> </span> </div>
+                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
                                 </div>
-                                <!-- <div class="adapter-modal-field-row mt-3">
-                                    <div class="">
-                                        <label>Confirm Password</label>
-                                        <input type="text" class="field-large" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="adapter-modal-field-row mt-3">
-                                    <div class="alert alert-success" role="alert">
-                                        <p>Your password has been changed successfully</p>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="adapter-modal-field-row mt-3">
-                                    <div class="alert alert-danger" role="alert">
-                                        Error message goes here
-                                    </div>
-                                </div> -->
+
 
 
                                 <div class="adapter-modal-bottom-row mt-3">
@@ -133,6 +302,12 @@
     <script src="js/custom.js"></script>
 
     <script>
+
+
+
+
+
+
         /*
      Slidemenu
    */
@@ -166,13 +341,14 @@
         };
 
         $(function () {
-            var dd = new DropDown($("#dd"));
+            var dd = new DropDown($("#dd, #ddd"));
 
             $(document).click(function () {
                 // all dropdowns
                 $(".wrapper-dropdown-2").removeClass("active");
             });
         });
+
     </script>
 
     <script>

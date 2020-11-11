@@ -63,6 +63,25 @@
             margin-bottom: 0px !important;
         }
     }
+    .two-col-grid {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 0px !important;
+        .checkbox-with-text-row {
+            .label-div {
+                margin-right: 15px !important;
+            }
+        }
+    }
+    .device-seen-row-box {
+        margin-top: 0px !important;
+    }
+    .modal-add-connections-wrapper .adapter-modal-field-row {
+        .width-auto {
+          width: auto !important;
+        }
+      }
     //new css end here
 
     .profile-box {

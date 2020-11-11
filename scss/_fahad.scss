@@ -3764,3 +3764,141 @@ color: #4c4c4c !important;
     }
   }
 }
+//create widget css start here
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  .two-col-grid {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .flex-50 {
+      flex-basis: 50%;
+    }
+  }
+
+  .checkbox-with-text-row .label-div {
+    margin-bottom: 0px;
+  }
+  .custom-select {
+    height: 36px !important;
+    background: #fff url(../images/down-arrow.svg) no-repeat scroll 97% 13px;
+  }
+  .yellow-box {
+    width: 20px;
+    height: 20px;
+    background: #398d01;
+  }
+}
+
+.modal-add-connections-wrapper .adapter-modal-field-row {
+  .width-auto {
+    width: auto !important;
+  }
+}
+.select-top-header {
+  width: auto !important;
+  display: grid;
+  grid-template-columns: 28px auto;
+  align-items: center;
+  padding: 7px 2px;
+.dropdown-logo {
+  width: auto !important;
+  img {
+    width: 20px;
+  }
+}
+}
+.dropdown-with-img {
+  border-right:1px solid #ccc;
+}
+.dropdown-with-logos {
+  a {
+    display: grid;
+  grid-template-columns: 28px auto;
+  align-items: center;
+  .dropdown-logo {
+    width: auto !important;
+    img {
+      width: 20px;
+    }
+  }
+}
+}
+.dropdown-logo {
+  .yellow-box {
+    width: 15px;
+    height: 15px;
+    background: #FFC700;
+    display: inline-block;
+  }
+  .green-box {
+    width: 15px;
+    height: 15px;
+    background: #21C393;
+    display: inline-block;
+  }
+  .blue-box {
+    width: 15px;
+    height: 15px;
+    background: #43DDC7 ;
+    display: inline-block;
+  }
+  .red-box {
+    width: 15px;
+    height: 15px;
+    background: #F65E5F;
+    display: inline-block;
+  }
+ }
+.modal-select-query-row {
+  display: grid;
+  grid-template-columns: 68% auto auto;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.device-seen-row-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cdcdd6;
+  margin-top: 20px;
+}
+.device-seen-row-grid {
+  display: grid;
+  grid-template-columns: 78% auto auto;
+  grid-gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #cdcdd6;
+  padding: 9px 16px;
+  &:last-child {
+    border-bottom: 0px;
+  }
+
+  div:last-child {
+    text-align: right;
+  }
+
+  .status-green {
+    width: 40px;
+    height: 6px;
+    background: #21c393;
+    display: inline-block;
+  }
+
+  .status-red {
+    width: 40px;
+    height: 6px;
+    background: #f65e5f;
+    display: inline-block;
+  }
+
+  .status-blue {
+    width: 40px;
+    height: 6px;
+    background: #4cc0f5;
+    display: inline-block;
+  }
+}
+
