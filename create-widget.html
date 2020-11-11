@@ -73,7 +73,7 @@
                                     <a href="#" class="adapter-modal-help-link hidden">
                                         Help
                                     </a>
-                                    <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+                                    <button id="btn_closeIcon" type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
                                         <span>
                                             <img src="images/modal-close.svg" />
                                         </span>
@@ -88,7 +88,7 @@
                                     <div class="two-col-grid">
                                         <div class="flex-50">Widget Title</div>
                                         <div>
-                                            <input id="input_hostName" type="text" class="form-control"
+                                            <input id="input_newDashboard" type="text" class="form-control"
                                                 placeholder="New Dashboard">
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                         <div>
                                             <!-- <input id="input_hostName" type="text" class="form-control"
                                                 placeholder="Query Comparision"> -->
-                                                <select name="" class="custom-select" id="">
+                                                <select id="ddl_queryComparision" name="" class="custom-select" id="">
                                                     <option value="">Query Comparision</option>
                                                     <option value="">Query Comparision 1</option>
                                                     <option value="">Query Comparision 2</option>
@@ -109,7 +109,7 @@
                                     <div class="two-col-grid">
                                         <div class="flex-50">Widget Presentation</div>
                                         <div>
-                                            <div id="dd" class="dropdown-with-img" tabindex="1">
+                                            <div id="dd ddl_pieSelect" class="dropdown-with-img" tabindex="1">
                                                 <div class="dropdown-with-img-select v-line-space">
                                                   <div class="select-top-header">
                                                     <div class="dropdown-logo">
@@ -165,13 +165,13 @@
                                         <div>
                                             <div class="checkbox-with-text-row ">
                                                 <div class="width-auto">
-                                                    <input id="chk_use_DHCP" type="radio" name="a" value="a">
+                                                    <input id="chk_assets" type="radio" name="a" value="a">
                                                 </div>
                                                 <div class="label-div mr-3 width-auto">
                                                     Assets
                                                 </div>
                                                 <div class="width-auto">
-                                                    <input id="chk_use_Select" checked="" type="radio" name="a"
+                                                    <input id="chk_users" checked="" type="radio" name="a"
                                                         value="b"></div>
                                                 <div class="label-div ">
                                                     Users
@@ -184,7 +184,7 @@
 
                                     <div class="modal-select-query-row">
                                         
-                                        <select name="" class="custom-select" id="">
+                                        <select id="ddl_selectQuery" name="" class="custom-select" id="">
                                             <option value="">Select Query</option>
                                             <option value="">Select Query 1</option>
                                             <option value="">Select Query 2</option>
@@ -195,7 +195,7 @@
                                         <!-- <input id="input_hostName" type="text" class="form-control"
                                             placeholder="Yellow Dropdown"> -->
 
-                                            <div id="ddd" class="dropdown-with-img" tabindex="1">
+                                            <div id="ddd ddl_colorSelect" class="dropdown-with-img" tabindex="1">
                                                 <div class="dropdown-with-img-select v-line-space" style="height: 33px;">
                                                     <div class="select-top-header">
                                                         <div class="dropdown-logo">
@@ -241,7 +241,7 @@
                                                 <option value="">Select Query 2</option>
                                             </select> -->
 
-                                        <a href="#"><img src="images/plus-icon-circle.svg" alt="Plus"></a>
+                                        <a href="#" id="link_plusIcon"><img src="images/plus-icon-circle.svg" alt="Plus"></a>
                                     </div>
 
 
@@ -250,19 +250,19 @@
                                         <div class="device-seen-row-grid">
                                             <div>Devices seen in last 30 days</div>
                                             <div> <span class="status-green"> </span> </div>
-                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                            <div> <a href="#" id="link_trashIcon" > <img src="images/icon-trash.svg"> </a></div>
                                         </div>
 
                                         <div class="device-seen-row-grid">
                                             <div>Devices seen in last 7 days</div>
                                             <div> <span class="status-red"> </span> </div>
-                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                            <div> <a href="#" id="link_trashIcon"> <img src="images/icon-trash.svg"> </a></div>
                                         </div>
 
                                         <div class="device-seen-row-grid">
                                             <div>All installed software on devices</div>
                                             <div> <span class="status-blue"> </span> </div>
-                                            <div> <a href="#"> <img src="images/icon-trash.svg"> </a></div>
+                                            <div> <a href="#" id="link_trashIcon"> <img src="images/icon-trash.svg"> </a></div>
                                         </div>
 
 
@@ -277,10 +277,10 @@
 
                                 <div class="adapter-modal-bottom-row mt-3">
                                     <div style="margin: 0px;">
-                                        <button type="button" class="cancel-btn">
+                                        <button id="btn_cancle" type="button" class="cancel-btn">
                                             Cancel
                                         </button>
-                                        <button type="button" class="theme-btn graydient-primary-btn">
+                                        <button id="btn_save" type="button" class="theme-btn graydient-primary-btn">
                                             Save
                                         </button>
                                     </div>

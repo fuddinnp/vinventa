@@ -82,6 +82,21 @@
           width: auto !important;
         }
       }
+      .device-seen-row-grid {
+        display: grid;
+        grid-template-columns: 67% auto auto;
+        grid-gap: 8px;
+        align-items: center;
+        border-bottom: 1px solid #cdcdd6;
+        padding: 9px;   
+      }
+      .dropdown-more-wrapper {
+        .dropdown-menu {
+            .pointer-top-img {
+               display: none !important;
+              }
+        }
+      }
     //new css end here
 
     .profile-box {
