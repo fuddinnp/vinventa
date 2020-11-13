@@ -2202,6 +2202,18 @@ th {
   }
 }
 
+.theme-btn-b {
+  padding: 10px 22px;
+  font-size: 16px;
+  background: #545b62;
+  border: 0px;
+  color: white;
+
+  &:hover {
+    background: #41474d;
+  }
+}
+
 .theme-btn-big {
   padding: 12px 22px;
 }

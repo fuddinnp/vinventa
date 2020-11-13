@@ -97,6 +97,14 @@
               }
         }
       }
+      .dashboard-top-title-div {
+          flex-direction: column;
+
+          .grid-auto {
+              grid-template-columns: 1fr;
+              margin-top: 15px !important;
+          }
+      }
     //new css end here
 
     .profile-box {

@@ -3965,3 +3965,9 @@ color: #4c4c4c !important;
   background-image: linear-gradient(rgba(4, 169, 180, .15) .1em, transparent .1em), linear-gradient(90deg, rgba(4, 169, 180, .15) .1em, transparent .1em);
   background-size: 1em 1em;
 }
+.grid-auto {
+  display: grid;
+grid-template-columns: auto auto auto;
+align-items: center;
+grid-gap: 15px;
+}
