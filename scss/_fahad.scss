@@ -3999,3 +3999,19 @@ grid-gap: 15px;
   transition: all 800ms;
   opacity: 1;
 }
+//system setting page --- date and time
+.time-sync-div {
+  display: grid;
+grid-template-columns: auto auto auto;
+align-items: center;
+grid-gap: 10px;
+justify-content: start;
+input {
+  width: 50px !important;
+}
+}
+.four-dropdwon-div {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+grid-gap: 10px;
+}

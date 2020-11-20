@@ -1,5 +1,13 @@
 // Responsive css
 @media screen and (max-width: 767px) {
+    // system setting date and time 
+    .four-dropdwon-div {
+        grid-template-columns: 1fr;
+        margin-bottom: 25px;
+        .form-group {
+            margin-bottom: 0px;
+        }
+    }
     // new css start here
     .system-settings-wrapper {
         flex-direction: column;
