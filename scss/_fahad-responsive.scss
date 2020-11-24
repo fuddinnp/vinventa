@@ -8,6 +8,12 @@
             margin-bottom: 0px;
         }
     }
+    .summary-details-row .hidden {
+        display: none!important;
+    }
+    .theme-btn-b {
+        width: 100%;
+    }
     // new css start here
     .system-settings-wrapper {
         flex-direction: column;
