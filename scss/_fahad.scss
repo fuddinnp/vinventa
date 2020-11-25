@@ -3746,10 +3746,10 @@ color: #4c4c4c !important;
     }
   }
   .field-section {
-    padding: 20px 0px;
+    padding: 20px;
   }
   .static-routes-div {
-    padding: 20px;
+    padding: 20px 33px;
   }
   .tabs-aggre {
     button {
@@ -3779,6 +3779,11 @@ color: #4c4c4c !important;
       width: 100% !important;
       .plus-minus-icons {
         // width: 50%;
+        display: grid;
+grid-gap: 14px;
+grid-template-columns: auto auto;
+justify-content: center;
+align-items: center;
       }
       &:nth-child(1) {
         margin-right: 15px;
