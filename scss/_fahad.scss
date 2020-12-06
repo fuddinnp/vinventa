@@ -4020,3 +4020,22 @@ input {
 grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 grid-gap: 10px;
 }
+.eyes-icon-password {
+  position: absolute;
+top: 35px;
+right: 12px;
+}
+.summary-details-row .eyes-icon-password input[type="checkbox"] {
+  border: 1px solid #b9babd;
+  background: #fff;
+  width: 12px;
+  display: none;
+}
+.summary-details-row .eyes-icon-password label.show-password-icon {
+  background: url(../images/eye-show-icon.svg) no-repeat 0px center;
+  cursor: pointer;
+  padding-left: 23px;
+}
+.summary-details-row .eyes-icon-password  input[type="checkbox"]:checked + label {
+  background-image: url(../images/eye-show-icon-line.svg);
+}
