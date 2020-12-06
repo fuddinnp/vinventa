@@ -476,7 +476,7 @@
                </div>
 
                <div class="user-group-checked-row">
-                <div class="form-group col-lg-10 pl-0">
+                <div class="form-group">
                  <div class="dropdown-select-native">
                   <select id="ddl_selectQuery" name="" class="custom-select">
                    <option value="">Select Query</option>
@@ -485,6 +485,15 @@
                   </select>
                  </div>
                 </div>
+                <div class="form-group hidden">
+                  <div class="dropdown-select-native">
+                   <select id="ddl_selectQuery" name="" class="custom-select">
+                    <option value="">Select Query</option>
+                    <option value="">Select Query 1</option>
+                    <option value="">Select Query 2</option>
+                   </select>
+                  </div>
+                 </div>
                 
                </div>
 
@@ -711,7 +720,161 @@
              </div>
             </div>
 
-            <div class="carousel-item"></div>
+            <div class="carousel-item">
+              <div class="widget-grid-two-legend-wrapper">
+                <div class="widget-grid-two-legend-left-column">
+                 <div class="widget-legend-title-row">
+                  <div class="form-group">
+                   <label>Title</label>
+                   <input type="text" id="input_assetsDistri" class="form-control" value="Assets Distribution">
+                  </div>
+                 </div>
+  
+                 <div class="widget-legend-heading">
+                  Widget Perview
+                 </div>
+  
+                 <div class="legend-box">
+                  <div class="legend-box-heading">
+                   Assets Distribution
+                  </div>
+  
+                  <div class="legend-goes-here">
+                   <img src="images/pie-chart.png">
+                  </div>
+  
+                  <div class="legend-guide">
+                   <div class="legend-guide-item-row">
+                    <div class="legend-yellow"></div>
+                    <div>Label 1</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-red"></div>
+                    <div>Label 2</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-green"></div>
+                    <div>Label 3</div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+  
+                <div class="widget-grid-two-legend-right-column">
+                 <div class="user-group-row mb-4">
+                  <div>
+                   <input type="checkbox" checked="">
+                  </div>
+  
+                  <div>Use Grouping</div>
+                 </div>
+  
+                 <div class="user-group-checked-row">
+                  <div class="form-group">
+                   <div class="dropdown-select-native">
+                    <select id="ddl_selectQuery" name="" class="custom-select">
+                     <option value="">Select Query</option>
+                     <option value="">Select Query 1</option>
+                     <option value="">Select Query 2</option>
+                    </select>
+                   </div>
+                  </div>
+                  
+                 </div>
+  
+                 <div class="user-group-checked-row">
+                  <div class="form-group">
+                   <label>Group By</label>
+                   <div class="dropdown-select-native">
+                    <select id="ddl_selectQuery" name="" class="custom-select">
+                     <option value="">Field</option>
+                     <option value="">Connector</option>
+                    </select>
+                   </div>
+                  </div>
+  
+                  <div class="form-group">
+                   <label>&nbsp;</label>
+                   <div class="dropdown-select-native">
+                    <select id="ddl_selectQuery" name="" class="custom-select">
+                     <option value="">OS Type</option>
+                     <option value="">Select Query 1</option>
+                     <option value="">Select Query 2</option>
+                    </select>
+                   </div>
+                  </div>
+                 </div>
+  
+                 <div class="accordion-group accordion create-widget-accordion-wrapper">
+                  <div class="accordion-heading">
+                   <a class="accordion-toggle" id="link_additionalSettings" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true">
+                    Additional Settings
+                    <span>
+                      <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                      <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                     </span>
+                   </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse show" style="">
+                   <div class="accordion-inner">
+                    <!-- Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... Anim
+                                                                           pariatur cliche... Anim pariatur cliche...
+                                                                           Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... -->
+                    <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                    <div class="accordion" id="accordion1">
+                     <div class="accordion-group pl-3 mt-3">
+                      <div class="accordion-heading">
+                       <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOneA" aria-expanded="false">
+                        Filter
+                        <span>
+                          <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                          <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                         </span>
+                       </a>
+                      </div>
+                      <div id="collapseOneA" class="accordion-body collapse" style="">
+                       <div class="accordion-inner">
+                        <div class="widget-checkbox-filter-row">
+                         <div class="widget-checkbox-filter-box">
+                          <div>
+                           <input type="checkbox">
+                          </div>
+                          <div>Show on Top</div>
+                         </div>
+  
+                         <div class="widget-checkbox-filter-box">
+                          <div class="checkbox-big">
+                           <input type="tel" id="input_showOnTop" class="form-control show-onotop-input" placeholder="">
+                          </div>
+                          <div>Entries</div>
+                         </div>
+  
+                         <div></div>
+                        </div>
+  
+                        <div class="widget-checkbox-filter-row">
+                         <div class="widget-checkbox-filter-box">
+                          <div>
+                           <input type="checkbox">
+                          </div>
+                          <div>Uses Filter</div>
+                         </div>
+  
+                         <div></div>
+                        </div>
+                       
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+            </div>
 
             <div class="carousel-item"></div>
            </div>
