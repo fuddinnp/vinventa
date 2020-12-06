@@ -100,15 +100,15 @@
         <div class="row">
          <div class="col-md-12">
           <!-- Left right -->
-          <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
+          <!-- <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
            <img src="images/chart_arrow_left.svg" />
           </a>
 
           <a class="carousel-control-next" href="#custCarousel" data-slide="next">
            <img src="images/chart_arrow_right.svg" />
-          </a>
+          </a> -->
 
-          <div id="custCarousel" class="carousel slide widget-slider">
+          <div id="custCarousel" class="carousel slide widget-slider" data-interval="false">
            <div class="slider-bg">
             <!-- Thumbnails -->
             <ol class="carousel-indicators list-inline">
@@ -185,7 +185,7 @@
                <div class="widget-legend-title-row">
                 <div class="form-group">
                  <label>Title</label>
-                 <input type="text" class="form-control" placeholder="Assets Distribution" />
+                 <input type="text" id="input_assetsDistri" class="form-control" placeholder="Assets Distribution" />
                 </div>
                </div>
 
@@ -205,15 +205,15 @@
                 <div class="legend-guide">
                  <div class="legend-guide-item-row">
                   <div class="legend-yellow"></div>
-                  <div>Label 1</div>
+                  <div>Enter Label 1</div>
                  </div>
                  <div class="legend-guide-item-row">
                   <div class="legend-red"></div>
-                  <div>Label 2</div>
+                  <div>Enter Label 2</div>
                  </div>
                  <div class="legend-guide-item-row">
                   <div class="legend-green"></div>
-                  <div>Label 3</div>
+                  <div>Enter Label 3</div>
                  </div>
                 </div>
                </div>
@@ -230,7 +230,7 @@
 
                <div class="add-label-query-row-grid">
                 <div>
-                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Label
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
                                                                             1" />
                 </div>
 
@@ -253,7 +253,7 @@
                </div>
                <div class="add-label-query-row-grid">
                 <div>
-                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Label
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
                                                                             1" />
                 </div>
 
@@ -266,17 +266,17 @@
                 </div>
 
                 <div class="plus-minus-btns">
-                 <button>
+                 <button id="btn_plus">
                   <img src="images/plus-icon-circle.svg" />
                  </button>
-                 <button>
+                 <button id="btn_min">
                   <img src="images/min-icon-circle.svg" />
                  </button>
                 </div>
                </div>
                <div class="add-label-query-row-grid">
                 <div>
-                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Label
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
                                                                             1" />
                 </div>
 
@@ -289,10 +289,10 @@
                 </div>
 
                 <div class="plus-minus-btns">
-                 <button>
+                 <button id="btn_plus">
                   <img src="images/plus-icon-circle.svg" />
                  </button>
-                 <button>
+                 <button id="btn_min">
                   <img src="images/min-icon-circle.svg" />
                  </button>
                 </div>
@@ -324,7 +324,7 @@
                 <!--ACCORDION ITEM TWO-->
                 <div class="accordion-group">
                  <div class="accordion-heading">
-                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+                  <a class="accordion-toggle collapsed" id="link_additionalSettings" data-toggle="collapse" data-parent="#accordion2"
                    href="#collapseTwo">
                    Additional Settings
                    <span>
@@ -344,7 +344,7 @@
                    <div class="accordion" id="accordion1">
                     <div class="accordion-group pl-3 mt-3">
                      <div class="accordion-heading">
-                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                      <a class="accordion-toggle collapsed"  data-toggle="collapse" data-parent="#accordion1"
                        href="#collapseOneA">
                        Colors
                        <span>
@@ -357,7 +357,7 @@
                       <div class="accordion-inner">
                        <div class="inner-legend-colors-row">
                         <div class="inner-legend-colors-col">
-                         <div>Label 1</div>
+                         <div>Enter Label 1</div>
                          <div class="dropdown-select-native-legend">
                           <select id="ddl_selectQuery" name="" class="custom-select" style="
                                                           background-color: #ffc700;
@@ -375,7 +375,7 @@
                          </div>
                         </div>
                         <div class="inner-legend-colors-col">
-                         <div>Label 2</div>
+                         <div>Enter Label 2</div>
                          <div class="dropdown-select-native-legend">
                           <select id="ddl_selectQuery" name="" class="custom-select" style="
                                                           background-color: #00c5d2;
@@ -393,7 +393,7 @@
                          </div>
                         </div>
                         <div class="inner-legend-colors-col">
-                         <div>Label 3</div>
+                         <div>Enter Label 3</div>
                          <div class="dropdown-select-native-legend">
                           <select id="ddl_selectQuery" name="" class="custom-select" style="
                                                           background-color: #f65e5f;
@@ -429,7 +429,7 @@
                <div class="widget-legend-title-row">
                 <div class="form-group">
                  <label>Title</label>
-                 <input type="text" class="form-control" placeholder="Assets Distribution" />
+                 <input type="text" id="input_assetsDistri" class="form-control" placeholder="Assets Distribution" />
                 </div>
                </div>
 
@@ -449,15 +449,15 @@
                 <div class="legend-guide">
                  <div class="legend-guide-item-row">
                   <div class="legend-yellow"></div>
-                  <div>Label 1</div>
+                  <div>Enter Label 1</div>
                  </div>
                  <div class="legend-guide-item-row">
                   <div class="legend-red"></div>
-                  <div>Label 2</div>
+                  <div>Enter Label 2</div>
                  </div>
                  <div class="legend-guide-item-row">
                   <div class="legend-green"></div>
-                  <div>Label 3</div>
+                  <div>Enter Label 3</div>
                  </div>
                 </div>
                </div>
@@ -466,14 +466,14 @@
               <div class="widget-grid-two-legend-right-column">
                <div class="user-group-row mb-4">
                 <div>
-                 <input type="checkbox" />
+                 <input type="checkbox" checked />
                 </div>
 
                 <div>Use Grouping</div>
                </div>
 
                <div class="user-group-checked-row">
-                <div class="form-group">
+                <div class="form-group col-lg-10 pl-0">
                  <div class="dropdown-select-native">
                   <select id="ddl_selectQuery" name="" class="custom-select">
                    <option value="">Select Query</option>
@@ -482,6 +482,7 @@
                   </select>
                  </div>
                 </div>
+                
                </div>
 
                <div class="user-group-checked-row">
@@ -510,7 +511,7 @@
 
                <div class="accordion-group accordion create-widget-accordion-wrapper">
                 <div class="accordion-heading">
-                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+                 <a class="accordion-toggle collapsed" id="link_additionalSettings" data-toggle="collapse" data-parent="#accordion2"
                   href="#collapseTwo">
                   Additional Settings
                   <span>
@@ -551,7 +552,7 @@
 
                        <div class="widget-checkbox-filter-box">
                         <div class="checkbox-big">
-                         <input type="text" class="form-control" placeholder="3" />
+                         <input type="tel" id="input_showOnTop" class="form-control show-onotop-input" placeholder="3" />
                         </div>
                         <div>Entries</div>
                        </div>
@@ -569,6 +570,7 @@
 
                        <div></div>
                       </div>
+                      <div class="includ-exclude-div">
 
                       <div class="include-exclude-checkbox-row">
                        <div class="include-exclude-checkbox-column">
@@ -600,7 +602,7 @@
                          <div class="legend-yellow"></div>
                          <div>WIndows 7</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -610,7 +612,7 @@
                          <div class="legend-green"></div>
                          <div>WIndows 8</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -620,7 +622,7 @@
                          <div class="legend-red"></div>
                          <div>WIndows 10</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -630,7 +632,7 @@
                          <div class="legend-yellow"></div>
                          <div>WIndows 7</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -640,7 +642,7 @@
                          <div class="legend-green"></div>
                          <div>WIndows 8</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -650,7 +652,7 @@
                          <div class="legend-red"></div>
                          <div>WIndows 10</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -660,7 +662,7 @@
                          <div class="legend-red"></div>
                          <div>WIndows 7</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -670,7 +672,7 @@
                          <div class="legend-red"></div>
                          <div>WIndows 8</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -680,7 +682,7 @@
                          <div class="legend-red"></div>
                          <div>WIndows 10</div>
                          <div>
-                          <a href="#">
+                          <a href="#" id="link_close">
                            <img src="images/bubble-close-btn.svg">
                           </a>
                          </div>
@@ -695,6 +697,7 @@
                         <button id="btn_save" type="button" class="theme-btn-b btn-secondary">Add</button>
                        </div>
                       </div>
+                    </div>
                      </div>
                     </div>
                    </div>
