@@ -121,20 +121,6 @@ body {
  --body-text-color: #333;
 }
 
-::-webkit-input-placeholder {
- /* Edge */
- color: #b4b4b4;
-}
-
-:-ms-input-placeholder {
- /* Internet Explorer 10-11 */
- color: #b4b4b4;
-}
-
-::placeholder {
- color: #b4b4b4;
-}
-
 ol,
 ul {
  list-style: none;
@@ -3755,6 +3741,7 @@ table .bold-heading {
  margin-top: 20px;
  grid-template-columns: auto auto auto;
  grid-gap: 20px;
+ font-size: 14px;
 }
 
 .legend-guide-item-row {
@@ -3766,21 +3753,21 @@ table .bold-heading {
 }
 
 .legend-yellow {
- background-color: yellow;
+ background-color: #ffc700;
  width: 12px;
  height: 12px;
  border-radius: 100%;
 }
 
 .legend-green {
- background-color: green;
+ background-color: #00c5d2;
  width: 12px;
  height: 12px;
  border-radius: 100%;
 }
 
 .legend-red {
- background-color: red;
+ background-color: #f65e5f;
  width: 12px;
  height: 12px;
  border-radius: 100%;
@@ -3902,6 +3889,7 @@ table .bold-heading {
 .modal-add-connections-wrapper .inner-legend-colors-col {
  select {
   width: 136px;
+  background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 93% 13px;
  }
 }
 
@@ -3979,6 +3967,7 @@ table .bold-heading {
   grid-template-columns: auto auto auto;
   align-items: center;
   font-size: 14px;
+  margin: 6px;
   a {
    display: flex;
   }
