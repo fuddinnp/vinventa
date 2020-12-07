@@ -3881,7 +3881,7 @@ table .bold-heading {
 
 .inner-legend-colors-col {
  display: grid;
- grid-template-columns: auto 1fr;
+ grid-template-columns: 155px 1fr;
  align-items: center;
  grid-gap: 20px;
 }
@@ -3902,7 +3902,6 @@ table .bold-heading {
 
 .widget-checkbox-filter-row {
  display: flex;
-
  padding-left: 20px;
  .widget-checkbox-filter-box {
   margin-top: 5px;
@@ -3919,6 +3918,15 @@ table .bold-heading {
     text-align: center;
    }
  }
+}
+.widget-checkbox-filter-sort-row {
+  display: flex;
+ padding-left: 20px;
+  .user-group-checked-row {
+    select {
+      background: #fff url(../images/drop-arrow-green.png) no-repeat scroll 95% 13px;
+    }
+  }
 }
 
 .checkbox-big {
