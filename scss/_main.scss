@@ -3598,7 +3598,41 @@ table .bold-heading {
 }
 
 // Talha weekend popup
-
+    .carousel-inner .dropdown-toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: #fff;
+      padding: 10px 15px;
+      border: 1px solid #CDCDD6; 
+      color:#6c757d !important;
+     font-size: 15px !important;
+    }
+    
+    .carousel-inner .dashboard-title-menu-dropdown {
+      top: -3px !important;
+      width: 100%;
+      border-radius: 0px; }
+      .carousel-inner .dashboard-title-menu-dropdown a img {
+        width: 10px; }
+      .carousel-inner .dashboard-title-menu-dropdown a:nth-child(1) {
+        border-bottom: 0px solid #a3a2a2;
+        margin-bottom: 0px; }
+      .carousel-inner .dashboard-title-menu-dropdown a:last-child {
+        border: 1px solid #776FFF;
+        padding: 8px 9px;
+        margin: 10px 0 6px 24px;
+        width: 136px;
+        text-align: center;
+        border-radius: 4px;
+        color: #776fff; }
+    .carousel-inner .dropdown-item {
+      font-size: 13px;
+      color: #4c4c4c;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+ 
 .create-widget-main-wrapper {
  width: 1080px;
  min-height: 500px;
@@ -3705,7 +3739,7 @@ table .bold-heading {
 
 .widget-grid-two-legend-wrapper {
  display: grid;
- grid-template-columns: 340px auto;
+ grid-template-columns: 321px auto;
  margin-top: 20px;
  grid-gap: 30px;
 }
@@ -3720,19 +3754,55 @@ table .bold-heading {
 
 .legend-box {
  background: #f6f6f6;
- padding: 40px 20px;
+ padding:20px;
 }
 
 .legend-box-heading {
  font-size: 16px;
  line-height: 23px;
- text-align: center;
  color: #4c4c4c;
 }
-
 .legend-goes-here {
  display: table;
- margin: 20px auto 0;
+ margin: 12px auto 0;
+width: 100%;
+ .tile-box {
+  border: 4px solid #FFC700;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  h5 {
+    font-size: 20px;
+    color: #4c4c4c;
+  }
+  h2 {
+    font-style: normal;
+font-weight: 600;
+font-size: 72px;
+color: #00C5D2;
+padding-top: 15px;
+line-height: 141.5%;
+  }
+  p {
+    font-size: 16px;
+    color: #9DA6AF;
+    line-height: 23px;
+  }
+ }
+
+ .list-chart-div {
+   ul {
+     li{
+      color: #4C4C4C;
+      display: grid;
+      font-size: 14px;
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 15px;
+      align-items: center;
+      margin: 20px 0px;
+     }
+   }
+ }
 }
 
 .legend-guide {
