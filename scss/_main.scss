@@ -3958,20 +3958,19 @@ line-height: 141.5%;
  align-items: center;
  grid-gap: 20px;
 
+ .dropdown-logo {
+  margin-right: 0px;
+  .yellow-box {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .green-box {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
  .dropdown-with-img {
-  width: 60px;
-
-  .dropdown-logo {
-    margin-right: 0px;
-    .yellow-box {
-      width: 18px;
-      height: 18px;
-    }
-    .green-box {
-      width: 18px;
-      height: 18px;
-    }
-  }  
+  width: 60px;  
  }
  
  .dropdown {
@@ -4147,4 +4146,133 @@ line-height: 141.5%;
 }
 .accordion-toggle span .img-plus-icon {
   display: none;
+}
+.c01 {
+  background: #1ABC9C;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c02 {
+  background: #16A085;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c03 {
+  background: #27AE60;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c04 {
+  background: #2ECC71;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c05 {
+  background: #75DDA7;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.c06 {
+  background: #FC6170;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.c07 {
+  background: #2980B9;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.c08 {
+  background: #45B4D0;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.c09 {
+  background: #C0392B;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c10 {
+  background: #D35400;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c11 {
+  background: #F1C40F;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c12 {
+  background: #F39C12;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+
+.c13 {
+  background: #9B59B6;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c14 {
+  background: #AB7698;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.c15 {
+  background: #AB7698;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+
+.c16{
+  background: #CC9988;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c17{
+  background: #46D8D5;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c18{
+  background: #F95D4D;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c19{
+  background: #46D8D5;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.c20{
+  background: #01A3FE;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
 }
