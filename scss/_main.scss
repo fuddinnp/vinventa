@@ -4279,3 +4279,30 @@ line-height: 141.5%;
   height: 18px;
   display: inline-block;
 }
+.table-preview {
+  .table {
+    border: 0px solid #cccccc;
+    color: #7D7D7D;
+    font-size: 13px;
+    thead {
+      background: transparent;
+      
+      th {
+        border-top: 0px solid #cccccc !important;
+        border-bottom: 1px solid #000 !important;
+        padding: 10px 0px;
+      }
+  }
+  tbody {
+    th{
+      font-weight: bold;
+      color: #4C4C4C;
+      padding: 10px 0px;
+    }
+    td {
+      padding: 10px 0px;
+      text-align: center;
+    }
+  }
+  }
+}
