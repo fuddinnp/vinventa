@@ -2023,7 +2023,11 @@ th {
  display: block;
  z-index: 99999999;
 }
-
+.dropdown-menu {
+.mCSB_scrollTools {
+  right: -4px !important;
+}
+}
 .dashboard-top-section-query {
  display: flex;
  align-items: center;
@@ -3796,9 +3800,12 @@ line-height: 145.5px;
 
  .list-chart-div {
   position: relative;
-  overflow: auto;
+  height: 250px;
+  .mCSB_scrollTools {
+    right: -14px !important;
+  }
    ul {
-     height: 250px;
+     
      li{
       color: #4C4C4C;
       display: grid;
@@ -4289,6 +4296,9 @@ line-height: 145.5px;
 .table-preview {
   overflow: auto;
 height: 250px;
+.mCSB_scrollTools {
+  right: -14px !important;
+}
   .table {
     border: 0px solid #cccccc;
     color: #7D7D7D;
