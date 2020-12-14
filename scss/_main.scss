@@ -3888,9 +3888,14 @@ line-height: 145.5px;
   height: calc(100vh - 120px) !important ;
   overflow-y: auto !important;
   margin-bottom: 30px;
+  .mCSB_scrollTools {
+    right: -14px !important;
+  }
  }
 }
-
+.mCustomScrollBox {
+  padding-bottom: 30px !important;
+}
 .dropdown-select-native {
  select {
    color: #6c757d;
