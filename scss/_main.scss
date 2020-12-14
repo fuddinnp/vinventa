@@ -3885,7 +3885,9 @@ line-height: 145.5px;
   margin-top: 20px;
  }
  .carousel-inner {
-  height: calc(100vh - 12px) !important ;
+  height: calc(100vh - 120px) !important ;
+  overflow-y: auto !important;
+  padding-bottom: 25px;
  }
 }
 
