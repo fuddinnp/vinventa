@@ -4005,7 +4005,18 @@ grid-gap: 15px;
   transition: all 800ms;
   opacity: 1;
 }
-//system setting page --- date and time
+//device listing page -- slider section
+.devices-list-slider-section-wrapper {
+  .sliding-right-section {
+    background: transparent !important;
+    .device-table-main {
+      td {
+        padding-left: 8px !important;
+      }
+    }
+  }
+}
+//system setting page -- date and time
 .time-sync-div {
   display: grid;
 grid-template-columns: auto auto auto;
