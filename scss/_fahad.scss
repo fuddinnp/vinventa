@@ -2979,7 +2979,7 @@ table .parent-row,
 
 .sliding-left-section .tab-content {
   position: absolute;
-  top: 100px;
+  top: 56px;
   left: 20px;
   z-index: 8;
   width: 68vw;
@@ -3001,7 +3001,7 @@ table .parent-row,
 
     .tab-content {
       position: absolute;
-      top: 120px;
+      top: 76px;
       left: 232px;
       z-index: 8;
       width: 68vw;
@@ -3348,7 +3348,7 @@ option {
   position: relative;
 
   &:after {
-    content: ""; // ::before and ::after both require content
+    // content: ""; // ::before and ::after both require content
     position: absolute;
     top: 0;
     left: 0;
@@ -4049,4 +4049,72 @@ right: 12px;
 }
 .summary-details-row .eyes-icon-password  input[type="checkbox"]:checked + label {
   background-image: url(../images/eye-show-icon-line.svg);
+}
+
+
+// Assets Inventory Page CSS 
+.assets-inventory-title-div {
+  display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center;
+div {
+  text-align: right;
+  padding-right: 32px;
+}
+}
+.query-icon {
+  margin-left: 12px;
+}
+.assets-inventory-wrapper {
+  .tabs-aggre {
+    a.active {
+      background: #fff;
+      border: 1px solid #c4c4c4 !important;
+    }
+    button {
+      padding: 15px 12px !important;
+      display: flex;
+      &::after {
+        top: 18px !important;
+      }
+      .filter-icon-group {
+        margin-right: 12px !important;
+       
+      }
+    }
+    .active {
+      background: #fff;
+      position: relative;
+      border: 1px solid #c4c4c4;
+      &::before {
+        width: 50px;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        top: 0px;
+        right: -10px;
+        content: "";
+        z-index: 99;
+    }
+
+    }
+    .card-body {
+      padding: 0px !important;
+      ul {
+        
+        li{
+          margin: 15px 0px;
+          a {
+            padding: 15px 12px 15px 42px !important;
+           
+          }
+        }
+      }
+      .active-tab-side-submenu {
+        border-radius: 0px !important;
+      }
+    }
+
+  }
 }

@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+ <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+ <title>Vinventa</title>
+</head>
+
+<body class="">
+ <div class="container-fluid main-wrapper p-0">
+  <div class="main-container">
+   <div class="row m-0">
+    <div class="col-lg-12">
+     <section id="content">
+      <div class="section-wrapper">
+       <div class="section-wrapper" style="display: flex; margin-top: 20px">
+        <div>
+         <h1>Model Links</h1>
+         <div class="links-model">
+          <br />
+          <br />
+          <br />
+          <p>
+           <a href="#" data-toggle="modal" data-target="#exampleModal">Create Widget New</a>
+          </p>
+         </div>
+        </div>
+       </div>
+       <!-- Section ends here -->
+      </div>
+     </section>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Addaing a Adapter Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="create-widget-main-wrapper mx-auto">
+    <div class="modal-content">
+     <div class="modal-body">
+      <div class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper">
+       <div class="adding-adapter-modal-header">
+        <div class="adapter-modal-name ml-0">Create Widget</div>
+
+        <div class="adapter-modal-help-box">
+         <a href="#" class="question-icon hidden"> ? </a>
+         <a href="#" class="adapter-modal-help-link hidden">
+          Help
+         </a>
+         <button id="btn_closeIcon" type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+          <span>
+           <img src="images/modal-close.svg" />
+          </span>
+         </button>
+        </div>
+       </div>
+
+       <div class="adapter-modal-content-box pb-3 create-widget-wrapper">
+        <div class="chart-widget-type-row">
+         <div class="chart-widget-type-heading">Widget Type :</div>
+
+         <div class="widget-type-actions-box">
+          <!-- <div>
+           <div>Users</div>
+          </div>
+
+          <div>
+           <label class="switch-btn">
+            <input type="checkbox" id="togBtn" />
+            <div class="sliderss round">
+ 
+             <div class="on"></div>
+             <div class="off"></div>
+        
+            </div>
+           </label>
+          </div>
+          <div>Assets</div> -->
+
+
+          <!-- talha -->
+
+          <style>
+           .switch {
+            position: relative;
+            display: inline-block;
+            width: 180px;
+            height: 34px;
+           }
+
+           .switch input {
+            display: none;
+           }
+
+           .slider-switch {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #776fff;
+            -webkit-transition: all 0.4s;
+
+            transition: all 0.4s;
+            user-select: none;
+           }
+
+           .slider-switch:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 88px;
+            left: 7px;
+            bottom: 4px;
+            background-color: #fff;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+           }
+
+           input:checked+.slider-switch {
+            background-color: #776fff;
+            color: white;
+           }
+
+           input:focus+.slider-switch {
+            box-shadow: 0 0 1px #5283ff;
+           }
+
+           input:checked+.slider-switch:before {
+            -webkit-transform: translateX(78px);
+            -ms-transform: translateX(78px);
+            transform: translateX(78px);
+            background-color: white;
+           }
+
+           /* Rounded slids */
+           .slider-switch.round {
+            border-radius: 34px;
+           }
+
+           .slider-switch.round:before {
+            border-radius: 34px;
+           }
+
+           .slider-switch.square:before {
+            border-radius: 4px;
+           }
+
+           .switch-non {
+            position: absolute;
+            top: 50%;
+            transform: translate(100%, -50%);
+            left: 2px;
+            color: white;
+           }
+
+           .switch-oui {
+            position: absolute;
+            top: 0;
+            /* transform: translate(-150%, -50%); */
+            right: 30px;
+            color: white;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            /* height: 100%; */
+            align-items: center;
+           }
+
+           input:checked+.slider-switch>.switch-oui {
+            color: #4c4c4c;
+           }
+
+           input:not(:checked)+.slider-switch>.switch-non {
+            color: #4c4c4c;
+           }
+          </style>
+          <label class="switch">
+           <input type="checkbox" checked="">
+           <span class="slider-switch round">
+            <span class="switch-non">User</span>
+            <span class="switch-oui">Asset</span>
+           </span>
+          </label>
+
+
+         </div>
+        </div>
+
+        <div class="row">
+         <div class="col-md-12">
+          <!-- Left right -->
+          <!-- <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
+           <img src="images/chart_arrow_left.svg" />
+          </a>
+
+          <a class="carousel-control-next" href="#custCarousel" data-slide="next">
+           <img src="images/chart_arrow_right.svg" />
+          </a> -->
+
+          <div id="custCarousel" class="carousel slide widget-slider" data-interval="false">
+           <div class="slider-bg">
+            <!-- Thumbnails -->
+            <ol class="carousel-indicators list-inline">
+             <li class="list-inline-item active">
+              <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel">
+               <img src="images/chat-icon1.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
+               <img src="images/chat-icon6.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel">
+               <img src="images/chat-icon3.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel">
+               <img src="images/count-chart.svg" class="" />
+              </a>
+             </li>
+
+             <li class="list-inline-item">
+              <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel">
+               <img src="images/list-chart.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
+               <img src="images/table-chart.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel">
+               <img src="images/stack bar-chart.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel">
+               <img src="images/chat-icon8.svg" class="" />
+              </a>
+             </li>
+
+             <li class="list-inline-item">
+              <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel">
+               <img src="images/chat-icon2.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
+               <img src="images/chat-icon10.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel">
+               <img src="images/chat-icon11.svg" class="" />
+              </a>
+             </li>
+             <li class="list-inline-item">
+              <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel">
+               <img src="images/chat-icon11.svg" class="" />
+              </a>
+             </li>
+            </ol>
+           </div>
+
+           <!-- slides -->
+           <div class="carousel-inner mCustomScrollbar" data-mcs-theme="minimal-dark">
+            <div class="carousel-item active">
+             <div class="widget-grid-two-legend-wrapper">
+              <div class="widget-grid-two-legend-left-column">
+               <div class="widget-legend-title-row">
+                <div class="form-group">
+                 <label>Title</label>
+                 <input type="text" id="input_assetsDistri" class="form-control" value="Assets Distribution" />
+                </div>
+               </div>
+
+               <div class="widget-legend-heading">
+                Widget Perview
+               </div>
+
+               <div class="legend-box">
+                <div class="legend-box-heading">
+                 Assets Distribution
+                </div>
+
+                <div class="legend-goes-here">
+                 <img src="images/pie-chart.png" />
+                </div>
+
+                <div class="legend-guide">
+                 <div class="legend-guide-item-row">
+                  <div class="legend-yellow"></div>
+                  <div>Label 1</div>
+                 </div>
+                 <div class="legend-guide-item-row">
+                  <div class="legend-red"></div>
+                  <div>Label 2</div>
+                 </div>
+                 <div class="legend-guide-item-row">
+                  <div class="legend-green"></div>
+                  <div>Label 3</div>
+                 </div>
+                </div>
+               </div>
+              </div>
+
+              <div class="widget-grid-two-legend-right-column">
+               <div class="user-group-row">
+                <div>
+                 <input type="checkbox" />
+                </div>
+
+                <div>Use Grouping</div>
+               </div>
+
+               <div class="add-label-query-row-grid">
+                <div>
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
+                                                                            1" />
+                </div>
+
+                <div class="dropdown">
+                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="heading-dropdown-dash">Select Query
+                  </span>
+                  <img src="images/down-arrow.svg" style="
+                            padding-bottom: 0px;
+                            height: 13px;
+                            width: 13px;
+                          " width="13" height="13">
+                 </a>
+                 <div class="dropdown-menu dashboard-title-menu-dropdown" aria-labelledby="dropdownMenuButton"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                  <a class="dropdown-item" href="#"><strong>System Dashboard</strong></a>
+                  <a class="dropdown-item" href="#">Dashboard 1</a>
+                  <a class="dropdown-item" href="#">Dashboard 2</a>
+                  <a class="dropdown-item" href="#"><img src="images/icon-plus-normal.svg" style="">Add Dashboard</a>
+                 </div>
+                </div>
+
+                <div class="plus-minus-btns">
+                 <button>
+                  <img src="images/plus-icon-circle.svg" />
+                 </button>
+                 <button>
+                  <img src="images/min-icon-circle.svg" />
+                 </button>
+                </div>
+               </div>
+               <div class="add-label-query-row-grid">
+                <div>
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
+                                                                            1" />
+                </div>
+
+                <div class="dropdown">
+                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="heading-dropdown-dash">Select Query
+                  </span>
+                  <img src="images/down-arrow.svg" style="
+                            padding-bottom: 0px;
+                            height: 13px;
+                            width: 13px;
+                          " width="13" height="13">
+                 </a>
+                 <div class="dropdown-menu dashboard-title-menu-dropdown" aria-labelledby="dropdownMenuButton"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                  <a class="dropdown-item" href="#"><strong>System Dashboard</strong></a>
+                  <a class="dropdown-item" href="#">Dashboard 1</a>
+                  <a class="dropdown-item" href="#">Dashboard 2</a>
+                  <a class="dropdown-item" href="#"><img src="images/icon-plus-normal.svg" style="">Add Dashboard</a>
+                 </div>
+                </div>
+
+                <div class="plus-minus-btns">
+                 <button id="btn_plus">
+                  <img src="images/plus-icon-circle.svg" />
+                 </button>
+                 <button id="btn_min">
+                  <img src="images/min-icon-circle.svg" />
+                 </button>
+                </div>
+               </div>
+               <div class="add-label-query-row-grid">
+                <div>
+                 <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Label
+                                                                            1" />
+                </div>
+
+                <div class="dropdown">
+                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="heading-dropdown-dash">Select Query
+                  </span>
+                  <img src="images/down-arrow.svg" style="
+                            padding-bottom: 0px;
+                            height: 13px;
+                            width: 13px;
+                          " width="13" height="13">
+                 </a>
+                 <div class="dropdown-menu dashboard-title-menu-dropdown" aria-labelledby="dropdownMenuButton"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                  <a class="dropdown-item" href="#"><strong>System Dashboard</strong></a>
+                  <a class="dropdown-item" href="#">Dashboard 1</a>
+                  <a class="dropdown-item" href="#">Dashboard 2</a>
+                  <a class="dropdown-item" href="#"><img src="images/icon-plus-normal.svg" style="">Add Dashboard</a>
+                 </div>
+                </div>
+
+                <div class="plus-minus-btns">
+                 <button id="btn_plus">
+                  <img src="images/plus-icon-circle.svg" />
+                 </button>
+                 <button id="btn_min">
+                  <img src="images/min-icon-circle.svg" />
+                 </button>
+                </div>
+               </div>
+
+               <div class="accordion create-widget-accordion-wrapper" id="accordion2">
+                <!--ACCORDION ITEM ONE-->
+                <!-- <div class="accordion-group">
+                                                                    <div class="accordion-heading">
+                                                                        <a class="accordion-toggle collapsed"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion2"
+                                                                            href="#collapseOne">
+                                                                            Collapsible Group 1
+                                                                        </a>
+                                                                    </div>
+                                                                    <div id="collapseOne"
+                                                                        class="accordion-body collapse"
+                                                                        style="height: 0px;">
+                                                                        <div class="accordion-inner">
+                                                                            Anim pariatur cliche... Anim pariatur
+                                                                            cliche... Anim pariatur cliche... Anim
+                                                                            pariatur cliche... Anim pariatur cliche...
+                                                                            Anim pariatur cliche... Anim pariatur
+                                                                            cliche... Anim pariatur cliche...
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
+                <!--ACCORDION ITEM TWO-->
+                <div class="accordion-group">
+                 <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" id="link_additionalSettings" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                   Additional Settings
+                   <span>
+                    <img class="img-min-icon" src="images/icon_collapse-min.svg" />
+                    <img class="img-plus-icon" src="images/icon_collapse-plus.svg" />
+                   </span>
+                  </a>
+                 </div>
+                 <div id="collapseTwo" class="accordion-body collapse" style="height: 0px">
+                  <div class="accordion-inner">
+                   <!-- Anim pariatur cliche... Anim pariatur
+                                                                            cliche... Anim pariatur cliche... Anim
+                                                                            pariatur cliche... Anim pariatur cliche...
+                                                                            Anim pariatur cliche... Anim pariatur
+                                                                            cliche... Anim pariatur cliche... -->
+                   <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                   <div class="accordion" id="accordion1">
+                    <div class="accordion-group pl-3 mt-3">
+                     <div class="accordion-heading">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                       href="#collapseOneA">
+                       Colors
+                       <span>
+                        <img class="img-min-icon" src="images/icon_collapse-min.svg" />
+                        <img class="img-plus-icon" src="images/icon_collapse-plus.svg" />
+                       </span>
+                      </a>
+                     </div>
+                     <div id="collapseOneA" class="accordion-body collapse" style="height: 0px">
+                      <div class="accordion-inner">
+                       <div class="inner-legend-colors-row">
+                        <div class="inner-legend-colors-col">
+                         <!-- <div>Label 1</div> -->
+                         <div class="dropdown-select-native-legend">
+                          <select id="ddl_selectQuery" name="" class="custom-select" style="
+                                                          background-color: #ffc700;
+                                                        ">
+                           <option value="">
+                            #FFC700
+                           </option>
+                           <option value="">
+                            Select Query 1
+                           </option>
+                           <option value="">
+                            Select Query 2
+                           </option>
+                          </select>
+                         </div>
+
+                        </div>
+                        <div class="inner-legend-colors-col">
+                         <!-- <div>Label 2</div> -->
+                         <div class="dropdown-select-native-legend">
+                          <select id="ddl_selectQuery" name="" class="custom-select" style="
+                                                          background-color: #00c5d2;
+                                                        ">
+                           <option value="">
+                            #00C5D2
+                           </option>
+                           <option value="">
+                            Select Query 1
+                           </option>
+                           <option value="">
+                            Select Query 2
+                           </option>
+                          </select>
+                         </div>
+
+                        </div>
+                        <div class="inner-legend-colors-col">
+                         <!-- <div>Label 3</div> -->
+                         <div class="dropdown-select-native-legend">
+                          <select id="ddl_selectQuery" name="" class="custom-select" style="
+                                                          background-color: #f65e5f;
+                                                        ">
+                           <option value="">
+                            #F65E5F
+                           </option>
+                           <option value="">
+                            Select Query 1
+                           </option>
+                           <option value="">
+                            Select Query 2
+                           </option>
+                          </select>
+                         </div>
+
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+
+            <div class="carousel-item">
+             <div class="widget-grid-two-legend-wrapper">
+              <div class="widget-grid-two-legend-left-column">
+               <div class="widget-legend-title-row">
+                <div class="form-group">
+                 <label>Title</label>
+                 <input type="text" id="input_assetsDistri" class="form-control" value="Assets Distribution" />
+                </div>
+               </div>
+
+               <div class="widget-legend-heading ">
+                Widget Perview
+               </div>
+
+               <div class="legend-box">
+                <div class="legend-box-heading">
+                 Assets Distribution
+                </div>
+
+                <div class="legend-goes-here">
+                 <div class="table-preview mCustomScrollbar" data-mcs-theme="minimal-dark">
+                  <table class="table table-sm">
+                   <thead>
+                    <tr>
+                     <th scope="col">Aute irre dolor</th>
+                     <th scope="col">Aute irre</th>
+                     <th scope="col">Aute irre </th>
+                     <th scope="col">Aute irre</th>
+                    </tr>
+                   </thead>
+                   <tbody>
+                    <tr>
+                     <th scope="row">Aute irre dolor</th>
+                     <td>90</td>
+                     <td>90</td>
+                     <td>90</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Aute irre dolor</th>
+                     <td>20</td>
+                     <td>20</td>
+                     <td>20</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Uis aute irurelor</th>
+                     <td>10</td>
+                     <td>10</td>
+                     <td>10</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Ute irure dolor</th>
+                     <td>40</td>
+                     <td>40</td>
+                     <td>40</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Duis aute irur</th>
+                     <td>76</td>
+                     <td>76</td>
+                     <td>76</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Aute irre dolor</th>
+                     <td>90</td>
+                     <td>90</td>
+                     <td>90</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Aute irre dolor</th>
+                     <td>20</td>
+                     <td>20</td>
+                     <td>20</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Uis aute irurelor</th>
+                     <td>10</td>
+                     <td>10</td>
+                     <td>10</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Ute irure dolor</th>
+                     <td>40</td>
+                     <td>40</td>
+                     <td>40</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">Duis aute irur</th>
+                     <td>76</td>
+                     <td>76</td>
+                     <td>76</td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </div>
+               </div>
+              </div>
+
+              <div class="widget-grid-two-legend-right-column">
+               <div class="user-group-row mb-4">
+                <div>
+                 <input type="checkbox" checked />
+                </div>
+
+                <div>Use Grouping</div>
+               </div>
+
+               <div class="user-group-checked-row">
+                <div class="form-group">
+                 <div class="dropdown">
+                  <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                   <span class="heading-dropdown-dash">Select Query
+                   </span>
+                   <img src="images/down-arrow.svg" style="
+                            padding-bottom: 0px;
+                            height: 13px;
+                            width: 13px;
+                          " width="13" height="13">
+                  </a>
+                  <div class="dropdown-menu dashboard-title-menu-dropdown" aria-labelledby="dropdownMenuButton"
+                   x-placement="bottom-start"
+                   style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                   <a class="dropdown-item" href="#"><strong>System Dashboard</strong></a>
+                   <a class="dropdown-item" href="#">Dashboard 1</a>
+                   <a class="dropdown-item" href="#">Dashboard 2</a>
+                   <a class="dropdown-item" href="#"><img src="images/icon-plus-normal.svg" style="">Add Dashboard</a>
+                  </div>
+                 </div>
+                </div>
+                <div class="form-group hidden">
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">Select Query</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+
+               </div>
+
+               <div class="user-group-checked-row">
+                <div class="form-group">
+                 <label>Group By</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">Field</option>
+                   <option value="">Connector</option>
+                  </select>
+                 </div>
+                </div>
+
+                <div class="form-group">
+                 <label>&nbsp;</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">OS Type</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+               </div>
+
+               <div class="accordion-group accordion create-widget-accordion-wrapper">
+                <div class="accordion-heading">
+                 <a class="accordion-toggle collapsed" id="link_additionalSettings" data-toggle="collapse"
+                  data-parent="#accordion2" href="#collapseTwo">
+                  Additional Settings
+                  <span>
+                   <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                   <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                  </span>
+                 </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px">
+                 <div class="accordion-inner">
+                  <!-- Anim pariatur cliche... Anim pariatur
+                                                                         cliche... Anim pariatur cliche... Anim
+                                                                         pariatur cliche... Anim pariatur cliche...
+                                                                         Anim pariatur cliche... Anim pariatur
+                                                                         cliche... Anim pariatur cliche... -->
+                  <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                  <div class="accordion" id="accordion1">
+                   <div class="accordion-group pl-3 mt-3">
+                    <div class="accordion-heading">
+                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                      href="#collapseOneA">
+                      Filter
+                      <span>
+                       <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                       <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                      </span>
+                     </a>
+                    </div>
+                    <div id="collapseOneA" class="accordion-body collapse" style="height: 0px">
+                     <div class="accordion-inner">
+                      <div class="widget-checkbox-filter-row">
+                       <div class="widget-checkbox-filter-box">
+                        <div>
+                         <input type="checkbox" />
+                        </div>
+                        <div>Show on Top</div>
+                       </div>
+
+                       <div class="widget-checkbox-filter-box">
+                        <div class="checkbox-big">
+                         <input type="tel" id="input_showOnTop" class="form-control show-onotop-input" placeholder="" />
+                        </div>
+                        <div>Entries</div>
+                       </div>
+
+                       <div></div>
+                      </div>
+
+                      <div class="widget-checkbox-filter-sort-row">
+                       <div class="user-group-checked-row">
+                        <div class="form-group">
+                         <label>Sort By</label>
+                         <div class="dropdown-select-native">
+                          <select id="ddl_selectByName" name="" class="custom-select">
+                           <option value="">Sort by name</option>
+                           <option value="">Sort by name</option>
+                          </select>
+                         </div>
+                        </div>
+
+                        <div class="form-group">
+                         <label>&nbsp;</label>
+                         <div class="dropdown-select-native">
+                          <select id="ddl_selectListPostion" name="" class="custom-select">
+                           <option value="">Ascending</option>
+                           <option value="">Descending</option>
+                          </select>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+
+
+                      <div class="widget-checkbox-filter-row">
+                       <div class="widget-checkbox-filter-box">
+                        <div>
+                         <input type="checkbox" />
+                        </div>
+                        <div>Uses Filter</div>
+                       </div>
+
+                       <div></div>
+                      </div>
+                      <div class="includ-exclude-div">
+
+                       <div class="include-exclude-checkbox-row">
+                        <div class="include-exclude-checkbox-column">
+                         <div class="width-auto">
+                          <input id="rbt_assets" type="radio" name="a" value="a" />
+                         </div>
+
+                         <div>
+                          Include Assets containing
+                          following value
+                         </div>
+                        </div>
+                        <div class="include-exclude-checkbox-column">
+                         <div class="width-auto">
+                          <input id="rbt_assets" type="radio" name="a" value="a" />
+                         </div>
+
+                         <div>
+                          Exclude Assets containing
+                          following value
+                         </div>
+                        </div>
+                       </div>
+
+                       <div class="widget-exclude-container">
+                        <div class="bubble-tags-wrapper">
+
+                         <div class="bubble">
+                          <div class="legend-yellow"></div>
+                          <div>WIndows 7</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-green"></div>
+                          <div>WIndows 8</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-red"></div>
+                          <div>WIndows 10</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-yellow"></div>
+                          <div>WIndows 7</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-green"></div>
+                          <div>WIndows 8</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-red"></div>
+                          <div>WIndows 10</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-red"></div>
+                          <div>WIndows 7</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-red"></div>
+                          <div>WIndows 8</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                         <div class="bubble">
+                          <div class="legend-red"></div>
+                          <div>WIndows 10</div>
+                          <div>
+                           <a href="#" id="link_close">
+                            <img src="images/bubble-close-btn.svg">
+                           </a>
+                          </div>
+                         </div>
+
+                        </div>
+
+
+                        <div class="enter-assets-row">
+                         <input id="input_newDashboard" type="text" class="form-control" placeholder="Enter Assets">
+
+                         <button id="btn_save" type="button" class="theme-btn-b btn-secondary">Add</button>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+
+            <div class="carousel-item">
+             <div class="widget-grid-two-legend-wrapper">
+              <div class="widget-grid-two-legend-left-column">
+               <div class="widget-legend-title-row">
+                <div class="form-group">
+                 <label>Title</label>
+                 <input type="text" id="input_assetsDistri" class="form-control" value="Assets Distribution">
+                </div>
+               </div>
+
+               <div class="widget-legend-heading">
+                Widget Perview
+               </div>
+
+               <div class="legend-box">
+                <div class="legend-box-heading">
+                 Assets Distribution
+                </div>
+
+                <div class="legend-goes-here">
+                 <div class="list-chart-div  mCustomScrollbar" data-mcs-theme="minimal-dark">
+                  <ul>
+                   <li>
+                    <div>
+                     <div class="legend-yellow"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-red"></div>
+                    </div>
+                    <div>Duis aute irure dolor</div>
+                    <div>232</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Uis aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-yellow"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-red"></div>
+                    </div>
+                    <div>Duis aute irure dolor</div>
+                    <div>232</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                   <li>
+                    <div>
+                     <div class="legend-green"></div>
+                    </div>
+                    <div>Aute irure dolor</div>
+                    <div>92</div>
+                   </li>
+                  </ul>
+                 </div>
+                </div>
+
+                <!-- <div class="legend-guide">
+                   <div class="legend-guide-item-row">
+                    <div class="legend-yellow"></div>
+                    <div>Label 1</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-red"></div>
+                    <div>Label 2</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-green"></div>
+                    <div>Label 3</div>
+                   </div>
+                  </div> -->
+               </div>
+              </div>
+
+              <div class="widget-grid-two-legend-right-column">
+               <div class="user-group-row mb-4">
+                <div>
+                 <input type="checkbox" checked="">
+                </div>
+
+                <div>Use Grouping</div>
+               </div>
+
+               <div class="user-group-checked-row">
+                <div class="form-group">
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">Select Query</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+
+               </div>
+
+               <div class="user-group-checked-row">
+                <div class="form-group">
+                 <label>Group By</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">Field</option>
+                   <option value="" selected>Connector</option>
+                  </select>
+                 </div>
+                </div>
+
+                <div class="form-group hidden">
+                 <label>&nbsp;</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">OS Type</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+               </div>
+
+               <div class="accordion-group accordion create-widget-accordion-wrapper">
+                <div class="accordion-heading">
+                 <a class="accordion-toggle" id="link_additionalSettings" data-toggle="collapse"
+                  data-parent="#accordion2" href="#collapseThree" aria-expanded="true">
+                  Additional Settings
+                  <span>
+                   <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                   <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                  </span>
+                 </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse show" style="">
+                 <div class="accordion-inner">
+                  <!-- Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... Anim
+                                                                           pariatur cliche... Anim pariatur cliche...
+                                                                           Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... -->
+                  <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                  <div class="accordion" id="accordion3">
+                   <div class="accordion-group pl-3 mt-3">
+                    <div class="accordion-heading">
+                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3"
+                      href="#collapseThreeA" aria-expanded="false">
+                      Filter
+                      <span>
+                       <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                       <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                      </span>
+                     </a>
+                    </div>
+                    <div id="collapseThreeA" class="accordion-body collapse" style="">
+                     <div class="accordion-inner">
+                      <div class="widget-checkbox-filter-row">
+                       <div class="widget-checkbox-filter-box">
+                        <div>
+                         <input type="checkbox">
+                        </div>
+                        <div>Show on Top</div>
+                       </div>
+
+                       <div class="widget-checkbox-filter-box">
+                        <div class="checkbox-big">
+                         <input type="tel" id="input_showOnTop" class="form-control show-onotop-input" placeholder="">
+                        </div>
+                        <div>Entries</div>
+                       </div>
+
+                       <div></div>
+                      </div>
+
+
+
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+
+            <div class="carousel-item">
+
+             <div class="widget-grid-two-legend-wrapper">
+              <div class="widget-grid-two-legend-left-column">
+               <div class="widget-legend-title-row">
+                <div class="form-group">
+                 <label>Title</label>
+                 <input type="text" id="input_assetsDistri" class="form-control" value="Assets Distribution">
+                </div>
+               </div>
+
+               <div class="widget-legend-heading">
+                Widget Perview
+               </div>
+
+               <div class="legend-box">
+                <div class="legend-box-heading">
+                 OS Distribution
+                </div>
+
+                <div class="legend-goes-here">
+                 <div class="tile-box">
+                  <!-- <h5>Lorem ipsum dolor</h5> -->
+                  <h2>1057</h2>
+                  <p>Duis aute irure dolor</p>
+                 </div>
+                </div>
+
+                <!-- <div class="legend-guide">
+                   <div class="legend-guide-item-row">
+                    <div class="legend-yellow"></div>
+                    <div>Label 1</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-red"></div>
+                    <div>Label 2</div>
+                   </div>
+                   <div class="legend-guide-item-row">
+                    <div class="legend-green"></div>
+                    <div>Label 3</div>
+                   </div>
+                  </div> -->
+               </div>
+              </div>
+
+              <div class="widget-grid-two-legend-right-column">
+
+               <div class="user-group-checked-row mt-0">
+                <div class="form-group">
+                 <label>Query</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">Select Query</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+
+               </div>
+
+               <div class="two-col-grid mt-3">
+                <div class="flex-50">Operator</div>
+                <div>
+                 <div class="checkbox-with-text-row mt-3">
+                  <div class="width-auto">
+                   <input id="rbt_count" checked="" type="radio" name="a" value="a">
+                  </div>
+                  <div class="label-div mr-3 width-auto">
+                   Count
+                  </div>
+                  <div class="width-auto">
+                   <input id="rbt_average" type="radio" name="a" value="a"></div>
+                  <div class="label-div  mr-3">
+                   Average
+                  </div>
+                  <div class="width-auto">
+                   <input id="rbt_sum" type="radio" name="a" value="a"></div>
+                  <div class="label-div ">
+                   Sum
+                  </div>
+
+                 </div>
+                </div>
+               </div>
+
+               <div class="user-group-checked-row">
+                <div class="form-group">
+                 <label>Bottom Title</label>
+                 <div class="dropdown-select-native">
+                  <input type="text" id="input_bottomTitle" class="form-control" placeholder="">
+                 </div>
+                </div>
+
+                <div class="form-group hidden">
+                 <label>&nbsp;</label>
+                 <div class="dropdown-select-native">
+                  <select id="ddl_selectQuery" name="" class="custom-select">
+                   <option value="">OS Type</option>
+                   <option value="">Select Query 1</option>
+                   <option value="">Select Query 2</option>
+                  </select>
+                 </div>
+                </div>
+               </div>
+
+               <div class="accordion-group accordion create-widget-accordion-wrapper">
+                <div class="accordion-heading">
+                 <a class="accordion-toggle" id="link_additionalSettings" data-toggle="collapse"
+                  data-parent="#accordion4" href="#collapseFour" aria-expanded="true">
+                  Additional Settings
+                  <span>
+                   <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                   <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                  </span>
+                 </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse show" style="">
+                 <div class="accordion-inner">
+                  <!-- Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... Anim
+                                                                           pariatur cliche... Anim pariatur cliche...
+                                                                           Anim pariatur cliche... Anim pariatur
+                                                                           cliche... Anim pariatur cliche... -->
+                  <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                  <div class="accordion" id="accordion4">
+                   <div class="accordion-group pl-3 mt-3">
+                    <div class="accordion-heading">
+                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4"
+                      href="#collapseFourA" aria-expanded="false">
+                      Colors
+                      <span>
+                       <img class="img-min-icon" src="images/icon_collapse-min.svg">
+                       <img class="img-plus-icon" src="images/icon_collapse-plus.svg">
+                      </span>
+                     </a>
+                    </div>
+                    <div id="collapseFourA" class="accordion-body collapse show" style="">
+                     <div class="accordion-inner">
+                      <div class="inner-legend-colors-row">
+                       <div class="inner-legend-colors-col">
+
+                        <div class="dropdown">
+                         <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <div class="dropdown-logo">
+                           <span class="yellow-box">&nbsp;</span>
+                          </div>
+
+                          <img src="images/down-arrow.svg" style="
+                                        padding-bottom: 0px;
+                                        height: 13px;
+                                        width: 13px;
+                                      " width="13" height="13">
+                         </a>
+                         <div class="dropdown-menu dashboard-title-menu-dropdown mCustomScrollbar"
+                          data-mcs-theme="minimal-dark" aria-labelledby="dropdownMenuButton" x-placement="bottom-start">
+                          <ul class="dropdown-with-logos">
+                           <li>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c01">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c02">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c03">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c04">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c05">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c06">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c07">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c08">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c09">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c10">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c11">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c12">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c13">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c14">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c15">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c16">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c17">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c18">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c19">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c20">&nbsp;</span>
+                             </div>
+                            </a>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+
+                        <div>Label 1</div>
+                        <!-- <div class="dropdown-select-native-legend">
+                            <select id="ddl_selectQuery" name="" class="custom-select" style="
+                                                            background-color: #ffc700;
+                                                          ">
+                             <option value="">
+                              #FFC700
+                             </option>
+                             <option value="">
+                              Select Query 1
+                             </option>
+                             <option value="">
+                              Select Query 2
+                             </option>
+                            </select>
+                           </div> -->
+
+                       </div>
+                       <div class="inner-legend-colors-col">
+                        <div class="dropdown">
+                         <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <div class="dropdown-logo">
+                           <span class="yellow-box">&nbsp;</span>
+                          </div>
+
+                          <img src="images/down-arrow.svg" style="
+                                        padding-bottom: 0px;
+                                        height: 13px;
+                                        width: 13px;
+                                      " width="13" height="13">
+                         </a>
+                         <div class="dropdown-menu dashboard-title-menu-dropdown mCustomScrollbar"
+                          data-mcs-theme="minimal-dark" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
+                          style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                          <ul class="dropdown-with-logos mCustomScrollbar" data-mcs-theme="minimal-dark">
+                           <li>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c01">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c02">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c03">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c04">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c05">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c06">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c07">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c08">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c09">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c10">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c11">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c12">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c13">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c14">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c15">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c16">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c17">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c18">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c19">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c20">&nbsp;</span>
+                             </div>
+                            </a>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                        <div>Label 2</div>
+
+                       </div>
+                       <div class="inner-legend-colors-col">
+                        <div class="dropdown">
+                         <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <div class="dropdown-logo">
+                           <span class="yellow-box">&nbsp;</span>
+                          </div>
+
+                          <img src="images/down-arrow.svg" style="
+                                        padding-bottom: 0px;
+                                        height: 13px;
+                                        width: 13px;
+                                      " width="13" height="13">
+                         </a>
+                         <div class="dropdown-menu dashboard-title-menu-dropdown mCustomScrollbar"
+                          data-mcs-theme="minimal-dark" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
+                          style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                          <ul class="dropdown-with-logos mCustomScrollbar">
+                           <li>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c01">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c02">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c03">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c04">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c05">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c06">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c07">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c08">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c09">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c10">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c11">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c12">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c13">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c14">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c15">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c16">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c17">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c18">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c19">&nbsp;</span>
+                             </div>
+                            </a>
+                            <a href="#">
+                             <div class="dropdown-logo">
+                              <span class="c20">&nbsp;</span>
+                             </div>
+                            </a>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                        <div>Label 3</div>
+
+
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <div class="adapter-modal-bottom-row mt-3">
+         <div style="margin: 0px">
+          <button id="btn_cancle" type="button" class="cancel-btn">
+           Apply
+          </button>
+          <button id="btn_save" type="button" class="theme-btn graydient-primary-btn">
+           Publish
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <script>
+  $("#myModal").on("shown.bs.modal", function () {
+   $("#myInput").trigger("focus");
+  });
+ </script>
+ <script src="js/custom.js"></script>
+ <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script>
+  /*
+Slidemenu
+*/
+  (function () {
+   var $body = document.body,
+    $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
+
+   if (typeof $menu_trigger !== "undefined") {
+    $menu_trigger.addEventListener("click", function () {
+     $body.className =
+      $body.className == "menu-active" ? "" : "menu-active";
+    });
+   }
+  }.call(this));
+ </script>
+ <script type="text/javascript">
+  function DropDown(el) {
+   this.dd = el;
+   this.initEvents();
+  }
+  DropDown.prototype = {
+   initEvents: function () {
+    var obj = this;
+
+    obj.dd.on("click", function (event) {
+     $(this).toggleClass("active");
+     event.stopPropagation();
+    });
+   },
+  };
+
+  $(function () {
+   var dd = new DropDown($("#dd, #ddd"));
+
+   $(document).click(function () {
+    // all dropdowns
+    $(".wrapper-dropdown-2").removeClass("active");
+   });
+  });
+ </script>
+ <script>
+  // Initialize the plugin
+  const demo = document.querySelector("#scroll, .scroll");
+  const ps = new PerfectScrollbar(demo);
+
+  // Handle size change
+  document.querySelector("#resize").addEventListener("click", () => {
+   // Get updated values
+   width = document.querySelector("#width").value;
+   height = document.querySelector("#height").value;
+
+   // Set demo sizes
+   demo.style.width = `${width}px`;
+   demo.style.height = `${height}px`;
+
+   // Update Perfect Scrollbar
+   ps.update();
+  });
+ </script>
+</body>
+
+</html>

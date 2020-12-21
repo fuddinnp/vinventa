@@ -300,9 +300,17 @@
                                     </div>
                                 </div>
                                 <div class="right-assets-inventory-div">
-                                    <h3 class="">
-                                        Assets Inventory
-                                    </h3>
+                                    <div class="assets-inventory-title-div">
+                                        <h3 class="">
+                                            Assets Inventory
+                                        </h3>
+                                        <div>
+                                            <button id="btn_cancle" type="button" class="cancel-btn">
+                                                Clear All Filters
+                                               </button>
+                                        </div>
+                                    </div>
+                                   
                                     <div class="dashboard-top-section-query new-search-bar-wrapper">
                                         <div class="search-right-bar">
                                             <!-- <select class="">
@@ -344,14 +352,17 @@
                                                 <img src="images/down-arrow.svg" style="width: 14px;">
                                             </a>
                                         </div>
+                                        <div class="query-icon">
+                                            <img src="images/query-wizard-icon.svg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sliding-section devices-list-slider-section-wrapper">
+                            <div class="sliding-section devices-list-slider-section-wrapper assets-inventory-wrapper">
                                 <div class="sliding-left-section">
                                     <a href="javascript:" class="slide-btn"><img src="images/silde-icon.png"
                                             class="scren-slide-icon"></a>
-                                    <div class="nav flex-column nav-pills device-filterleft-bar" id="v-pills-tab"
+                                    <!-- <div class="nav flex-column nav-pills device-filterleft-bar" id="v-pills-tab"
                                         role="tablist" aria-orientation="vertical">
                                         <a class="nav-link activea" id="v-pills-home-tab" data-toggle="pill"
                                             href="#filter-tab" role="tab" aria-controls="v-pills-home"
@@ -373,7 +384,166 @@
                                             aria-selected="false"><img src="images/export-options-icon.svg"
                                                 class="filter-icon-group"> Export Options <img
                                                 src="images/icon-ios-arrow-left.png" class="filter-arrow-left-icon"></a>
-                                    </div>
+                                    </div> -->
+
+
+
+
+
+                                    <div class="nav flex-column nav-pills device-filterleft-bar" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <div class="inner-tab-content-left-col tab-side-dropdown-menu tabs-aggre" id="side-menu-accord">
+                                          <div class="nav flex-column nav-pills nav-no-img" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link  p-0" id="v-pills-home-tab" data-toggle="pill"
+                                            href="#filter-tab" role="tab" aria-controls="v-pills-home"
+                                            aria-selected="true">
+                                            <div class="accordion">
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon" data-toggle="collapse" data-target="#"> 
+                                                  <img src="images/filter-by-icon.svg" class="filter-icon-group">
+                                                  Filter by
+                                                </button>
+                                              </div>
+                                            </div>
+                                        </a>    
+                      
+                                            <div class="nav-link accordion p-0">
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button data-toggle="collapse" data-target="#hardware-submenu0" aria-expanded="false" class="collapsed">
+                                                  <img src="images/run-query-icon.svg" class="filter-icon-group">
+                                                  Run Query
+                                                </button>
+                      
+                                                <div id="hardware-submenu0" class="collapse" data-parent="#side-menu-accord" style="">
+                                                  <div class="card-body table-submenu-list">
+                                                    <ul>
+                                                      <li>
+                                                        <a id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" class="active-tab-side-submenu1">Predefined Query</a>
+                                                      </li>
+                                                      <li>
+                                                        <a id="menu-accord" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile">Query Builder</a>
+                                                      </li>
+                                                      <!-- <li><a href="#">Perform Task</a></li>
+                                                      <li><a href="#">Customize View</a></li> -->
+                                                      
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <a class="nav-link p-0" id="v-pills-messages-tab" data-toggle="pill"
+                                            href="#perform-task-tab" role="tab" aria-controls="v-pills-messages"
+                                            aria-selected="false">
+                      
+                                            <div id="menu-accord" class="accordion">
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon" data-toggle="collapse" data-target="#">
+                                                  <img src="images/perform-task-icon.svg" class="filter-icon-group">
+                                                  Perform Task
+                                                </button>
+                      
+                                                <!-- <div id="hardware-submenu" class="collapse" data-parent="#side-menu-accord">
+                                                  <div class="card-body table-submenu-list">
+                                                    <ul>
+                                                      <li>
+                                                        <a href="#" class="active-tab-side-submenu">User</a>
+                                                      </li>
+                                                      <li><a href="#">Role</a></li>
+                                                      <li><a href="#">Password Policy</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </div> -->
+                                              </div>
+                                            </div>
+                                            </a>
+
+                                            
+                                            <a class="nav-link p-0" id="v-pills-messages-tab" data-toggle="pill"
+                                            href="#customized-view" role="tab" aria-controls="v-pills-messages"
+                                            aria-selected="false">
+                                            <div class="accordion " >
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon" data-toggle="collapse" data-target="#">
+                                                  <img src="images/customize-view-icon.svg" class="filter-icon-group">
+                                                  Customize View
+                                                </button>
+                      
+                                                <!-- <div id="hardware-submenu1" class="collapse" data-parent="#side-menu-accord">
+                                                  <div class="card-body table-submenu-list">
+                                                    <ul>
+                                                      <li>
+                                                        <a href="#" class="active-tab-side-submenu">Discovery</a>
+                                                      </li>
+                                                      <li><a href="#">Correlation</a></li>
+                                                      <li><a href="#">Data Retention</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </div> -->
+                                              </div>
+                                            </div>
+                                            </a>
+
+                      
+                                            <a class="nav-link p-0" id="v-pills-settings-tab" data-toggle="pill"
+                                            href="#export-options-tab" role="tab" aria-controls="v-pills-settings"
+                                            aria-selected="false">
+                                            <div class="accordion ">
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon" data-toggle="collapse" data-target="#hardware-submenu2">
+                                                  <img src="images/export-options-icon.svg" class="filter-icon-group">
+                                                  Export Options
+                                                </button>
+                      
+                                                <!-- <div id="hardware-submenu2" class="collapse" data-parent="#side-menu-accord">
+                                                  <div class="card-body table-submenu-list">
+                                                    <ul>
+                                                      <li>
+                                                        <a href="#" class="active-tab-side-submenu">Hardware Installed</a>
+                                                      </li>
+                                                      <li><a href="#">Hard Disks</a></li>
+                                                      <li><a href="#">Network Cards</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </div> -->
+                                              </div>
+                                            </div>
+                                            </a>
+                      
+                                            <!-- <div class="nav-link accordion p-0" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon">
+                                                  
+                                                  <img src="images/icon_systemNotifications.svg" class="filter-icon-group">
+                                                  Notifications 
+                                                </button>
+                                              </div>
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon">
+                                                  <img src="images/icon_logs.svg" class="filter-icon-group">
+                                                  Logs &amp; Events 
+                                                </button>
+                                              </div>
+                      
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon">
+                                                  <img src="images/icon_servicesIntegration.svg" class="filter-icon-group">
+                                                  Service Integration
+                                                </button>
+                                              </div>
+                      
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button class="no-arrow-icon">
+                                                  <img src="images/icon_sslSettings.svg" class="filter-icon-group">
+                                                  SSL Settings
+                                                </button>
+                                              </div>
+                                            </div> -->
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+
+
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <div class="tab-pane fade" id="filter-tab" role="tabpanel"
@@ -2071,6 +2241,871 @@
                                                                         &nbsp;
                                                                     </td>
                                                                 </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="parent-row">
+                                                                    <td class="border-top-left border-bottom-left">
+                                                                        <input type="checkbox"></td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-logos">
+                                                                                <!-- <a href="#"><img
+                                                                                        src="images/deep_security_logo.png"></a>
+                                                                                <a href="#"><img src="images/eset_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/fortigate_logo.png"></a>
+                                                                                <a href="#"><img
+                                                                                        src="images/nexpose_logo.png"></a> -->
+                                                                                <span class="c-gray-td">4</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <div class="table-innerbox">
+                                                                                <span>
+                                                                                    2019-10-20:11:25:45
+                                                                                </span>
+                                                                                <span class="pipe">
+                                                                                    |
+                                                                                </span>
+                                                                                <span>
+                                                                                    2019-05-16 21 08
+                                                                                </span>
+                                                                                <span class="plus-more-data">
+                                                                                    <div class="more-numbers">
+                                                                                        2
+                                                                                    </div>
+                                                                                    <div class="dots-row">
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                        <span class="dots">.</span>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>
+                                                                                2019-10-20:11:25:45
+                                                                            </span>
+                                                                            <span class="pipe">
+                                                                                |
+                                                                            </span>
+                                                                            <span>
+                                                                                2019-05-16 21 08
+                                                                            </span>
+                                                                            <span class="plus-more-data">
+                                                                                <div class="more-numbers">
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="dots-row">
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                    <span class="dots">.</span>
+                                                                                </div>
+                                                                            </span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="table-innerbox">
+                                                                            <span>Computer</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="border-top-right border-bottom-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/down-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                    <td class="border-top-right">
+                                                                        <!-- <a href="#" class="acord-arrow">
+                                                                            <img src="images/up-arrow.svg">
+                                                                        </a> -->
+                                                                        &nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                
                                                                 <!-- <tr class="empty-row">
                                       <td colspan="6" class="border-bottom-left border-bottom-right">
                                         <div class="empty-row-shadow"></div>
