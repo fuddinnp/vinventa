@@ -220,12 +220,12 @@
   height: $custom-select-height;
   padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
   font-family: $custom-select-font-family;
-  @include font-size($custom-select-font-size);
+  // @include font-size($custom-select-font-size);
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   vertical-align: middle;
-  background-image: url(../images/select-dropdwon-icon.png);
+  background-image: url(../images/down-arrow.svg);
   background-repeat: no-repeat;
   background-position-x: 97%;
   background-position-y: 18px;
