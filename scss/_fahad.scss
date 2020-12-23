@@ -1763,7 +1763,7 @@ input:checked + .sliders-Not .not-blue-bg {
     width: 95%;
     padding: 15px;
     background: #fff;
-    z-index: 2;
+    z-index: 9;
     top: 40px;
     left: 0px;
   }
@@ -2714,7 +2714,7 @@ table .parent-row,
 
 .list-view-hover-wrapper {
   background: #fff;
-  padding: 35px 35px 35px 44px;
+  padding: 20px;
   border: 1px solid #c4c4c4;
 
   .content-wrapper {
@@ -4055,6 +4055,36 @@ right: 12px;
 
 
 // Assets Inventory Page CSS 
+.grid-auto-div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.dropdown-connectors-list {
+  li {
+    .nav-link {
+      width: 100%;
+    }
+  }
+}
+.collapsed-dropdown-icon {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    display: inline-block;
+    background-image: url(../images/down-arrow.svg);
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    background-repeat: no-repeat;
+  }
+}
+.table-submenu-lists {
+  padding-left: 30px;
+  padding-top: 10px;
+}
 .date-picker-div-assets-inventory {
   display: grid;
   grid-template-columns: auto minmax(200px, auto) minmax(150px, auto);
@@ -4087,12 +4117,24 @@ div {
 .query-icon {
   margin-left: 12px;
 }
-.assets-inventory-wrapper {
+.assets-inventory-wrapper { 
+  .table-submenu-list {
+    li {
+      a {
+        border: 1px solid #ecedf2;
+      }
+    }
+  }
   .dropdown-main-div {
     .dropdown-div {
       .dropdwon-top {
+        padding-left: 0px !important;
+        padding-top: 0px !important;
         border: 0px solid #cdcdd6 !important;
         border-bottom: 1px solid #cdcdd6 !important;
+        h3 {
+          font-weight: bold;
+        }
       }
     }
   }
@@ -4138,14 +4180,14 @@ align-items: center;
       position: relative;
       border: 1px solid #c4c4c4;
       &::before {
-        width: 50px;
-        height: 100%;
-        background: #fff;
-        position: absolute;
-        top: 0px;
-        right: -10px;
-        content: "";
-        z-index: 99;
+        width: 6px;
+height: 100%;
+background: #fff;
+position: absolute;
+top: 0px;
+right: 188px;
+content: "";
+z-index: 99;
     }
 
     }
@@ -4167,4 +4209,17 @@ align-items: center;
     }
 
   }
+}
+.slid-screen-wrapper {
+  .tabs-aggre .active::before {
+    
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    content: "";
+    z-index: 99;
+}
 }

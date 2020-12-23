@@ -305,7 +305,7 @@
                                             Assets Inventory
                                         </h3>
                                         <div>
-                                            <button id="btn_cancle" type="button" class="cancel-btn">
+                                            <button id="btn_clear_all_filters " type="button" class="cancel-btn">
                                                 Clear All Filters
                                                </button>
                                         </div>
@@ -348,12 +348,115 @@
                                             <input type="text"
                                                 placeholder="Search by Host Name, User Name, Manufacturer Serial MAC or IP..."
                                                 class="search-field">
-                                            <a href="#" class="search-query-dropdown-btn">
+                                            <a href="#" id="link_arrow-icon" class="search-query-dropdown-btn">
                                                 <img src="images/down-arrow.svg" style="width: 14px;">
+
                                             </a>
+                                            <div class="widget-exclude-container" style="position: absolute; top: 40px; z-index: 98; background: #fff; padding: 20px;width: 100%;" >
+                                                <h6>Recent searches</h6>
+                                                <div class="bubble-tags-wrapper" style="max-height: 100%; overflow-y: inherit; margin: 20px 0px;">
+                                                
+                                                 <div class="bubble">
+                                                    <div class="legend-greens">&nbsp;</div>
+                                                  <div>WIndows 7</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-greens">&nbsp;</div>
+                                                  <div>WIndows 8</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-reds">&nbsp;</div>
+                                                  <div>WIndows 10</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-yellows">&nbsp;</div>
+                                                  <div>WIndows 7</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                                                </div>
+
+                                                 <h6 style="border-top: 1px solid #ccc;
+                                                 padding-top: 10px;" >Recent searches</h6>
+                                                 <div class="bubble-tags-wrapper" style="max-height: 100%; overflow-y: inherit; margin: 20px 0px;">
+                                                 <div class="bubble">
+                                                  <div class="legend-greens">&nbsp;</div>
+                                                  <div>WIndows 8</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-reds">&nbsp;</div>
+                                                  <div>Devices not manufactured in the U.S.</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-reds">&nbsp;</div>
+                                                  <div>WIndows 7</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-reds">&nbsp;</div>
+                                                  <div>WIndows 8</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                 <div class="bubble">
+                                                  <div class="legend-reds">&nbsp;</div>
+                                                  <div>WIndows 10</div>
+                                                  <div>
+                                                   <a href="#" id="link_close">
+                                                    <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                   </a>
+                                                  </div>
+                                                 </div>
+                         
+                                                </div>
+                         
+                                               </div>
+                                            
                                         </div>
                                         <div class="query-icon">
-                                            <img src="images/query-wizard-icon.svg">
+                                           <a href="#" id="link_query_icon" > <img src="images/query-wizard-icon.svg"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -692,7 +795,50 @@
                                                                         </li>
 
 
+                                                                        <li>
+                                                                            <div class="nav-link accordion p-0">
+                                                                                <div class="tabs-sidemenu-accord-container">
+                                                                                  <div >
+                                                                                    <div class="grid-auto-div">
+                                                                                        <div class="checkbox-connector-list">
+                                                                                            <input type="checkbox" />
+                                                                                        </div> 
+                                                                                        <div data-toggle="collapse" data-target="#hardware-submenu00" aria-expanded="false" class="collapsed grid-auto-div collapsed-dropdown-icon">
+                                                                                            <div>
+                                                                                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img">
+                                                                                            </div>
+                                                                                            <div>Absolute</div>
+                                                                                        </div>
+                                                                        
+                                                                                      </div>
+                                                                                    </div>
 
+                                                                                  
+                                                        
+                                                                                  <div id="hardware-submenu00" class="collapse" data-parent="#side-menu-accord" style="">
+                                                                                    <div class="card-bodys table-submenu-lists">
+                                                                                        <ul class="dropdown-connectors-sublist"
+                                                                                        >
+                
+                
+                                                                                        <li>
+                                                                                            <div class="">
+                                                                                                <input type="checkbox" />
+                                                                                            </div>
+                                                                                            <div>Select All</div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="">
+                                                                                                <input type="checkbox" />
+                                                                                            </div>
+                                                                                            <div>Select All</div>
+                                                                                        </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                        </li>
 
                                                                         <li>
                                                                             <div class="">
@@ -714,7 +860,50 @@
                                                                           
                                                                         </li>
                                                                         
+                                                                        <li>
+                                                                            <div class="nav-link accordion p-0">
+                                                                                <div class="tabs-sidemenu-accord-container">
+                                                                                  <div >
+                                                                                    <div class="grid-auto-div">
+                                                                                        <div class="checkbox-connector-list">
+                                                                                            <input type="checkbox" />
+                                                                                        </div> 
+                                                                                        <div data-toggle="collapse" data-target="#hardware-submenu000" aria-expanded="false" class="collapsed grid-auto-div collapsed-dropdown-icon">
+                                                                                            <div>
+                                                                                                <img src="images/absolute_adapter.png" class="dropdwon-connector-img">
+                                                                                            </div>
+                                                                                            <div>Absolute</div>
+                                                                                        </div>
                                                                         
+                                                                                      </div>
+                                                                                    </div>
+
+                                                                                  
+                                                        
+                                                                                  <div id="hardware-submenu000" class="collapse" data-parent="#side-menu-accord" style="">
+                                                                                    <div class="card-bodys table-submenu-lists">
+                                                                                        <ul class="dropdown-connectors-sublist"
+                                                                                        >
+                
+                
+                                                                                        <li>
+                                                                                            <div class="">
+                                                                                                <input type="checkbox" />
+                                                                                            </div>
+                                                                                            <div>Select All</div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="">
+                                                                                                <input type="checkbox" />
+                                                                                            </div>
+                                                                                            <div>Select All</div>
+                                                                                        </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                        </li>
                                                                         <li>
                                                                             <div class="">
                                                                                                 <input type="checkbox" />
