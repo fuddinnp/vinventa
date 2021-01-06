@@ -2866,7 +2866,7 @@ table .parent-row,
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
 
   .view-box {
     border: 1px solid #c4c4c4;
@@ -3450,6 +3450,7 @@ option {
   }
 }
 .form-control:disabled,
+.custom-select:disabled,
 .form-control[readonly] {
   background-color: #d7d7d7 !important;
 }
@@ -4222,4 +4223,14 @@ z-index: 99;
     content: "";
     z-index: 99;
 }
+}
+
+//assets page css new
+.perform-task-fields-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap:15px;
+}
+.grid-full-width {
+  grid-column: 1/-1;
 }
