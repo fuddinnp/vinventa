@@ -4118,7 +4118,7 @@ line-height: 145.5px;
   padding: 8px 4px 6px 8px;
   display: grid;
   justify-content: center;
-  grid-gap: 10px;
+  grid-gap: 4px;
   grid-template-columns: 1fr auto;
   align-items: center;
   font-size: 14px;
@@ -4401,4 +4401,8 @@ height: 250px;
     }
    }
   }
+ }
+ .standard-table-scroll {
+   overflow-y: hidden;
+   height: 290px;
  }
