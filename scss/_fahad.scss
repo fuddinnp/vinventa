@@ -398,7 +398,7 @@ input[type="submit"] {
 }
 
 .tabs-aggre button {
-  padding: 15px 22px !important;
+  padding: 12px 22px !important;
   color: #4c4c4c !important;
 }
 
@@ -1783,7 +1783,7 @@ input:checked + .sliders-Not .not-blue-bg {
 
 .selectBox {
   position: relative;
-  margin-right: 12px;
+  margin-right: 16px;
 
   select {
     border: 0px solid #ccc;
@@ -2943,7 +2943,7 @@ table .parent-row,
     .nav-pills .nav-link {
       text-decoration: none;
       color: #4c4c4c;
-      margin: 12px 0px;
+      margin: 6px 0px;
       padding: 15px;
 
       .filter-arrow-left-icon {
@@ -4118,7 +4118,7 @@ div {
 }
 }
 .query-icon {
-  margin-left: 12px;
+  margin-left: 16px;
 }
 .assets-inventory-wrapper { 
   .table-submenu-list {
@@ -4235,4 +4235,9 @@ z-index: 99;
 }
 .grid-full-width {
   grid-column: 1/-1;
+}
+.list-view-hover-wrapper {
+  .view-boxs-wrapper {
+    align-items: center;
+  }
 }

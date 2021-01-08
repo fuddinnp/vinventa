@@ -228,9 +228,9 @@
   background-image: url(../images/down-arrow.svg);
   background-repeat: no-repeat;
   background-position-x: 97%;
-  background-position-y: 18px;
-  padding: 10px;
-  height: 40px;
+  background-position-y: 16px;
+  padding:6px 10px;
+  height: 38px;
   margin-right: 15px;
   border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius, 0);

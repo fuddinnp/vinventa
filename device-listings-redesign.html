@@ -653,7 +653,7 @@
                                             aria-labelledby="v-pills-profile-tab">
                                             <div class="list-view-hover-wrapper">
                                                     <div class="content-wrapper">
-                                                        <div class="dropdowns-wrapper no-border">
+                                                        <div class="dropdowns-wrapper no-border p-0">
                                                             <div class="dropdown-main-div">
                                                                 <div class="dropdown-div mr-4 margin-b">
                                                                     <div class="dropdwon-top">
@@ -1386,7 +1386,7 @@
                                             
                                             <div class="list-view-hover-wrapper">
 
-                                                <div class="query-wizard-exp-contents m-3">
+                                                <div class="query-wizard-exp-contents">
                                                     <div class="query-wizard-expension">
                                                       <button type="button" class="no-btn close-btn full-panel-close-btn" data-dismiss="modal">
                                                         <span>
@@ -1609,28 +1609,136 @@
                                                     
                                                 <!-- view box row -->
                                                 <div class="view-boxs-wrapper">
-                                                    <div class="view-box no-border">
+                                                    <div class="view-box p-0 no-border">
                                                         <!-- <h3>Save View</h3> -->
                                                         <p>
                                                             <input type="radio" id="rbt_assignTagSelectedAssets" checked name="assignTagSelectedAssets" value="assignTagSelectedAssets" />
-                                                            <label for="male">Assign Tag to Selected Assets</label>
+                                                            <label class="mb-0" for="male">Assign Tag to Selected Assets</label>
                                                         </p>
+                                                        
+                                                    </div>
+
+                                                    <div class="view-box p-0 no-border perform-task-fields-div">
+
+                                                        <div>
+                                                            <select class="custom-select">
+                                                                <option>Select Tag Name</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div>
+                                                            <select class="custom-select">
+                                                                <option>Select Tag Value</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box p-0 no-border">
+                                                        <!-- <h3>Save View</h3> -->
+                                                        
                                                         <p>
                                                             <input type="radio" id="rbt_addCustomFieldsSelectedAssets" name="addCustomFieldsSelectedAssets" value="addCustomFieldsSelectedAssets" />
-                                                            <label for="male">Add Custom Fields to Selected Assets</label>
+                                                            <label  class="mb-0" for="male">Add Custom Fields to Selected Assets</label>
                                                         </p>
+                                                       
+                                                    </div>
+
+                                                    <div class="view-box p-0 no-border perform-task-fields-div">
+
+                                                    
+                                                    <div>
+                                                        <input type="text" class="form-control" readonly id="input_enterFieldName" placeholder="Enter Field Name">
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" readonly class="form-control" id="input_enterFieldValue" placeholder="Enter Field Value">
+                                                    </div>
+                                                   
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box p-0 no-border">
+                                                        <!-- <h3>Save View</h3> -->
+                                                        
                                                         <p>
                                                             <input type="radio" id="rbt_runPolicySelectedAssets" name="gender" value="male" />
-                                                            <label for="male">Run Policy on Selected Assets</label>
+                                                            <label class="mb-0" for="male">Run Policy on Selected Assets</label>
                                                         </p>
+                                                       
+                                                    
+                                                    </div>
+
+                                                    <div class="view-box p-0 no-border perform-task-fields-div">
+
+                                                    
+                                                    <div class="grid-full-width">
+                                                        <select class="custom-select" disabled>
+                                                            <option>Select Policy</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box p-0 no-border">
+                                                        <!-- <h3>Save View</h3> -->                                                       
                                                         <p>
                                                             <input type="radio" id="rbt_getMoreInformationSelectedAssets" name="gender" value="male" />
-                                                            <label for="male">Get More Information of Selected Assets from</label>
+                                                            <label class="mb-0" for="male">Get More Information of Selected Assets from</label>
                                                         </p>
+                                                       
+                                                    </div>
+
+                                                    <div class="view-box p-0 no-border perform-task-fields-div">
+                                                        <div  class="grid-full-width">
+                                                            <select class="custom-select" disabled>
+                                                                <option>Select</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box p-0 no-border">
+                                                        <!-- <h3>Save View</h3> -->
+                                                       
                                                         <p>
                                                             <input type="radio" id="rbt_deleteDevicesWhichAreNotDiscoveredLlast" name="gender" value="male" />
-                                                            <label for="male">Delete Devices which are not discovered in last</label>
+                                                            <label class="mb-0" for="male">Delete Devices which are not discovered in last</label>
                                                         </p>
+                                                       
+                                                    </div>
+
+                                                    <div class="view-box p-0 no-border perform-task-fields-div">
+
+                                                    <div class="">
+                                                        <input type="text" readonly class="form-control" id="input_enterFieldValue" placeholder="">
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-boxs-wrapper">
+                                                    <div class="view-box p-0 no-border">
+                                                        <!-- <h3>Save View</h3> -->
                                                         <p>
                                                             <input type="radio" id="rbt_deleteSelectedDevices" name="gender" value="male" />
                                                             <label for="male">Delete Selected Devices</label>
@@ -1643,59 +1751,11 @@
                                                             <input type="radio" id="rbt_HideSelectedAssetsFromCurrentList" name="gender" value="male" />
                                                             <label for="male">Hide Selected Assets from Current List</label>
                                                         </p>
-                                                    
-                                                    </div>
-
-                                                    <div class="view-box no-border perform-task-fields-div">
-
-                                                    <div>
-                                                        <select class="custom-select">
-                                                            <option>Select Tag Name</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <select class="custom-select">
-                                                            <option>Select Tag Value</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <input type="text" class="form-control" readonly id="input_enterFieldName" placeholder="Enter Field Name">
-                                                    </div>
-                                                    <div>
-                                                        <input type="text" readonly class="form-control" id="input_enterFieldValue" placeholder="Enter Field Value">
-                                                    </div>
-                                                    <div class="grid-full-width">
-                                                        <select class="custom-select" disabled>
-                                                            <option>Select Tag Name</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div  class="grid-full-width">
-                                                        <select class="custom-select" disabled>
-                                                            <option>Select Tag Value</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="mb-5">
-                                                        <input type="text" readonly class="form-control mb-5" id="input_enterFieldValue" placeholder="">
-                                                    </div>
                                                     </div>
                                                 </div>
-                                                <div class="mt-3 col-lg-12 box-btn text-right">
+
+
+                                                <div class="mt-3 col-lg-12 box-btn text-right pr-0">
                                                     <button type="button"
                                                         class="theme-btn graydient-primary-btn">
                                                         Apply
@@ -2227,7 +2287,7 @@
                                                     
                                                     <!-- view box row -->
                                                     <div class="view-boxs-wrapper">
-                                                        <div class="view-box no-border">
+                                                        <div class="view-box no-border p-0 mr-0">
                                                             <!-- <h3>Save View</h3> -->
                                                             <p>
                                                                 <input type="radio" id="rbt_exportCSV" checked name="gender" value="male" />

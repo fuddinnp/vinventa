@@ -4384,8 +4384,8 @@ height: 250px;
    }
  
    td {
-    font-size: 14px;
-    color: #4c4c4c;
+    font-size: 14px !important;
+    color: #4C4C4C;
     border-top: 1px solid #ecedf2;
    }
   }
@@ -4402,7 +4402,17 @@ height: 250px;
    }
   }
  }
+ .standard-table .td-center img {
+  width: 18px;
+}
+.standard-table .td-center a {
+  margin: 0px 10px;
+}
  .standard-table-scroll {
    overflow-y: hidden;
    height: 290px;
+ }
+ .table td {
+   font-size: 14px !important;
+   color: #4C4C4C !important;
  }
