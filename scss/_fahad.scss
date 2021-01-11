@@ -1188,7 +1188,7 @@ input:checked + .sliders:before {
     -moz-appearance: none;
     appearance: none;
     /* Remove default arrow */
-    background-image: url(../images/select-dropdwon-icon.png);
+    background-image: url(../images/down-arrow.svg);
     background-repeat: no-repeat;
     background-position-x: 97%;
     background-position-y: 13px;
@@ -1263,7 +1263,7 @@ input:checked + .sliders:before {
 }
 
 .list-ic .active {
-  background: dodgerblue;
+  background: #fff;
 }
 
 .list-ic .active ~ li {
@@ -1670,6 +1670,9 @@ input:checked + .sliders-Not .not-blue-bg {
 /*--------- END --------*/
 
 /* Rounded sliders */
+.custom-select-arrow {
+  background-position-x: 94% !important;
+}
 .sliders-Not.round {
   border-radius: 34px;
 }
@@ -2714,7 +2717,7 @@ table .parent-row,
 
 .list-view-hover-wrapper {
   background: #fff;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #c4c4c4;
 
   .content-wrapper {
@@ -2989,7 +2992,10 @@ table .parent-row,
   transition: all 300ms;
 }
 .tab-content-small {
-  width: 45vw !important;
+  width: 35vw !important;
+}
+.tab-content-small-query-builder {
+  width: 85vw !important;
 }
 .slid-screen-wrapper {
   .sliding-left-section {
@@ -3026,6 +3032,9 @@ table .parent-row,
     z-index: 3;
     height: 100%;
 background: white;
+  }
+  .tab-content-small-query-builder {
+    width: 76.5vw !important;
   }
 }
 
