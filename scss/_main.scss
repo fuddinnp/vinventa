@@ -4506,13 +4506,14 @@ height: 250px;
   }
  
   .data-row-heading {
-   color: black;
-   font-size: 20px;
+   color: #4C4C4C;
+   font-size: 16px;
    padding: 10px;
    margin-left: 52px;
    padding-top: 10px;
    padding-bottom: 3px;
    line-height: 20px;
+   font-weight: 600;
   }
  
   .table-hover-content-parent {
@@ -4523,16 +4524,14 @@ height: 250px;
     .data-row {
      width: 100%;
      border-bottom: 1px solid #ecedf2;
-     background: #f6f6f6;
- 
+     background: #f6f6f6; 
      &:hover {
       // background: #bababa;
      }
     }
  
     .data-row:nth-child(odd) {
-    //  background: #e2e2e2;
- 
+    //  background: #e2e2e2; 
      &:hover {
       // background: #bababa;
      }
@@ -4543,12 +4542,11 @@ height: 250px;
      grid-template-columns: auto auto;
      grid-gap: 10px;
      padding: 5px 20px;
-     align-items: center;
- 
+     align-items: center; 
      // background: #ac5858;
-     color: #000;
- 
+     color: #4C4C4C; 
      text-decoration: none;
+     font-size: 14px;
  
      :last-child {
       border-bottom: 0px;
@@ -4577,9 +4575,11 @@ height: 250px;
      background: #F6F6F6;
      border: 1px solid #c4c4c4;
      text-align: left;
-     max-height: 297px;
-     overflow-y: scroll;
      z-index: 1;
+    }
+    .data-row-contenter {
+      max-height: 297px;
+      overflow-y: scroll;
     }
    }
   }
