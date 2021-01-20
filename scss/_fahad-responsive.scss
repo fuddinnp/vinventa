@@ -1,5 +1,12 @@
 // Responsive css
 @media screen and (max-width: 767px) {
+    .assets-details-modal-field-row {
+        grid-template-columns: 1fr;
+
+        button {
+            width: 100%;
+        }
+    }
     // system setting date and time 
     .four-dropdwon-div {
         grid-template-columns: 1fr;

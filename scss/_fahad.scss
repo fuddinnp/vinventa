@@ -4250,3 +4250,10 @@ z-index: 99;
     align-items: center;
   }
 }
+//assets details modal css
+.assets-details-modal-field-row {
+  display: grid;
+// align-items: center;
+grid-template-columns: 1fr auto;
+grid-gap: 15px;
+}

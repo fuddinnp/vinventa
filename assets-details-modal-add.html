@@ -38,7 +38,7 @@
                     <br />
                     <br />
                     <p>
-                      <a href="#" data-toggle="modal" data-target="#exampleModal">Add User</a>
+                      <a href="#" data-toggle="modal" data-target="#exampleModal">Assets Details Modal Add</a>
                     </p>
                   </div>
                 </div>
@@ -55,13 +55,20 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="col-lg-7 modal-wrapper-xl mx-auto">
+      <div class="col-lg-11 modal-wrapper-xl mx-auto">
         <div class="modal-content">
           <div class="modal-body">
             <div class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper">
               <div class="adding-adapter-modal-header">
-                <div class="adapter-modal-name ml-0">
-                  Add User
+                <div class="adapter-modal-name ml-0 page-heading mt-2">
+                    Assets Details 
+                    <div class="breadcumb-flex">
+                        <div class="page-heading-breadcrumb">
+                            <a href=""> > mail.netpace.com  </a>
+                        </div>
+                        <!-- <div class="page-heading-breadcrumb"> <span class="green-circle"></span> 192.168.1.20 - Vinventa
+  </div> -->
+                    </div>
                 </div>
 
                 <div class="adapter-modal-help-box">
@@ -79,98 +86,71 @@
                 </div>
               </div>
 
-              <div class="adapter-modal-content-box">
-                <div class="adapter-modal-field-row text-right">
-                  <div class="">
+              <div class="adapter-modal-content-box ">
+                <div class="assets-details-modal-field-row">
+                    <div class="">
+                      <label>Labels</label>
+                      <input type="text" class="field-large" placeholder="Enter Label" />
+                    </div>
+  
+                    <div class="mt-4">
+                      
+                      <button type="button" class="theme-button-small graydient-primary-btn">
+                        Add
+                    </button>
+                    </div>
+                </div>
 
-                    <div class="query-toggle-btn-div add-user-toggle-btn">
-                      <!--and or btn-->
-                      <label class="switch-btn">
-                        <input type="checkbox" id="togBtn">
-                        <div class="sliderss round">
-                          <!--ADDED HTML -->
-                          <div class="on">Active</div>
-                          <div class="off">Inactive</div>
-                          <!--END-->
-                        </div>
-                      </label>
+
+                <div class="mt-5" >
+                    <p style="padding-bottom: 6px; font-size: 14px; font-weight: 600;border-bottom: 1px solid #ccc;">Label Name</p>
+                    <div class="bubble-tags-wrapper" style="max-height: 100%; overflow-y: inherit; margin: 20px 0px;">
+                    
+                     <div class="bubble">
+                       
+                      <div>WIndows 7</div>
+                      <div>
+                       <a href="#" id="link_close">
+                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                       </a>
+                      </div>
+                     </div>
+
+                     <div class="bubble">
+                     
+                      <div>WIndows 8</div>
+                      <div>
+                       <a href="#" id="link_close">
+                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                       </a>
+                      </div>
+                     </div>
+
+                     <div class="bubble">
+                     
+                      <div>WIndows 10</div>
+                      <div>
+                       <a href="#" id="link_close">
+                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                       </a>
+                      </div>
+                     </div>
+
+                     <div class="bubble">
+                      
+                      <div>WIndows 7</div>
+                      <div>
+                       <a href="#" id="link_close">
+                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                       </a>
+                      </div>
+                     </div>
                     </div>
 
+                   </div>
 
-                    <!-- <label class="toggle-switch-btn">
-                      <input type="checkbox" id="togBtn">
-                      <div class="slider round">
-                        ADDED HTML
-                        <span class="on-active">Active</span>
-                        <span class="off-inactive">Inactive</span>
-                        END
-                      </div>
-                    </label> -->
-                  </div>
 
-                  <!-- <div class="">
-                      <label>Last Name</label>
-                      <input type="text" class="field-large" placeholder="" />
-                    </div> -->
-                </div>
-                <div class="adapter-modal-field-row">
-                  <div class="mr-3">
-                    <label>Frist Name</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
 
-                  <div class="">
-                    <label>Last Name</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
-                </div>
-
-                <div class="adapter-modal-field-row mt-3">
-                  <div class="mr-3">
-                    <label>Email</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
-
-                  <div>
-                    <label>Username</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
-                </div>
-
-                <div class="adapter-modal-field-row mt-3">
-                  <div class="mr-3">
-                    <label>Password</label>
-                    <input type="password" class="field-large" placeholder="" />
-                  </div>
-
-                  <div class="">
-                    <label>Confrim Password</label>
-                    <input type="password" class="field-large" placeholder="" />
-                  </div>
-                </div>
-
-                <div class="adapter-modal-field-row mt-3">
-                  <div class="mr-3">
-                    <label>Phone</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
-                  <div class="">
-                    <label>User Type</label>
-                    <input type="text" class="field-large" placeholder="" />
-                  </div>
-                </div>
-
-                <div class="adapter-modal-bottom-row">
-                  <!-- <div>
-                  <a href="#"> Cancel </a>
-                </div> -->
-
-                  <div style="margin: 0px;">
-                    <button type="button" class="theme-btn graydient-primary-btn">
-                      Save
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
