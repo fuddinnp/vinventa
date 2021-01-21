@@ -2999,7 +2999,7 @@ table .bold-heading {
 .theme-button-small {
  padding: 12px 22px;
  font-size: 16px;
- background: #a57dff;
+ background: #776FFF;
  border: 0px;
  color: white;
 
@@ -4656,7 +4656,10 @@ height: 250px;
   .standard-table .stripe tr:nth-of-type(odd) {
     background: #fafafa;
   }
-  
+  .table-hover tbody tr:hover, .standard-table .stripe tr:hover {
+    color: #212529;
+    background-color: rgba(0, 0, 0, 0.075) !important;
+}
   .standard-table table {
     white-space: nowrap;
     width: 100%;
