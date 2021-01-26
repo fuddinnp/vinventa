@@ -1948,6 +1948,12 @@ td {
     padding: 10px;
     // border-radius: 14px;
     text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 2px solid #776FFF;
+    }
 
     .box-logo {
       a {
@@ -4256,4 +4262,15 @@ z-index: 99;
 // align-items: center;
 grid-template-columns: 1fr auto;
 grid-gap: 15px;
+}
+.assets-details-modal-title-row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-gap: 15px;
+  margin: 15px 0px;
+}
+.assets-details-modal-title {
+  font-size: 20px;
+  color: #4c4c4c;
 }
