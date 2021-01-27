@@ -19,6 +19,7 @@
   </script>
 
   <script src="js/perfect-scrollbar.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
   <title>Vinventa</title>
 </head>
@@ -51,123 +52,305 @@
     </div>
   </div>
 
-  <!-- Addaing a Adapter Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="col-lg-11 modal-wrapper-xl mx-auto">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper">
-              <div class="adding-adapter-modal-header">
-                <div class="adapter-modal-name ml-0 page-heading mt-2">
-                    Assets Details 
-                    <div class="breadcumb-flex">
-                        <div class="page-heading-breadcrumb">
-                            <a href=""> > mail.netpace.com  </a>
-                        </div>
-                        <!-- <div class="page-heading-breadcrumb"> <span class="green-circle"></span> 192.168.1.20 - Vinventa
-  </div> -->
-                    </div>
-                </div>
+ <!-- Addaing a Adapter Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="create-widget-main-wrapper mx-auto">
+    <div class="modal-content">
+     <div class="modal-body">
+      <div class="add-user-modal adding-adapter-wrapper modal-query-wizard-wrapper modal-add-connections-wrapper">
+       <div class="adding-adapter-modal-header mb-0">
+        <div class="adapter-modal-name ml-0">Assets Details > mail.netpace.com</div>
 
-                <div class="adapter-modal-help-box">
-                  <a href="#" class="question-icon hidden">
-                    ?
-                  </a>
-                  <a href="#" class="adapter-modal-help-link hidden">
-                    Help
-                  </a>
-                  <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
-                    <span>
-                      <img src="images/modal-close.svg" />
-                    </span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="adapter-modal-content-box ">
-                <div class="assets-details-modal-title-row">
-                  <div>
-                    <h2 class="assets-details-modal-title">Labels</h2>
-                  </div>
-                  <!-- <div>
-                    <button class="cancel-btn pr-0">Export CVS</button>
-                  </div> -->
-
-                </div>
-                <div class="assets-details-modal-field-row">
-                    <div class="">
-                      <!-- <label>Labels</label> -->
-                      <input type="text" class="field-large" placeholder="Enter Label" />
-                    </div>
-  
-                    <div>
-                      
-                      <button type="button" class="theme-button-small graydient-primary-btn">
-                        Add
-                    </button>
-                    </div>
-                </div>
-
-
-                <div class="mt-5" >
-                    <p style="padding-bottom: 6px; font-size: 14px; font-weight: 600;border-bottom: 1px solid #ccc;">Label Name</p>
-                    <div class="bubble-tags-wrapper" style="max-height: 100%; overflow-y: inherit; margin: 20px 0px;">
-                    
-                     <div class="bubble">
-                       
-                      <div>WIndows 7</div>
-                      <div>
-                       <a href="#" id="link_close">
-                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
-                       </a>
-                      </div>
-                     </div>
-
-                     <div class="bubble">
-                     
-                      <div>WIndows 8</div>
-                      <div>
-                       <a href="#" id="link_close">
-                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
-                       </a>
-                      </div>
-                     </div>
-
-                     <div class="bubble">
-                     
-                      <div>WIndows 10</div>
-                      <div>
-                       <a href="#" id="link_close">
-                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
-                       </a>
-                      </div>
-                     </div>
-
-                     <div class="bubble">
-                      
-                      <div>WIndows 7</div>
-                      <div>
-                       <a href="#" id="link_close">
-                        <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
-                       </a>
-                      </div>
-                     </div>
-                    </div>
-
-                   </div>
-
-
-
-              </div>
-            </div>
-          </div>
+        <div class="adapter-modal-help-box">
+         <button id="btn_closeIcon" type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+          <span>
+           <img src="images/modal-close.svg" />
+          </span>
+         </button>
         </div>
-      </div>
-    </div>
-  </div>
+       </div>
 
+       <div class="adapter-modal-content-box pb-3 pt-0 create-widget-wrapper">
+
+        <div class="">
+
+         <div class="tabs-flowing-box">
+
+
+
+          <div class="summary-box">
+           <img src="images/vinventa-small-log.png">
+          </div>
+
+
+
+          <div class="grid-box-tabs-flow" style="position: relative;">
+
+
+           <ul class=" nav nav-tabs tabs-flow-main-header-row hori-scroll" data-mcs-theme="minimal-dark">
+            <li class="nav-item">
+             <a class="nav-link active" href="#">
+              <img src="images/icon-aws-adapter.png">
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#"> <img src="images/icon-aws-adapter.png"></a>
+             </li>
+
+           </ul>
+
+
+
+           <div class="events-policy-tabs hori-scroll" data-mcs-theme="minimal-dark">
+
+
+            <a href="#">
+             <img src="images/icon-notes.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-tag.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-calendar.svg">
+            </a>
+            <!-- <a href="#">
+             <img src="images/icon-notes.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-notes.svg">
+            </a>
+
+            <a href="#">
+             <img src="images/icon-notes.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-tag.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-calendar.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-notes.svg">
+            </a>
+            <a href="#">
+             <img src="images/icon-notes.svg">
+            </a> -->
+           </div>
+
+          </div>
+
+         </div>
+
+
+         <ul class="nav nav-tabs main-summary-tabs-flow  hori-scroll" data-mcs-theme="minimal-dark" id="myTab">
+
+          <li class="nav-item ">
+           <a class="nav-link active" data-toggle="tab" href="#box2"> Summary </a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box3"> Firewall Rules</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box4"> Network Interfaces</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box5"> Hard Drives</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box6">Hardware</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#box7"> Software</a>
+          </li>
+
+
+         </ul>
+
+         <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="box2">
+            <!-- page html -->
+    <div class="assets-details-modal-title-row">
+      <div>
+        <h2 class="assets-details-modal-title">Labels</h2>
+      </div>
+      <div>
+        <button class="cancel-btn pr-0">Export CVS</button>
+      </div>
+
+    </div>
+
+
+    <div class="label-list-hori">
+      <input type="checkbox">
+      <label for="">Text type here</label>
+    </div>
+
+    <div class="assets-details-modal-field-row">
+        <div class="">
+          <!-- <label>Labels</label> -->
+          <input type="text" class="field-large" placeholder="Enter Label" />
+        </div>
+
+        <div>
+          
+          <button type="button" class="theme-button-small graydient-primary-btn">
+            Add
+        </button>
+        </div>
+    </div>
+    <div class="mt-5" >
+        <p style="padding-bottom: 6px; font-size: 14px; font-weight: 600;border-bottom: 1px solid #ccc;">Label Name</p>
+        <div class="bubble-tags-wrapper" style="max-height: 100%; overflow-y: inherit; margin: 20px 0px;">
+        
+         <div class="bubble">
+           
+          <div>WIndows 7</div>
+          <div>
+           <a href="#" id="link_close">
+            <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+           </a>
+          </div>
+         </div>
+
+         <div class="bubble">
+         
+          <div>WIndows 8</div>
+          <div>
+           <a href="#" id="link_close">
+            <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+           </a>
+          </div>
+         </div>
+
+         <div class="bubble">
+         
+          <div>WIndows 10</div>
+          <div>
+           <a href="#" id="link_close">
+            <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+           </a>
+          </div>
+         </div>
+
+         <div class="bubble">
+          
+          <div>WIndows 7</div>
+          <div>
+           <a href="#" id="link_close">
+            <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+           </a>
+          </div>
+         </div>
+        </div>
+
+       </div>
+          </div>
+          <div class="tab-pane fade" id="box3">Content 3</div>
+          <div class="tab-pane fade" id="box4">Content 4</div>
+          <div class="tab-pane fade" id="box5">Content 5</div>
+          <div class="tab-pane fade" id="box6">Content 6</div>
+          <div class="tab-pane fade" id="box7">Content 7</div>
+
+         </div>
+
+
+
+        </div>
+
+
+
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+  
   <script>
     $("#myModal").on("shown.bs.modal", function () {
       $("#myInput").trigger("focus");
@@ -175,6 +358,24 @@
   </script>
 
   <script src="js/custom.js"></script>
+  
+  <script>
+
+    (function ($) {
+     $(window).on("load", function () {
+      $(".hori-scroll").mCustomScrollbar({
+       axis: "x",
+       theme: "light-2",
+       advanced: {
+        autoExpandHorizontalScroll: true //optional (remove or set to false for non-dynamic/static elements)
+       }
+      });
+     });
+    })(jQuery);
+  
+   </script>
+
+  
 
   <script>
     /*
@@ -219,25 +420,6 @@
     });
   </script>
 
-  <script>
-    // Initialize the plugin
-    const demo = document.querySelector("#scroll");
-    const ps = new PerfectScrollbar(demo);
-
-    // Handle size change
-    document.querySelector("#resize").addEventListener("click", () => {
-      // Get updated values
-      width = document.querySelector("#width").value;
-      height = document.querySelector("#height").value;
-
-      // Set demo sizes
-      demo.style.width = `${width}px`;
-      demo.style.height = `${height}px`;
-
-      // Update Perfect Scrollbar
-      ps.update();
-    });
-  </script>
 </body>
 
 </html>
