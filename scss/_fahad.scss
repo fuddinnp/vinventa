@@ -4279,7 +4279,7 @@ grid-gap: 15px;
 
 .grid-box-tabs-flow {
   display: grid;
-  grid-template-columns: auto 165px;
+  grid-template-columns: auto 170px;
   border-bottom: 1px solid #808285;
  }
  
@@ -4329,10 +4329,13 @@ grid-gap: 15px;
     text-decoration: none;
     color: #4c4c4c;
     font-size: 16px;
-    padding: 8px 6px;
+    padding: 8px 15px;
     margin: 0px;
     display: inline-block;
     white-space: pre;
+    &:hover {
+      font-weight: 600;
+    }
    }
  
    a.active {
@@ -4354,7 +4357,7 @@ grid-gap: 15px;
   overflow-y: hidden;
   scroll-behavior: smooth;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 5px;
   position: relative;
   justify-content: space-around;
  
@@ -4370,7 +4373,18 @@ grid-gap: 15px;
    // white-space: pre;
    // display: flex;
    text-align: center;
+   padding: 6px 14px;
+
   }
+  a.active {
+    background: #f6f6f6;
+border-top: 1px solid #4c4c4c;
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100%;
+position: relative;    
+   }
  }
  
  .tabs-flowing-box {
@@ -4386,6 +4400,10 @@ grid-gap: 15px;
         a {
           padding: 6px 14px;
           text-align: center;
+          justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
 
           img {
             width: 30px;
@@ -4421,7 +4439,7 @@ grid-gap: 15px;
  .events-policy-tabs {
   .mCSB_container {
    display: grid;
-   grid-gap: 20px;
+   grid-gap: 0px;
    align-items: center;
   }
  }
