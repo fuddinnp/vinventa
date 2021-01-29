@@ -773,7 +773,7 @@ input:checked + .sliders:before {
 
 .modal-add-connections-wrapper .adding-adapter-modal-header {
   border-bottom: 1px solid #dcdde1;
-  padding: 12px 25px;
+  padding: 20px 25px 15px
 }
 
 .modal-add-connections-wrapper .modal-close-btn {
@@ -4279,24 +4279,25 @@ grid-gap: 15px;
 
 .grid-box-tabs-flow {
   display: grid;
-  grid-template-columns: auto 170px;
+  grid-template-columns: auto 154px;
   border-bottom: 1px solid #808285;
  }
  
- .summary-box {
+ .summary-box, .summary-box:hover {
   background: #f6f6f6;
   border-top: 1px solid #4c4c4c;
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100%;
+  cursor: pointer;
   img {
     width: 18px;
   }
  }
  .summary-box-unselect {
   background: #fff;
-  border-top: 0px solid #4c4c4c;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #4c4c4c;
  }
  .tabs-flow-main-header-row {
@@ -4313,6 +4314,7 @@ grid-gap: 15px;
   .mCustomScrollBox {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(130px,1fr)); 
+    height: 47px !important;
   }
  }
  
@@ -4390,18 +4392,24 @@ grid-gap: 15px;
    // white-space: pre;
    // display: flex;
    text-align: center;
-   padding: 6px 14px;
+   padding: 10px 14px;
+   border-top: 1px solid #fff;
 
-  }
-  a.active {
+   img {
+     width: 23px;
+   }
+   .active, &:hover {
     background: #f6f6f6;
+    padding: 10px 14px;
 border-top: 1px solid #4c4c4c;
-justify-content: center;
-align-items: center;
-display: flex;
-height: 100%;
+// justify-content: center;
+// display: flex;
+height: auto;
 position: relative;    
    }
+
+  }
+  
  }
  
  .tabs-flowing-box {
@@ -4427,7 +4435,7 @@ position: relative;
           }
         }
       }
-      .active {
+      .active, .nav-item:hover {
         background: #f6f6f6;
         border-top: 1px solid #4c4c4c;
         justify-content: center;
