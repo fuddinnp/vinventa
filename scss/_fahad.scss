@@ -4366,6 +4366,9 @@ grid-gap: 15px;
   align-items: center;
   width: 100%;
   direction: rtl !important;
+  .mCSB_container {
+    width: auto!important;
+  }
 }
 
  .events-policy-tabs {
