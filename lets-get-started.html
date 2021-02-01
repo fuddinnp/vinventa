@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class="lets-get-close">
-                                    <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+                                    <button id="btn_closeIcon" type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
                                         <span>
                                             <img src="images/modal-close.svg" />
                                         </span>
@@ -86,7 +86,7 @@
                                             Configuring Connector instances is the first step to start discovering & protecting Assets
                                         </p>
                                         <br/>
-                                        <button class="theme-btn graydient-primary-btn mt-4">Configure Connector Instances</button>
+                                        <button id="btn_configureConnector" class="theme-btn graydient-primary-btn mt-4">Configure Connector Instances</button>
                                     </div>
 
                                     <div class="box-div">
@@ -97,14 +97,14 @@
                                             If you are configuring this instance as “vInventa Satellite” then you need to form a Trust relationship between this Satellite and Master VM.
                                         </p>
                                         <br/>
-                                        <button class="theme-btn graydient-primary-btn mt-2">Establish Trust Relationship</button>
+                                        <button id="btn_establishTrustRelationship" class="theme-btn graydient-primary-btn mt-2">Establish Trust Relationship</button>
                                     </div>
                                    
                                 </div>
                                 <h6>Welcome Aboard and lets Start the Journey of Discovering and Protecting your Assets</h6>
                                 <div class="default-password-modal-bottom-row">
                                     <div class="checkbox-with-text-row">
-                                        <div><input type="checkbox"></div>
+                                        <div><input id="chk_dontShowThisMessageAgain" type="checkbox"></div>
                                         <div class="label-div">
                                             Don’t show this message again 
                                         </div>
@@ -112,7 +112,7 @@
 
                                     </div>
                                     <div class="default-pass-btn-div">
-                                        <button type="button" class="btn-continue">
+                                        <button id="btn_continue" type="button" class="btn-continue">
                                             Continue
                                         </button>
                                     </div>

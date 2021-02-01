@@ -4314,7 +4314,7 @@ grid-gap: 15px;
   .mCustomScrollBox {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(130px,1fr)); 
-    height: 47px !important;
+    height: 53px !important;
   }
  }
  
@@ -4395,19 +4395,20 @@ grid-gap: 15px;
    // white-space: pre;
    // display: flex;
    text-align: center;
-   padding: 10px 14px;
+   padding: 14px 14px;
    border-top: 1px solid #fff;
+   height: 54px;
 
    img {
      width: 23px;
    }
    .active, &:hover {
     background: #f6f6f6;
-    padding: 10px 14px;
+    padding: 14px 14px;
 border-top: 1px solid #4c4c4c;
 // justify-content: center;
 // display: flex;
-height: auto;
+height: 54px;
 position: relative;    
    }
 
