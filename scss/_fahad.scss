@@ -4659,21 +4659,54 @@ height: 300px;
     background-image: url(../images/userEdit-icon.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    // display: table-cell;
-    // vertical-align: middle;
     padding:14px 21px;
     border-radius: 28px;
+    background-size: 25px;
+
     &:hover {
       background: #17D794;
       background-image: url(../images/userEditWhite-icon.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      // display: table-cell;
-      // vertical-align: middle;
-      padding: 14px 21px;
-      border-radius: 28px;
+      background-size: 25px;
     }
+   
   }
+  .userSettings-icon.active {
+    background: #17D794;
+    background-image: url(../images/userEditWhite-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px;
+  }
+  .userLock-icon {
+    background: #DBDDE8;
+    background-image: url(../images/userLock-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding:14px 21px;
+    border-radius: 28px;
+    background-size: 25px;
+
+    &:hover {
+      background: #17D794;
+      background-image: url(../images/userLockWhite-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 25px;
+
+    }
+   
+  }
+  .userLock-icon.active {
+    background: #17D794;
+    background-image: url(../images/userLockWhite-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px;
+
+  }
+
   .userPictureNTitle {
     text-align: center;
     img {
