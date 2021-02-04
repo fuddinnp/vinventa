@@ -2254,7 +2254,11 @@ td {
       margin-right: 5px;
     }
   }
-
+  .hrs-select-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
   .custom-select {
     // background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 6'%3e%3cpath fill='%23343a40' d='M2 0L0 0h4zm0 5L0 2h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/10px 20px;
     background-color: #fff;
@@ -2327,7 +2331,9 @@ td {
     }
   }
 }
-
+.mid-width-select {
+  width: 175px !important;
+}
 .notification-dropdow-div {
   min-width: auto !important;
   border: 0px solid rgba(0, 0, 0, 0.15);
@@ -4233,7 +4239,7 @@ z-index: 99;
     
     width: 50px;
     height: 100%;
-    background: #fff;
+    // background: #fff;
     position: absolute;
     top: 0px;
     right: -10px;
@@ -4528,7 +4534,7 @@ position: relative;
   transition: all 0.4s;
   user-select: none;
   display: grid;
-  padding: 0px 10px;
+  padding: 0px 4px;
   grid-template-columns: auto auto;
  }
 
@@ -4621,3 +4627,123 @@ position: relative;
  .align-items-center {
    align-items: center!important;
  }
+ //user profile css start here
+ .userProfile-wrapper {
+  position: relative;
+  min-width: auto !important;
+border: 0px solid rgba(0, 0, 0, 0.15);
+height: 300px;
+  .userProfile-container {
+    background: #fff;
+    top: 8px;
+    right: -65px;
+    left: unset;
+    width: 362px;
+    box-shadow: 0px 5px 7px 6px #c1c1c1;
+    padding: 15px;
+    position: absolute;
+    border-radius:6px;
+    // overflow: hidden;
+  }
+  .userLogout-icon {
+    background: #DBDDE8;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 8px 10px 6px;
+    border-radius: 28px;
+    position: absolute;
+    right: 0px;
+  }
+  .userSettings-icon {
+    background: #DBDDE8;
+    background-image: url(../images/userEdit-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    // display: table-cell;
+    // vertical-align: middle;
+    padding:14px 21px;
+    border-radius: 28px;
+    &:hover {
+      background: #17D794;
+      background-image: url(../images/userEditWhite-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      // display: table-cell;
+      // vertical-align: middle;
+      padding: 14px 21px;
+      border-radius: 28px;
+    }
+  }
+  .userPictureNTitle {
+    text-align: center;
+    img {
+      width: auto;
+      height: auto;
+      border-radius: 50%;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 4px 0px;
+      color: #000;
+    }
+    h4 {
+      color: #9DA6AF;
+    }
+    .userpic-div {
+      position: relative;
+      width: 120px;
+      margin: 0px auto;
+      position: relative;
+      .userEdit-icon {
+        position: absolute;
+        bottom: -2px;
+        right: -10px;
+        background: #fff;
+        padding: 7px;
+        border-radius: 50%;
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+  .userSettingIcons-wrapper {
+    margin: 15px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .passwordconditionText {
+    padding: 10px;
+    background: #F6F6F6;
+    margin-bottom: 25px;
+    ul {
+      li {
+        list-style: disc;
+        padding: 6px;
+        color: #4C4C4C;
+        list-style-position: inside;
+      }
+      .greenTxt {
+        color: #17D794;
+      }
+    }
+  }
+ }
+ .eyes-icon-password input[type="checkbox"] {
+  border: 1px solid #b9babd;
+  background: #fff;
+  width: 12px;
+  display: none;
+}
+.eyes-icon-password input[type="checkbox"]:checked + label {
+  background-image: url(../images/eye-show-icon-line.svg);
+}
+ .eyes-icon-password label.show-password-icon {
+  background: url(../images/eye-show-icon.svg) no-repeat 0px center;
+  cursor: pointer;
+  padding-left: 23px;
+}
