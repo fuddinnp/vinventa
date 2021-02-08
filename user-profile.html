@@ -494,7 +494,7 @@
                                 <img src="images/userLogout-icon.svg" />
                             </a>
 
-                            <div class="userPictureNTitle pt-4">
+                            <div class="userPictureNTitle pt-3">
                                <div class="userpic-div">
                                 <img src="images/userPic.png" />
                                 <a class="userEdit-icon" href="#">
@@ -514,20 +514,12 @@
                                 </a>
                             </div>
 
+                            <!-- Edit Profile html -->
                             <div class="userForm-wrapper">
                                 <div class="device-results mb-4 mt-4">
                                     Edit Profile
                                   </div>
-                                <div class="passwordconditionText">
-                                    <ul>
-                                        <li class="greenTxt">✓ At least one lower case letter [a-z]</li>
-                                        <li class="greenTxt">✓ At least one upper case letter [A-Z]</li>
-                                        <li>At least one numeral [0-9]</li>
-                                        <li>At least one symbol [!@11^2e0•-ii0?-]</li>
-                                        <li>Minimum 10 characters</li>
-                                    </ul>
-                                </div>
-
+                                
                                 <div class="form-group">
                                     <label>Current Password</label>
                                     <input type="password" class="form-control" placeholder="">
@@ -577,6 +569,45 @@
                                     <button type="button" class="theme-btn graydient-primary-btn">Update</button>
                                   </div>
                             </div>
+
+                            <!-- change password html -->
+                            <div class="userForm-wrapper">
+                                <div class="device-results mb-4 mt-4">
+                                    Change Password
+                                  </div>
+                                <div class="passwordconditionText">
+                                    <h3 class="mt-2 mb-2 ml-2">Password requirements</h3>
+                                    <ul>
+                                        <li class="greenTxt">✓ At least one lower case letter [a-z]</li>
+                                        <li class="greenTxt">✓ At least one upper case letter [A-Z]</li>
+                                        <li>At least one numeral [0-9]</li>
+                                        <li>At least one symbol [!@11^2e0•-ii0?-]</li>
+                                        <li>Minimum 10 characters</li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Current Password</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                  </div>
+                                <div class="form-group relative">
+                                    <label>New Password</label>
+                                    <input id="input_defaultSortingOrder" type="password" class="form-control" placeholder="">
+                                    <div class="eyes-icon-password">
+                                      <input type="checkbox" name="show_password" id="showpassord">
+                                      <label for="showpassord" class="show-password-icon">&nbsp;</label>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Confirm New Password</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                  </div>
+                                  <div class="search-section-buttons text-right mt-4">
+                                    <button type="button" class="cancel-btn">Cancel</button>
+                                    <button type="button" class="theme-btn graydient-primary-btn">Change Password</button>
+                                  </div>
+                            </div>
+
 
                         </div>                        
                     </div>
