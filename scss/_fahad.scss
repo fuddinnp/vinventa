@@ -4773,10 +4773,10 @@ height: 300px;
   display: none;
 }
 .eyes-icon-password input[type="checkbox"]:checked + label {
-  background-image: url(../images/eye-show-icon-line.svg);
+  background-image: url(../images/eye-hide-icon.svg);
 }
  .eyes-icon-password label.show-password-icon {
-  background: url(../images/eye-show-icon.svg) no-repeat 0px center;
+  background: url(../images/eye-hide-icon.svg) no-repeat 0px center;
   cursor: pointer;
   padding-left: 23px;
 }
