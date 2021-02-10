@@ -478,14 +478,14 @@
                 </div>
 
                 <div class="dropdown d-flex">
-                    <a href="#" class="dropdown-toggle menu-notification" type="button" id="dropdownMenuButton"
+                    <a href="#" class="dropdown-toggle menu-notification" type="button" onclick="showUserProfile()" id="dropdownMenuButtonss"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="user-profile">
                             JD
                         </div>
                         <span>3</span>
                     </a>
-                    <div class="dropdown-menu userProfile-wrapper" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu userProfile-wrapper" id="userProfile" aria-labelledby="dropdownMenuButton">
                         <!-- <a class="dropdown-item" href="#"></a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a> -->
@@ -1602,6 +1602,17 @@
         $("#myModal").on("shown.bs.modal", function () {
             $("#myInput").trigger("focus");
         });
+        var expanded = false;
+        function showUserProfile() {
+            var checkboxes = document.getElementById("userProfile");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
     </script>
 
     <script src="js/custom.js"></script>

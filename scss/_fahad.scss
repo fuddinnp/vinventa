@@ -2950,8 +2950,8 @@ table .parent-row,
       margin-top: 100px;
 
       .filter-icon-group {
-        margin-right: 6px;
-        width: 16px;
+        margin-right: 12px;
+        width: 18px;
       }
     }
 
@@ -3756,7 +3756,7 @@ color: #4c4c4c !important;
     .device-filterleft-bar {
       margin-top: 0px;
       .filter-icon-group {
-        width: 25px;
+        width: 18px;
       }
   }
   .nav-pills {
@@ -4643,7 +4643,6 @@ height: 300px;
     padding: 20px;
     position: absolute;
     border-radius:6px;
-    // overflow: hidden;
   }
   .userLogout-icon {
     background: #DBDDE8;
@@ -4779,4 +4778,7 @@ height: 300px;
   background: url(../images/eye-hide-icon.svg) no-repeat 0px center;
   cursor: pointer;
   padding-left: 23px;
+}
+.sarch-right-bar-border select{
+  border: 1px solid #bababa !important;
 }
