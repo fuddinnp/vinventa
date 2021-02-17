@@ -3780,6 +3780,8 @@ color: #4c4c4c !important;
   .tabs-aggre {
     button {
       margin: 6px 0px;
+      display: flex;
+    align-items: center;
     }
   }
 
@@ -4782,3 +4784,42 @@ height: 300px;
 .sarch-right-bar-border select{
   border: 1px solid #bababa !important;
 }
+
+// Query wizard modal new structure
+.flex-sub-framework-box {
+  .flex-sub-row-container {
+   margin-left: 32.7%;
+   &::after {
+    top: -20px !important;
+    height: 108px !important;
+  }
+  }
+  .horizontal {
+    &::after {
+      content: "";
+    width: 0;
+    height: 36px;
+    position: absolute;
+    border: 1px solid #776fff;
+    top: -18px;
+    left: 425px;
+    }
+  }
+ }
+ .flex-sub-framework-toggle-btn {
+  justify-content: inherit;
+  z-index: 6;
+  &::after {
+    content: "";
+    width: 0;
+    height: 68px;
+    position: absolute;
+    border: 1px solid #776fff;
+    top: -18px;
+    left: 44.8%;
+  }
+  .query-toggle-btn-div {
+    margin-left: 40.7%;
+    padding: 0px;
+  }
+ }
