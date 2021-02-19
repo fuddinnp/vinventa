@@ -19,6 +19,7 @@
   </script>
 
  <script src="js/perfect-scrollbar.js"></script>
+ <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
  <title>Vinventa</title>
 </head>
@@ -127,15 +128,22 @@
                <div id="dd" class="dropdown-with-img dropdown-with-img-input" tabindex="1">
                 <div class="dropdown-with-img-select v-line-space">
                  <div class="dropdown-logo">
-                  <img src="images/cisco_logo.png" />
+                  <img src="images/icon_multi_select.svg" />
                  </div>
                  <div>
                   Active Directory
                  </div>
 
                  
-                 <ul class="dropdown dropdown-with-logos">
-                   <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                 <ul class="dropdown dropdown-with-logos dropdown-border-div">
+                  <li class="ml-2">
+                    <div class="">
+                                                          <input type="checkbox" />
+                                                      </div>
+                   
+                    <div>Select All</div>
+                  </li>
+                   <div class="mCustomScrollbar dropdown-scroll-div" data-mcs-theme="minimal-dark">
                     <li class="">
                       <div class="">
                                                             <input type="checkbox" />
@@ -490,14 +498,129 @@
              </li>
              <li>
               <span>
-               <div class="query-wizard-div-box">
-                <div class="v-line-space">
-                 <select id="cars" class="query-wizard-dropdown-large">
-                  <option value="volvo">Software</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                 </select>
+               <div id="dd" class="dropdown-with-img dropdown-with-img-small" tabindex="1">
+                <div class="dropdown-with-img-select v-line-space">
+                 <div class="dropdown-logo">
+                  <img src="images/lock.png" width="25px" />
+                 </div>
+                 <div>
+                  Software
+                 </div>
+
+                 
+                 <ul class="dropdown dropdown-with-logos">
+                   <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <li class="">
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 1</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div>Column 2</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 3</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div>: Column 4</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div>Column 5</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div>Column 6</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 7</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 8</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 9</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/absolute_adapter.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 10</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/azure_logo 1.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div> Column 11</div>
+                    </li>
+                    <li>
+                      <div class="">
+                                                            <input type="checkbox" />
+                                                        </div>
+                      <div>
+                        <img src="images/aws_logo.png" class="dropdwon-connector-img" />
+                      </div>
+                      <div>Column 12</div>
+                    </li>
+                   </div>
+                 
+                 </ul>
                 </div>
                </div>
               </span>
@@ -600,7 +723,7 @@
               <img src="images/icon_plus-circle.svg" width="20px" />
              </a>
              <a href="#" style="text-decoration: none;">
-              <img src="images/icon_plus-circle.svg" width="20px" />
+              <img src="images/icon_delete-circle.svg" width="20px" />
              </a>
             </div>
            </div>
@@ -903,7 +1026,7 @@
                <img src="images/icon_plus-circle.svg" width="20px" />
               </a>
               <a href="#" style="text-decoration: none;">
-               <img src="images/icon_plus-circle.svg" width="20px" />
+               <img src="images/icon_delete-circle.svg" width="20px" />
               </a>
              </div>
             </div>
@@ -987,7 +1110,7 @@
                   <img src="images/icon_plus-circle.svg" width="20px" />
                  </a>
                  <a href="#" style="text-decoration: none;">
-                  <img src="images/icon_plus-circle.svg" width="20px" />
+                  <img src="images/icon_delete-circle.svg" width="20px" />
                  </a>
                 </div>
                </div>
