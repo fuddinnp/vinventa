@@ -956,7 +956,7 @@ input:checked + .sliders:before {
 
   .dropdown-with-img-select img {
     width: 30px !important;
-    padding: 4px 4px 3px;
+    padding: 2px 4px 0px 0px;
   }
 }
 
@@ -971,6 +971,9 @@ input:checked + .sliders:before {
     margin-left: 10px !important;
     margin-right: 10px !important;
     padding: 0px;
+    &::after {
+      right: 5px !important;
+    }
   }
 
   .dropdown-with-logos li::before {
@@ -2951,7 +2954,7 @@ table .parent-row,
       margin-top: 100px;
 
       .filter-icon-group {
-        margin-right: 12px;
+        margin-right: 14px;
         width: 18px;
       }
     }
@@ -3757,7 +3760,7 @@ color: #4c4c4c !important;
     .device-filterleft-bar {
       margin-top: 0px;
       .filter-icon-group {
-        width: 18px;
+        width: 22px;
       }
   }
   .nav-pills {
@@ -4790,11 +4793,18 @@ height: 300px;
 .query-wizard-exp-contents {
   .flex-sub-framework-box {
     justify-content: flex-start !important;
+    .close-actions {
+      margin: 0px;
+      margin-left: -8px;
+    }
+    div + div a {
+      margin: 0px 5px;
+    }
   }
 }
 .flex-sub-framework-box {
   .flex-sub-row-container {
-   margin-left: 44.5%;
+   margin-left: 418px;
    &::after {
     top: -20px !important;
     height: 108px !important;
@@ -4822,7 +4832,7 @@ height: 300px;
     position: absolute;
     border: 1px solid #776fff;
     top: -18px;
-    left: 56.4%;
+    left: 535px;
   }
   .query-toggle-btn-div {
     margin-left: 52.5%;
@@ -4850,6 +4860,7 @@ height: 300px;
     .dropdown-logo {
       img {
         width: 26px !important;
+        padding: 6px;
       }
     }
   }
@@ -4869,6 +4880,7 @@ height: 300px;
 .query-wizard-exp-contents-new {
   .query-wizard-dropdown-large {
     width: 134px !important;
+    background-position-x: 95%;
   }
 }
 .qw-input {
@@ -4880,6 +4892,10 @@ height: 300px;
 }
 .dropdown-border-div {
   border: 1px solid #cccccc;
+  padding-top: 10px;
+  li {
+    padding:5px 0px
+  }
 }
 .dropdown-scroll-div {
   height: 200px;
@@ -4892,5 +4908,24 @@ height: 300px;
       border: 1px solid #cccccc;
     }
 
+  }
+}
+//horizontal tabs css
+.hori-tabs-top-wrapper {
+  border-bottom: 4px solid #C4C4C4;
+  li {
+    margin-right: 6px;
+    .nav-link {
+      display: block;
+      padding: 0.8rem 2.3rem;
+      background: #F4F4F4;
+      color: #4C4C4C;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  .active {
+    color: #fff;
+    background: #C4C4C4 !important;
+  }
   }
 }
