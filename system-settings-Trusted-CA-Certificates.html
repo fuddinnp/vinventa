@@ -954,16 +954,22 @@
                                         
                                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-                                          <div class="device-result-export-row device-result-export-row-standard mt-5">
-                                            <div class="device-results">
-                                              Key List
-                                            </div>
-      
-                                            <div class="edit-column-export">
-                                              <button type="button" id="btn_validteCertificateChain" class="theme-btn graydient-secondary-btn">Import </button>
-                                              <button type="button" id="btn_validteCertificateChain" class="theme-btn graydient-secondary-btn">Export</button>
-                                            </div>
-                                        </div>
+                                        <div class="add-edit-connection-heading-row mt-5">
+                                          <div class="add-edit-heading"><strong>Key List</strong></div>
+                                          <div class="add-edit-connection-btns">
+                                              <!-- <a href="#">Advanced Settings</a> -->
+                                              <div>
+                                                  <button id="btn_import" type="button" class="theme-btn graydient-secondary-btn">
+                                                    Import
+                                                  </button>
+                                              </div>
+                                              <div>
+                                                  <button id="btn_export" type="button" class="theme-btn graydient-secondary-btn">
+                                                    Export
+                                                  </button>
+                                              </div>
+                                          </div>
+                                      </div>
       
                                         <div class="standard-table  table-responsive mt-4 mCustomScrollbar" data-mcs-theme="minimal-dark">
                                           <table class="table  table-hover">
@@ -1047,13 +1053,252 @@
                                         <!-- Key List tab-->
                                         
                                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                          3
-
+                                          
+                                          <div class="add-edit-connection-heading-row mt-5">
+                                            <div class="add-edit-heading"><strong>CRS List</strong></div>
+                                            <div class="add-edit-connection-btns">
+                                                <!-- <a href="#">Advanced Settings</a> -->
+                                                <div>
+                                                    <button id="btn_import" type="button" class="theme-btn graydient-primary-btn">
+                                                      Create New CSR
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                          <div class="standard-table  table-responsive mt-4 mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                            <table class="table  table-hover">
+                                             <thead>
+                                              <tr>
+                                               <th>&nbsp;</th>
+                                               <th>File Name </th>
+                                               <th>Size (byte)</th>
+                                               <th>Modified Date</th>
+                                               <th class="td-center" >Delete</th>
+                                              </tr>
+                                             </thead>
+                                             <tbody class="stripe" >
+                                              <tr>
+                                               <td width="30px"><input type="checkbox"></td>
+                                               <td>netpace.com.Key</td>
+                                               <td>479</td>
+                                               <td>Sun, Sep 05 2021</td>
+                                               <td class="td-center">
+                                                <a href="#"><img src="images/delete.svg"></a> 
+                                               </td>
+                                              </tr>
+                                              <tr>
+                                                <td width="30px"><input type="checkbox"></td>
+                                                <td>ns-server.key</td>
+                                                <td>432</td>
+                                                <td>Sun, Sep 05 2021</td>
+                                                <td class="td-center">
+                                                 <a href="#"><img src="images/delete.svg"></a> 
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td width="30px"><input type="checkbox"></td>
+                                                <td>ns-server.key2</td>
+                                                <td>532</td>
+                                                <td>Sun, Sep 05 2021</td>
+                                                <td class="td-center">
+                                                 <a href="#"><img src="images/delete.svg"></a> 
+                                                </td>
+                                               </tr> 
+                                             </tbody>
+                                            </table>
+                                           </div>
+                                           <div class="bottom-page">
+                                            <ul class="pagination table-pagination">
+                                              <li class="page-item"><a class="page-link" href="#">First</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          
+                                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">Last</a></li>                        
+                          
+                                            </ul>
+                                            <div class="results-per-page">
+                                              <span class="mr-4 result-pg">Results Per Page</span>
+                                              <a href="#" class="result-number">20</a>
+                          
+                                              <a href="#" class="acord-arrow result-dropdown">
+                                                <img src="images/down-arrow.svg">
+                                              </a>
+                          
+                                            </div>
+                                          </div>
+  
+                                            <!-- <div class="text-right  mt-4">
+                                              <div class="add-edit-connection-bottom-btn mr-0 policy-btns-wrapper">
+                                                  <button type="button" class="cancel-btn">
+                                                      Cancel
+                                                  </button>
+                                                  <button type="button" class="theme-button-small graydient-secondary-btn">
+                                                      Secondary Button
+                                                  </button>
+                                                  <button type="button" class="theme-btn graydient-primary-btn">
+                                                    Generate New Key
+                                                  </button>
+                                              </div>
+                                          </div> -->
                                         </div>
                                         <!-- CSRs tab-->
                                         
                                         <div class="tab-pane fade" id="pills-certificates" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                          4
+                                          <div class="add-edit-connection-heading-row mt-5">
+                                            <div class="add-edit-heading"><strong>Certificate List</strong></div>
+                                            <div class="add-edit-connection-btns">
+                                                <!-- <a href="#">Advanced Settings</a> -->
+                                                <div>
+                                                    <button id="btn_import" type="button" class="theme-btn graydient-secondary-btn">
+                                                      Import
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button id="btn_export" type="button" class="theme-btn graydient-secondary-btn">
+                                                      Export
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                          <div class="standard-table  table-responsive mt-4 mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                            <table class="table  table-hover">
+                                             <thead>
+                                              <tr>
+                                               <th>&nbsp;</th>
+                                               <th>File Name </th>
+                                               <th>Size (byte)</th>
+                                               <th>Modified Date</th>
+                                               <th class="td-center" >Delete</th>
+                                              </tr>
+                                             </thead>
+                                             <tbody class="stripe" >
+                                              <tr>
+                                               <td width="30px"><input type="checkbox"></td>
+                                               <td>netpace.com.Key</td>
+                                               <td>479</td>
+                                               <td>Sun, Sep 05 2021</td>
+                                               <td class="td-center">
+                                                <a href="#"><img src="images/delete.svg"></a> 
+                                               </td>
+                                              </tr>
+                                              <tr>
+                                                <td width="30px"><input type="checkbox"></td>
+                                                <td>ns-server.key</td>
+                                                <td>432</td>
+                                                <td>Sun, Sep 05 2021</td>
+                                                <td class="td-center">
+                                                 <a href="#"><img src="images/delete.svg"></a> 
+                                                </td>
+                                               </tr>
+                                               <tr>
+                                                <td width="30px"><input type="checkbox"></td>
+                                                <td>ns-server.key2</td>
+                                                <td>532</td>
+                                                <td>Sun, Sep 05 2021</td>
+                                                <td class="td-center">
+                                                 <a href="#"><img src="images/delete.svg"></a> 
+                                                </td>
+                                               </tr> 
+                                             </tbody>
+                                            </table>
+                                           </div>
+                                           <div class="bottom-page">
+                                            <ul class="pagination table-pagination">
+                                              <li class="page-item"><a class="page-link" href="#">First</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          
+                                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">Last</a></li>                        
+                          
+                                            </ul>
+                                            <div class="results-per-page">
+                                              <span class="mr-4 result-pg">Results Per Page</span>
+                                              <a href="#" class="result-number">20</a>
+                          
+                                              <a href="#" class="acord-arrow result-dropdown">
+                                                <img src="images/down-arrow.svg">
+                                              </a>
+                          
+                                            </div>
+                                          </div>
+
+                                          <div class="field-section static-routes-div mt-5">
+                                                          
+                                            <div class="d-flex pt-3">
+                                              <div class="">
+                                                <div class="form-group">
+                                                  <label>Certificate Key</label>
+                                                 <!-- <input id="input_certificateKey" type="text" class="form-control" placeholder="Network"> -->
+                                                 <select id="input_certificateKey" class="custom-select">
+                                                  <option>Select Key Pair</option>
+                                                  <option>Select Key Pair</option>
+                                                  <option>Select Key Pair</option>
+                                                </select>
+                                                </div>
+                                             </div> 
+                                             <div class="">
+                                              <div class="form-group">
+                                                <label>Signed Certificate</label>
+                                                <!-- <input id="input_primaryDNS" type="text" class="form-control" placeholder="Subnet Mask"> -->
+                                                <select id="ddl_signedCertificate" class="custom-select">
+                                                  <option>Select Certificate</option>
+                                                  <option>Select Certificate</option>
+                                                  <option>Select Certificate</option>
+                                                </select>
+                                               
+                                              </div>
+                                             </div>
+                                             <div class="">
+                                              <div class="form-group">
+                                                <label>Intermediate Certificate</label>
+                                                <!-- <input id="input_primaryDNS" type="text" class="form-control" placeholder="Gateway"> -->
+                                                <select id="ddl_intermediateCertificate" class="custom-select">
+                                                  <option>Select Certificate</option>
+                                                  <option>Select Certificate</option>
+                                                  <option>Select Certificate</option>
+                                                </select>
+                                              </div>
+                                             </div>
+                                             <div class="" style="flex-basis: 160px !important;">
+                                              <div class="form-group plus-minus-icons">
+                                                <span><img src="images/plus-icon-circle.svg" alt="Plus"></span>
+                                                <!-- <span><img src="images/minus.svg" alt="Minus"></span> -->
+                                              </div>
+                                             </div>
+                                            </div> 
+                                            
+                                            <div class="two-col-space-between mt-3" >
+                                                <div class="query-switch-btn"></div>
+                            
+                                                <div class="query-wizard-bottom-btns">
+                                                  <button type="button" id="btn_validteCertificateChain" class="theme-btn">Validte Certificate Chain</button>
+                                                </div>
+                                                
+                                              </div>
+                                            
+                                         </div>
+  
+                                            <!-- <div class="text-right  mt-4">
+                                              <div class="add-edit-connection-bottom-btn mr-0 policy-btns-wrapper">
+                                                  <button type="button" class="cancel-btn">
+                                                      Cancel
+                                                  </button>
+                                                  <button type="button" class="theme-button-small graydient-secondary-btn">
+                                                      Secondary Button
+                                                  </button>
+                                                  <button type="button" class="theme-btn graydient-primary-btn">
+                                                    Generate New Key
+                                                  </button>
+                                              </div>
+                                          </div> -->
                                         </div>
                                         <!-- Certificate tab-->
                                     
