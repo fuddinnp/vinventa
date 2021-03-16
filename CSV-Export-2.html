@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="js/perfect-scrollbar.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <title>Vinventa</title>
+</head>
+
+<body class="">
+    <div class="container-fluid main-wrapper p-0">
+        <div class="main-container">
+            <div class="row m-0">
+                <div class="col-lg-12">
+                    <section id="content">
+                        <div class="section-wrapper">
+                            <div class="section-wrapper" style="display: flex; margin-top: 20px;">
+                                <div>
+                                    <h1>Model Links</h1>
+                                    <div class="links-model">
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <p>
+                                            <a href="#" data-toggle="modal" data-target="#exampleModal">CSV Export 2</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section ends here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Addaing a Adapter Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="col-lg-6 modal-wrapper-xl  mx-auto">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div
+                            class="add-user-modal modal-add-connections-wrapper">
+                            <div class="adding-adapter-modal-header">
+                                <div class="adapter-modal-name ml-0">
+                                    CSV Export
+                                </div>
+
+                                <div class="adapter-modal-help-box">
+                                    <a href="#" class="question-icon hidden">
+                                        ?
+                                    </a>
+                                    <a href="#" class="adapter-modal-help-link hidden">
+                                        Help
+                                    </a>
+                                    <button type="button" class="close no-btn modal-close-btn" data-dismiss="modal">
+                                        <span>
+                                            <img src="images/modal-close.svg" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                                <!-- <div class="adapter-modal-content-box pb-4 row">
+
+                                    <div class="adapter-modal-field-row col-lg-12">
+                                        <div class="">
+                                            <textarea class="field-large" name="" id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                </div> -->
+
+                            <div class="adapter-modal-content-box pb-3 pt-0 row">
+
+                                <div class="col-lg-12">
+                                    
+                                    <h2 class="mt-2"><strong>Exported Columns</strong></h2>
+                                   
+                                    <div class="checkbox-with-text-row mt-4">
+                                        
+                                        <div><input id="rbt_allColmuns" type="radio" name="a" value="a"></div>
+                                        <div class="label-div mr-3 mb-3">
+                                            All Colmuns
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-with-text-row">
+                                        
+                                        <div><input id="rbt_exportFollowingColumns" checked type="radio" name="a" value="a"></div>
+                                        <div class="label-div mr-3 mb-3">
+                                            Export Following Columns
+                                        </div>
+                                    </div>
+
+                                    <div class="bubble-tags-wrapper" style="border: 1px solid #B4B4B4;padding: 10px;max-height: 150px;">
+                                        <div class=" mCustomScrollbar"  data-mcs-theme="minimal-dark"  style="max-height: 100%; margin: 20px 0px;">
+                                                
+                                            <div class="bubble">
+                                              
+                                             <div>WIndows 7</div>
+                                             <div>
+                                              <a href="#" id="link_close">
+                                               <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                              </a>
+                                             </div>
+                                            </div>
+                    
+                                            <div class="bubble">
+                                            
+                                             <div>WIndows 8</div>
+                                             <div>
+                                              <a href="#" id="link_close">
+                                               <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                              </a>
+                                             </div>
+                                            </div>
+                    
+                                            <div class="bubble">
+                                            
+                                             <div>WIndows 10</div>
+                                             <div>
+                                              <a href="#" id="link_close">
+                                               <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                              </a>
+                                             </div>
+                                            </div>
+                    
+                                            <div class="bubble">
+                                             
+                                             <div>WIndows 7</div>
+                                             <div>
+                                              <a href="#" id="link_close">
+                                               <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                              </a>
+                                             </div>
+                                            </div>
+
+                                            <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                              
+                                                <div>WIndows dad adad adad ad 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                             
+                                                <div>WIndows 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+
+                                               <div class="bubble">
+                                              
+                                                <div>WIndows dad adad adad ad 7</div>
+                                                <div>
+                                                 <a href="#" id="link_close">
+                                                  <img src="images/bubble-close-btn.svg" class="mCS_img_loaded">
+                                                 </a>
+                                                </div>
+                                               </div>
+                                           </div>
+                                    </div>
+
+                                    <div class="pl-4 row">
+                                        <div class="col-lg-5 pl-2 d-flex align-items-center">
+                                            Multi-Value Field Delimiter
+                                        </div>
+                                        <div class="col-lg-6 pr-2">
+                                            <select name="" class="custom-select m-0" id="">
+                                                <option>New Line (/n)</option>
+                                                <option>New Line (/n)</option>
+                                                <option>New Line (/n)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="pl-4 mt-2 row">
+                                        <div class="col-lg-5 pl-2 d-flex align-items-center">
+                                            Number of entries to export
+                                        </div>
+                                        <div class="col-lg-6 pr-2">
+                                            <input type="text" class="form-control" placeholder="100,000" >
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="adapter-modal-content-box pb-4 row">
+
+                                <div class="adapter-modal-bottom-row mt-0 row">
+                                    <div class="mt-3 m-0">
+                                        <button type="button" id="btn_generaeNow" class="theme-btn graydient-primary-btn">
+                                            Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#myModal").on("shown.bs.modal", function () {
+            $("#myInput").trigger("focus");
+        });
+    </script>
+
+    <script src="js/custom.js"></script>
+
+    <script>
+        /*
+     Slidemenu
+   */
+        (function () {
+            var $body = document.body,
+                $menu_trigger = $body.getElementsByClassName("menu-trigger")[0];
+
+            if (typeof $menu_trigger !== "undefined") {
+                $menu_trigger.addEventListener("click", function () {
+                    $body.className =
+                        $body.className == "menu-active" ? "" : "menu-active";
+                });
+            }
+        }.call(this));
+    </script>
+
+    <script type="text/javascript">
+        function DropDown(el) {
+            this.dd = el;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents: function () {
+                var obj = this;
+
+                obj.dd.on("click", function (event) {
+                    $(this).toggleClass("active");
+                    event.stopPropagation();
+                });
+            },
+        };
+
+        $(function () {
+            var dd = new DropDown($("#dd"));
+
+            $(document).click(function () {
+                // all dropdowns
+                $(".wrapper-dropdown-2").removeClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        // Initialize the plugin
+        const demo = document.querySelector("#scroll");
+        const ps = new PerfectScrollbar(demo);
+
+        // Handle size change
+        document.querySelector("#resize").addEventListener("click", () => {
+            // Get updated values
+            width = document.querySelector("#width").value;
+            height = document.querySelector("#height").value;
+
+            // Set demo sizes
+            demo.style.width = `${width}px`;
+            demo.style.height = `${height}px`;
+
+            // Update Perfect Scrollbar
+            ps.update();
+        });
+    </script>
+</body>
+
+</html>
