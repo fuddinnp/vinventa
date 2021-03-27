@@ -3871,15 +3871,15 @@ line-height: 145.5px;
  }
 }
 ::-webkit-input-placeholder { /* Edge */
-  color: #6c757d;
+  color: #6c757d !important;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #6c757d;
+  color: #6c757d !important;
 }
 
 ::placeholder {
-  color: #6c757d;
+  color: #6c757d !important;
 }
 
 .widget-slider {

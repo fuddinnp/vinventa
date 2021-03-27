@@ -679,6 +679,15 @@ input:checked + .sliders:before {
   height: 10px;
   margin-left: 6px;
 }
+.c-gray-lite {
+  padding: 6px;
+  background: #C4C4C4;
+  border-radius: 100%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+}
 
 .orange-c {
   background: #ff8a5b !important;
@@ -1676,6 +1685,9 @@ input:checked + .sliders-Not .not-blue-bg {
 /* Rounded sliders */
 .custom-select-arrow {
   background-position-x: 94% !important;
+}
+.custom-select-arrow-small {
+  background-position-x: 90% !important;
 }
 .sliders-Not.round {
   border-radius: 34px;
