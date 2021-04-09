@@ -4966,3 +4966,14 @@ height: 300px;
 .result-title {
   font-size: 36px !important;
 }
+.btn-links-wrapper {
+  .cancel-btn {
+    color:#4C4C4C;
+    text-decoration: none;
+    span {
+      color: #4c4c4c;
+    font-size: 20px;
+    padding: 18px 0px 14px;
+    }
+  }
+}
