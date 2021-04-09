@@ -4967,13 +4967,19 @@ height: 300px;
   font-size: 36px !important;
 }
 .btn-links-wrapper {
+  display: flex;
+  align-items: center;
+
   .cancel-btn {
     color:#4C4C4C;
     text-decoration: none;
-    span {
-      color: #4c4c4c;
-    font-size: 20px;
-    padding: 18px 0px 14px;
-    }
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+  span {
+    color: #4c4c4c;
+  font-size: 20px;
+  padding: 0px 14px;
   }
 }
