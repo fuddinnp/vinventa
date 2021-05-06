@@ -5004,3 +5004,13 @@ height: 300px;
 .userDPname-div .userEdit-icon {
   font-size: initial;
 }
+/*corss btn css*/
+.list-view-hover-cross-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.list-view-hover-cross-btn .close {
+  position: inherit;
+  top: inherit;
+  right: inherit;
+}
