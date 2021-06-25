@@ -5027,7 +5027,7 @@ height: 300px;
   min-width: 247px;
 }
 .table-wrapper-section table {
-  width: 685px;
+  width: 100%;
 }
 .table-wrapper-section table td {
   padding: 15px;
@@ -5042,5 +5042,9 @@ height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 683px;
+  width: 100%;
+}
+.guide-img-border-div img {
+  width: 100%;
+  height: 50vh;
 }
