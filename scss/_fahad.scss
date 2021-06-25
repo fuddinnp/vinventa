@@ -5014,3 +5014,33 @@ height: 300px;
   top: inherit;
   right: inherit;
 }
+
+/*guid page css*/
+.title-guide {
+  font-size: 16px;
+  font-weight: 600;
+}
+.guide-table th, .guide-table td {
+  background: #fff;
+  border:1px solid #9A9A9A;
+  padding:15px;
+  min-width: 247px;
+}
+.table-wrapper-section table {
+  width: 685px;
+}
+.table-wrapper-section table td {
+  padding: 15px;
+  border:1px solid #9A9A9A;
+}
+.table-wrapper-section table td strong {
+  color: #4C4C4C;
+}
+.guide-img-border-div {
+  border:1px solid #9A9A9A;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 683px;
+}

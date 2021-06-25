@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Vinventa</title>
+</head>
+
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link profile-section">
+                    <a href="#" class="menu-notification relative">
+                        <div class="user-profile">
+                            JD
+                            <span>3</span>
+                        </div>
+                        <div class="profile-name-mobile">
+                            John Doe
+                            <div class="profile-category">Admin</div>
+                        </div>
+                    </a>
+                    <div class="logout-menu">
+                        <a href="#">Logout</a>
+                    </div>
+                </li>
+                <li class="pushy-submenu pushy-link">
+                    <a href="#">
+                        <div class="menu-img dashbord-icon"></div>
+                        <div>Dashboard</div>
+                    </a>
+                    <!-- <button id="first-link">Dashboard</button> -->
+                    <!-- <ul>
+                    <li class="pushy-submenu">
+                        <button>Sub-Submenu 1</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Sub-Submenu 2</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="#">Item 1</a></li>
+                    <li class="pushy-link"><a href="#">Item 2</a></li>
+                </ul> -->
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img active devices-icon"></div>
+                        <div class="active-menu-text">Devices</div>
+                    </a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img users-icon"></div>
+                        <div>Users</div>
+                    </a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img policy-icon"></div>
+                        <div>Policy Center</div>
+                    </a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img connectors-icon"></div>
+                        <div>Connectors</div>
+                    </a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img reports-icon"></div>
+                        <div>Reports</div>
+                    </a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#">
+                        <div class="menu-img analytic-icon"></div>
+                        <div>Analytic</div>
+                    </a>
+                </li>
+                <div class="mobile-menu-bottom">
+                    <a href="#">
+                        <div class="menu-img help-icon"></div>
+                        <div>Help</div>
+                    </a>
+                    <a href="#">
+                        <div class="menu-img settings-icon"></div>
+                        <div>Settings</div>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div class="container-fluid main-wrapper p-0">
+        <header>
+            <div class="menu-trigger" style="display: none">
+                <img src="images/menu-button.svg" />
+            </div>
+            <div class="header-logo">
+                <img src="images/logo.svg" class="logo" />
+            </div>
+            <div class="top-menu header-menu">
+                <ul>
+                    <li>
+                        <div class="menu-img dashbord-icon"></div>
+                        <a href="#">Dashboard</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img active devices-icon"></div>
+                        <a href="#" class="active-menu-text">Devices</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img users-icon"></div>
+                        <a href="#">Users</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img policy-icon"></div>
+                        <a href="#">Policy Center</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img connectors-icon"></div>
+                        <a href="#">Connectors</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img reports-icon"></div>
+                        <a href="#">Reports</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="menu-img analytic-icon"></div>
+                        <a href="#">Analaytic</a>
+                        <ul class="header-submenu">
+                            <li><a href="#">SubMenu 2</a></li>
+                            <li><a href="#">SubMenu 3</a></li>
+                            <li><a href="#">SubMenu 4</a></li>
+                            <li><a href="#">SubMenu 5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-icons">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="images/icon_help.svg" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="images/settings.svg" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div class="dropdown d-flex">
+                    <a href="#" class="dropdown-toggle menu-notification" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-profile">JD</div>
+                        <span>3</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div class="username-box">
+                    <div class="username">John Deo</div>
+                    <div class="user-role">Admin</div>
+                </div>
+            </div>
+            <button class="menu-btn">
+                <img src="images/menu.svg" />
+            </button>
+        </header>
+        <div class="main-container">
+            <div class="row m-0">
+                <div class="col-lg-12">
+                    <section id="content" class="sec-system-settings-wrapper">
+                        <div class="section-wrapper">
+                            <!-- <h3 class="mt-5">
+                                Assets Inventory
+                            </h3> -->
+                            <div class="device-list-main-top mt-2">
+                                <div class="device-list-top-left">
+                                    <div class="page-heading-with-device-list-btn mb-4">
+                                        <div class="page-heading">
+                                            vInventa Connector Guide
+                                            <div class="breadcumb-flex">
+                                                <!-- &gt;<div class="page-heading-breadcrumb">
+                            mail.netpace.com
+                          </div> -->
+                                                <!-- <div class="page-heading-breadcrumb"> <span class="green-circle"></span> 192.168.1.20 - Vinventa
+                          </div> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="device-list-settings"> ;
+                                <img src="images/device-detail-list-icon.png">
+                              </div> -->
+                                    </div>
+                                    <!-- <div class="total-assets-number">
+                                        <h3 class="">
+                                            Assets Details
+                                        </h3>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="sliding-section asset-details-page-wrapper system-settings-wrapper">
+                                <div class="sliding-left-section">
+                                    <a href="javascript:" class="slide-btn"><img src="images/silde-icon.png"
+                                            class="scren-slide-icon" /></a>
+                                    <div class="nav flex-column nav-pills device-filterleft-bar" id="v-pills-tab"
+                                        role="tablist" aria-orientation="vertical">
+                                        <div class="inner-tab-content-left-col tab-side-dropdown-menu tabs-aggre"
+                                            id="side-menu-accord">
+                                            <div class="nav flex-column nav-pills nav-no-img" id="v-pills-tab"
+                                                role="tablist" aria-orientation="vertical">
+                                                <div class="nav-link accordion p-0">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button data-toggle="collapse" data-target="#hardware-submenu0">
+                                                            <img src="images/icon_systems.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>VMware ESXi</span>
+                                                        </button>
+
+                                                        <div id="hardware-submenu0" class="collapse"
+                                                            data-parent="#side-menu-accord">
+                                                            <div class="card-body table-submenu-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a id="v-pills-home-tab" data-toggle="pill"
+                                                                            href="#v-pills-home" role="tab"
+                                                                            aria-controls="v-pills-home"
+                                                                            aria-selected="true"
+                                                                            class="active-tab-side-submenu">APIs</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a id="menu-accord" data-toggle="pill"
+                                                                            href="#v-pills-profile" role="tab"
+                                                                            aria-controls="v-pills-profile">Supported
+                                                                            Versions</a>
+                                                                    </li>
+                                                                    <!-- <li><a href="#">GUI</a></li>
+                                                                    <li><a href="#">Mail Sever</a></li> -->
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-link accordion p-0">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon" data-toggle="collapse"
+                                                            data-target="#">
+                                                            <img src="images/icon_vinventa_license.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>VMware Connector Deployment Pre-requisites</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div id="menu-accord" class="accordion nav-link p-0 active"
+                                                    id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                                    role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button data-toggle="collapse" data-target="#hardware-submenu">
+                                                            <img src="images/icon_user.svg" class="filter-icon-group" />
+                                                            <span>VMware ESXi Connector Settings in vInventa</span>
+                                                        </button>
+
+                                                        <div id="hardware-submenu" class="collapse"
+                                                            data-parent="#side-menu-accord">
+                                                            <div class="card-body table-submenu-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                            class="active-tab-side-submenu">Instance
+                                                                            Profile Tab</a>
+                                                                    </li>
+                                                                    <li><a href="#">Connector Settings Tab</a></li>
+                                                                    <li><a href="#">Discovery Settings Tab</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-link accordion p-0" id="v-pills-home-tab"
+                                                    data-toggle="pill" href="#v-pills-home" role="tab"
+                                                    aria-controls="v-pills-home" aria-selected="false">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button data-toggle="collapse" data-target="#hardware-submenu1">
+                                                            <img src="images/icon_discoveries.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>VMware ESXi Configuration</span>
+                                                        </button>
+
+                                                        <!-- <div id="hardware-submenu1" class="collapse"
+                                                            data-parent="#side-menu-accord">
+                                                            <div class="card-body table-submenu-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                            class="active-tab-side-submenu">Discovery</a>
+                                                                    </li>
+                                                                    <li><a href="#">Correlation</a></li>
+                                                                    <li><a href="#">Data Retention</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-link accordion p-0" id="v-pills-home-tab"
+                                                    data-toggle="pill" href="#v-pills-home" role="tab"
+                                                    aria-controls="v-pills-home" aria-selected="true">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon" data-toggle="collapse"
+                                                            data-target="#hardware-submenu2">
+                                                            <img src="images/labels-icon.png"
+                                                                class="filter-icon-group" />
+                                                            <span>Identity Provider</span>
+                                                        </button>
+
+                                                        <div id="hardware-submenu2" class="collapse"
+                                                            data-parent="#side-menu-accord">
+                                                            <div class="card-body table-submenu-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                            class="active-tab-side-submenu">Hardware
+                                                                            Installed</a>
+                                                                    </li>
+                                                                    <li><a href="#">Hard Disks</a></li>
+                                                                    <li><a href="#">Network Cards</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-link accordion p-0" id="v-pills-home-tab"
+                                                    data-toggle="pill" href="#v-pills-home" role="tab"
+                                                    aria-controls="v-pills-home" aria-selected="true">
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon">
+
+                                                            <img src="images/icon_systemNotifications.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>Notifications</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon">
+                                                            <img src="images/icon_logs.svg" class="filter-icon-group" />
+                                                            <span>Logs & Events</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon">
+                                                            <img src="images/icon_servicesIntegration.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>Service Integration</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="tabs-sidemenu-accord-container">
+                                                        <button class="no-arrow-icon">
+                                                            <img src="images/icon_sslSettings.svg"
+                                                                class="filter-icon-group" />
+                                                            <span>SSL Settings</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 
+                                            <div class="nav-link accordion p-0" id="v-pills-home-tab" data-toggle="pill"
+                                              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+            
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button>
+                                                  Network Cards
+                                                </button>
+                                              </div>
+            
+                                            </div>
+            
+            
+                                            <div class="nav-link accordion p-0" id="v-pills-home-tab" data-toggle="pill"
+                                              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+            
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button>
+                                                  Software Details
+                                                </button>
+                                              </div>
+            
+                                            </div>
+            
+            
+            
+                                            <div class="nav-link accordion p-0" id="v-pills-home-tab" data-toggle="pill"
+                                              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+            
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button>
+                                                  Security and Compliance
+                                                </button>
+                                              </div>
+            
+                                            </div>
+            
+            
+                                            <div class="nav-link accordion p-0" id="v-pills-home-tab" data-toggle="pill"
+                                              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+            
+                                              <div class="tabs-sidemenu-accord-container">
+                                                <button>
+                                                  Agent Info
+                                                </button>
+                                              </div>
+            
+                                            </div> -->
+
+                                                <!-- <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                              aria-selected="false">
+                                              <div>
+                                                Local Admins
+                                              </div>
+            
+                                              <div>
+            
+                                              </div>
+            
+            
+                                            </a>
+            
+            
+            
+            
+                                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                              role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+                                              <div>
+                                                Agent Versions
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+                                            </a>
+            
+            
+                                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                              role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                              <div>
+                                                Hard Drives
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+            
+            
+                                            </a>
+            
+            
+                                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                              aria-selected="false">
+                                              <div>
+                                                Running Processes
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+            
+            
+                                            </a>
+            
+            
+                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                              aria-selected="false">
+                                              <div>
+                                                Services
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+            
+            
+                                            </a>
+            
+            
+                                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                              role="tab" aria-controls="v-pills-home" aria-selected="true">
+            
+                                              <div>
+                                                Shares
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+                                            </a>
+            
+            
+                                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                              role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                              <div>
+                                                Firewall Rules
+                                              </div>
+                                              <div>
+            
+                                              </div>
+            
+            
+            
+                                            </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sliding-right-section">
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 inner-tab-right-section mt-0 p-0">
+                                            <div class="grid-table-flow">
+                                                <div class="table-full-scroll">
+                                                    <div
+                                                        class="white-bg system-settings-content-wrapper border-theme inner-tab-content-right-col">
+                                                        <div class="tab-content" id="v-pills-tabContent">
+                                                            <div class="tab-pane fade active show" id="v-pills-home"
+                                                                role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                                <h3 style="
+                                                                border-bottom: 1px solid #9A9A9A;
+                                                                padding-bottom: 15px;
+                                                            " class="tab-title">VMware ESXi</h3>
+
+                                                                <!-- <div
+                                      class="search-wrap-standard search-inverse mb-4"
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Search Installed Hardware"
+                                        class="search-field"
+                                      />
+      
+                                      <a
+                                        href="#"
+                                        class="search-query-dropdown-btn"
+                                      >
+                                        <img src="images/down-arrow.svg" />
+                                      </a>
+                                    </div> -->
+
+                                                                <!-- <div
+                                      class="device-result-export-row device-result-export-row-standard">
+                                      <div class="device-results">
+                                          Hardware Installed (120)
+                                          <a href="#">
+                                              <img src="images/vertical-dots.svg">
+                                          </a>
+                                      </div>
+
+
+                                      <div class="edit-column-export">
+                                          <a href="#">Edit Column</a>
+                                          <span class="split-pipe">|</span>
+                                          <a href="#">Export CSV</a>
+                                      </div>
+
+
+                                  </div> -->
+                                                                <!-- <div class="checkbox-with-text-row mt-4">
+                                    <div class="label-div mr-3 mb-3">
+                                      Use Proxy
+                                    </div>
+                                  </div> -->
+                                                                <!-- <div class="summary-details-row d-flex mt-4">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label>Refresh Rate:</label>
+                                                                            <input id="input_refreshRate" type="text"
+                                                                                class="form-control" placeholder="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Default Entries:</label>
+                                                                            <select id="ddl_defaultEntries"
+                                                                                class="form-control custom-select">
+                                                                                <option>1 hour</option>
+                                                                                <option>2 hour</option>
+                                                                                <option>3 hour</option>
+                                                                                <option>4 hour</option>
+                                                                                <option>5 hour</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+
+                                                                        <div class="form-group">
+                                                                            <label>Session Idle Timeout:</label>
+                                                                            <input id="input_sessionidleTime"
+                                                                                type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Default Sorting Order:</label>
+                                                                            <input id="input_defaultSortingOrder"
+                                                                                type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                        <div class="two-col-space-between mt-4">
+                                                                            <div class="query-switch-btn"></div>
+
+                                                                            <div class="query-wizard-bottom-btns">
+                                                                                <button id="btn_save" type="button"
+                                                                                    class="theme-btn">Save</button>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
+
+
+
+
+                                                                <div class="col-lg-9 mt-4 pl-0">
+
+                                                                    VMware ESXi is an enterprise-class, type-1
+                                                                    hypervisor for deploying and serving virtual
+                                                                    computers.
+                                                                    We use this connector to fetch devices from VMware
+                                                                    ESXi.
+
+                                                                    <h3 class="title-guide mt-3 mb-2"
+                                                                        style="color: #4C4C4C;">Types of assets
+                                                                        discovered from VMware ESXi:
+                                                                    </h3>
+                                                                    The following types of assets are discovered by
+                                                                    VMware ESXi:
+                                                                    <h3 class="title-guide mt-5 mb-2"
+                                                                        style="color: #4C4C4C;">Devices:</h3>
+                                                                    <div class="imgs-div mt-3">
+                                                                        <img src="images/user-close-img.svg"
+                                                                            class="mr-3" />
+                                                                        <img src="images/devices-img.svg" />
+                                                                    </div>
+
+                                                                    <h3 class="title-guide mt-4 mb-2"
+                                                                        style="color: #4C4C4C;">APIs: </h3>
+                                                                    vInventa uses the vCenter API to fetch information
+                                                                    regarding virtual devices and ESX hosts.
+
+                                                                    <h3 class="title-guide mt-5 mb-2"
+                                                                        style="color: #4C4C4C;">Supported
+                                                                        Versions: </h3>
+
+                                                                    <table class="guide-table">
+                                                                        <tr>
+                                                                            <th>Version</th>
+                                                                            <th>Supported</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>VMWare Versions: 6.x, 7.x</td>
+                                                                            <td>Yes</td>
+                                                                        </tr>
+                                                                    </table>
+
+                                                                    <p class="mt-5">
+                                                                        Note: While it may work with other versions,
+                                                                        this connector has been tested with the versions
+                                                                        marked as supported. In case you have versions
+                                                                        which are not listed above or are not
+                                                                        functioning as expected, please contact
+                                                                        support@vinventa.com for immediate assistance.
+                                                                    </p>
+
+                                                                </div>
+
+                                                                <div class="col-lg-9 mt-5 pl-0">
+                                                                    <h3 style="
+                                                                border-bottom: 1px solid #9A9A9A;
+                                                                padding-bottom: 15px;
+                                                            " class="tab-title">VMware Connector Deployment
+                                                                        Pre-requisites</h3>
+
+                                                                    The following fields are required for connector
+                                                                    deployment:
+
+                                                                    <p class="mt-4">
+                                                                        <strong style="color: #4C4C4C;">
+                                                                            I. ESXi Host Name
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p class="mb-4">
+                                                                        <strong style="color: #4C4C4C;">II. ESXi
+                                                                            Username & Password</strong>
+                                                                    </p>
+
+                                                                    If you do not have this information available then
+                                                                    go to the VMware ESXi Configuration section on page
+                                                                    8.
+                                                                </div>
+
+                                                                <div class="col-lg-9 mt-5 pl-0">
+                                                                    <h3 style="
+                                                                border-bottom: 1px solid #9A9A9A;
+                                                                padding-bottom: 15px;
+                                                            " class="tab-title">VMware ESXi Connector Settings in
+                                                                        vInventa</h3>
+
+                                                                    <img src="images/top-connector-img.svg" />
+                                                                    <p class="mt-2">
+                                                                        From the main menu, go to the Connectors page
+                                                                        and
+                                                                        select the connector: VMware ESXi.
+                                                                    </p>
+
+                                                                    <img class="mt-5"
+                                                                        src="images/Click-VMware-ESXi-Tile.svg" />
+                                                                    <p class="mt-2">
+                                                                        Click VMware ESXi Tile
+                                                                    </p>
+
+                                                                    <img class="mt-5"
+                                                                        src="images/add-connector-img.svg" />
+                                                                    <p class="mt-2">
+                                                                        Click Add Connection
+                                                                    </p>
+
+                                                                    <p class="mt-5">
+                                                                        <strong>Instance Profile Tab</strong>
+                                                                    </p>
+                                                                    <p class="mt-2">
+                                                                        The Instance profile tab is used to add in the
+                                                                        information required to connect to VMware ESXi.
+                                                                    </p>
+                                                                    <div class="guide-img-border-div mt-2">
+                                                                        <img
+                                                                            src="images/Instance-Profile-Tab-img.svg" />
+                                                                    </div>
+
+                                                                    <div class="table-wrapper-section mt-4">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <strong>Field</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Default</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Description</strong>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Instance Name*</td>
+                                                                                <td>None</td>
+                                                                                <td>Uniquely identifies a connector
+                                                                                    instance for any particular
+                                                                                    connector (allowed characters 1-30)
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Description</td>
+                                                                                <td>None</td>
+                                                                                <td>Add a description of the connector
+                                                                                    instance here (allowed characters
+                                                                                    300 max)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Connector Label</td>
+                                                                                <td>None</td>
+                                                                                <td>Additional label/tag for a connector
+                                                                                    instance (allowed characters 1-30)
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>User Name*</td>
+                                                                                <td>None</td>
+                                                                                <td>Create a unique name for
+                                                                                    identification of a user (Please
+                                                                                    refer to VMware details)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Password*</td>
+                                                                                <td>None</td>
+                                                                                <td>Use alphanumeric and special
+                                                                                    characters to create a strong
+                                                                                    password (Please refer to VMware
+                                                                                    details)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Hostname*</td>
+                                                                                <td>None</td>
+                                                                                <td>Assign a label to a connected host
+                                                                                    device (Please refer to VMware
+                                                                                    details)</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+
+                                                                    <p class="mt-2">
+                                                                        * Mandatory fields must be configured
+                                                                    </p>
+
+
+                                                                    <p class="mt-5">
+                                                                        <strong style="color: #4C4C4C;">Connector
+                                                                            Settings Tab </strong>
+                                                                    </p>
+                                                                    <p class="mt-2">
+                                                                        This tab is used to configure each connector’s
+                                                                        optional configuration settings such as
+                                                                        schedules, delete option and more.
+                                                                    </p>
+                                                                    <div class="guide-img-border-div mt-2">
+                                                                        <img src="images/connector-settings-img.svg" />
+                                                                    </div>
+
+                                                                    <!-- <p class="mt-5">
+                                                                        <strong>Connector Settings Tab </strong>
+                                                                    </p>
+                                                                    <p class="mt-2">
+                                                                        This tab is used to configure each connector’s
+                                                                        optional configuration settings such as
+                                                                        schedules, delete option and more.
+                                                                    </p> -->
+
+                                                                    <div class="table-wrapper-section mt-4">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <strong>Field</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Default</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Description</strong>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Use system default</td>
+                                                                                <td>True</td>
+                                                                                <td>By default, system will use global
+                                                                                    discovery schedule. The settings can
+                                                                                    be changed under Configuration>
+                                                                                    Discoveries
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Use this schedule</td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Day for scheduling discovery cycle
+                                                                                </td>
+                                                                                <td>False</td>
+                                                                                <td>User can specify the day for
+                                                                                    scheduling a discovery cycle
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Time for the selected day</td>
+                                                                                <td>12:00 PM</td>
+                                                                                <td>User can specify the time for
+                                                                                    selected day</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Number of hours between each
+                                                                                    discovery cycle</td>
+                                                                                <td>None</td>
+                                                                                <td>User can specify the number of hours
+                                                                                    between each discovery cycle </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Time for initial discovery cycle
+                                                                                </td>
+                                                                                <td>None</td>
+                                                                                <td>User can specify time for initial
+                                                                                    discovery cycle </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+
+
+                                                                    <p class="mt-5">
+                                                                        <strong style="color: #4C4C4C;">Delete Assets:
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p class="mt-2">
+                                                                        This setting is used to define the conditions to
+                                                                        delete discovered assets
+                                                                    </p>
+
+                                                                    <div class="table-wrapper-section mt-4">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <strong>Field</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Default</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Description</strong>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Use system default</td>
+                                                                                <td>True</td>
+                                                                                <td>By default, system will use global
+                                                                                    discovery Retention Policy. The
+                                                                                    settings can be changed under
+                                                                                    Configuration> Retention
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Use Custom </td>
+                                                                                <td>&nbsp;</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Delete Assets not discovered in the
+                                                                                    last
+                                                                                </td>
+                                                                                <td>False</td>
+                                                                                <td>Specify the number of day(s),
+                                                                                    week(s), and month(s). Assets not
+                                                                                    discovered from this particular
+                                                                                    connector instance will be deleted
+                                                                                    if not discovered in the specified
+                                                                                    number of day(s), month(s), or
+                                                                                    week(s)
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+
+                                                                    <img class="mt-5"
+                                                                        src="images/Click-Save-Configuration.svg" />
+
+
+                                                                    <p class="mt-5">
+                                                                        <strong style="color: #4C4C4C;">Discovery
+                                                                            Settings Tab </strong>
+                                                                    </p>
+                                                                    <p class="mt-2">
+                                                                        This tab is used to define discovery conditions
+                                                                        such as, assets and attributes, to be discovered
+                                                                        by the connector
+                                                                    </p>
+                                                                    <div class="guide-img-border-div mt-4">
+                                                                        <img src="images/Discovery-Settings-Tab.svg" />
+                                                                    </div>
+
+                                                                    <div class="table-wrapper-section mt-4 mb-5">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <strong>Settings</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Default</strong>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <strong>Description</strong>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Powered on machines</td>
+                                                                                <td>False</td>
+                                                                                <td>If checked, only machines which are
+                                                                                    turned on will be fetched
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </table>
+                                                                    </div>
+
+                                                                    <h3 style="
+                                                                border-bottom: 1px solid #9A9A9A;
+                                                                padding-bottom: 15px;
+                                                            " class="tab-title">VMware ESXi Configuration</h3>
+
+                                                                    <p>
+                                                                        <strong style="color: #4C4C4C;">
+                                                                            Creating a User in vCenter
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <p class="mt-4">
+                                                                        1. Log in to the vCenter as an administrator
+                                                                    </p>
+
+                                                                    <div class="guide-img-border-div mt-2">
+                                                                        <img src="images/vcenter-img.svg" />
+                                                                    </div>
+
+                                                                    <p class="mt-4">
+                                                                        2. Click Menu > Administration
+                                                                    </p>
+
+                                                                    <div class="guide-img-border-div mt-2">
+                                                                        <img src="images/administration-img.svg" />
+                                                                    </div>
+
+                                                                    <p class="mt-4">
+                                                                        3. Navigate to the menu on left
+                                                                    </p>
+
+                                                                    <p class="mt-4">
+                                                                        4. Click Users and Groups.
+
+                                                                    <ul class="pl-3 mt-2" style="font-size: 13px;">
+                                                                        <li class="mb-2">• Under the Users tab, from the
+                                                                            Domain
+                                                                            field, select the domain
+                                                                        </li>
+                                                                        <li>• Click Add User</li>
+                                                                    </ul>
+                                                                    </p>
+
+                                                                    <div class="guide-img-border-div mt-3">
+                                                                        <img src="images/administration-img.svg" />
+                                                                    </div>
+
+                                                                    <p class="mt-5">
+                                                                        5. Fill in the relevant details.
+                                                                    </p>
+
+                                                                    <div class="guide-img-border-div mt-2">
+                                                                        <img src="images/relevant-details-img.svg" />
+                                                                    </div>
+
+                                                                    <p class="mt-5">
+                                                                        6. From the left menu, click Global Permissions
+                                                                        and add a 'Read-only' permission to the created
+                                                                        user.
+                                                                    </p>
+                                                                    <p class="mt-4">
+                                                                        7. Select Propagate to children
+                                                                    </p>
+                                                                    <p class="mt-4 mb-5">
+                                                                        8. Click OK.
+                                                                    </p>
+
+                                                                    <h3 style="
+                                                                    border-bottom: 1px solid #9A9A9A;
+                                                                    padding-bottom: 15px;
+                                                                " class="tab-title">For Questions and Queries</h3>
+
+                                                                    <p class="mt-3">
+                                                                        For help related queries, please contact <a
+                                                                            href="">support@vinventa.com</a>
+                                                                    </p>
+
+
+                                                                </div>
+
+
+
+
+                                                                <!-- <div class="field-section static-routes-div mt-4">
+                                    <h3 class="mb-3 ">Static Routes</h3>
+  
+                                    <div class="d-flex">
+                                      <div class="">
+                                        <div class="form-group">
+                                          <label>Add Route</label>
+                                          <input id="input_ipAddres" type="text" class="form-control"
+                                            placeholder="Network">
+                                        </div>
+                                      </div>
+                                      <div class="">
+                                        <div class="form-group">
+                                          <label>&nbsp;</label>
+                                          <input id="input_primaryDNS" type="text" class="form-control"
+                                            placeholder="Subnet Mask">
+                                        </div>
+                                      </div>
+                                      <div class="">
+                                        <div class="form-group">
+                                          <label>&nbsp;</label>
+                                          <input id="input_primaryDNS" type="text" class="form-control"
+                                            placeholder="Gateway">
+                                        </div>
+                                      </div>
+                                      <div class="">
+                                        <div class="form-group plus-minus-icons">
+                                          <span><img src="images/plus-icon-circle.svg" alt="Plus"></span>
+                                          <span><img src="images/minus.svg" alt="Minus"></span>
+                                        </div>
+                                      </div>
+                                    </div>
+  
+                                  </div> -->
+
+
+                                                                <!-- <div class="table-wrap table-wrap-margin">
+                                                                      <table
+                                                                          class="table table-extra-padding table-fonts">
+                                                                          <thead>
+                                                                              <tr>
+                                                                                  <th scope="col">Name
+                                                                                      <img src="images/table-down-arrow.svg"
+                                                                                          class="table-down-arrow">
+                                                                                  </th>
+                                                                                  <th scope="col">Manufacturer</th>
+                                                                                  <th scope="col">ID</th>
+      
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI x64-based PC</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI x64-based PC</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI x64-based PC</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>ACPI Fixes Feature Button</td>
+                                                                                  <td>(Standard system devices)</td>
+                                                                                  <td>ACP\FIXEDBUTTON\2@7FD89F7@1</td>
+      
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+      
+      
+      
+      
+                                                                  </div> -->
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="v-pills-profile"
+                                                                role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Left Section
+                                                                    </div>
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Right Section
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-messages"
+                                                                role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Left Section
+                                                                    </div>
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Right Section
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-settings"
+                                                                role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Left Section
+                                                                    </div>
+                                                                    <div class="col-lg-6 mt-2">
+                                                                        Right Section
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section ends here -->
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label class="onoffbtn btn-switch-box">
+      <span>
+        And
+      </span>
+      <input type="checkbox">
+    </label> -->
+        <!--and or btn-->
+        <!-- <label class="switch-btn">
+      <input type="checkbox" id="togBtn">
+      <div class="sliders round"> -->
+        <!--ADDED HTML -->
+        <!-- <span class="on">OR</span>
+        <span class="off">AND</span> -->
+        <!--END-->
+        <!-- </div>
+    </label> -->
+    </div>
+
+    <!-- <script>
+      $(document).ready(function () {
+          if ($(".nav-link").hasClass("active")) {
+              $(".sliding-right-section").addClass("right-section-overlay")
+          };
+      }
+      });
+    </script> -->
+    <script>
+        $(".onoffbtn").on("click", function () {
+            if ($(this).children().is(":checked")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
+    </script>
+    <script>
+        $("#myModal").on("shown.bs.modal", function () {
+            $("#myInput").trigger("focus");
+        });
+    </script>
+    <script>
+        $("#myModal").on("shown.bs.modal", function () {
+            $("#myInput").trigger("focus");
+        });
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+    </script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- <script>
+      $(".nav-link").click(function () {
+        if ($(".nav-link").hasClass("active")) {
+          $(".sliding-right-section").addClass("right-section-overlay");
+        } else {
+          $(".sliding-right-section").removeClass("right-section-overlay");
+        }
+      });
+    </script> -->
+    <script>
+        jQuery(".collapse, .collapse1 ").collapse();
+    </script>
+    <script type="text/javascript">
+        function DropDown(el) {
+            this.dd = el;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents: function () {
+                var obj = this;
+                obj.dd.on("click", function (event) {
+                    $(this).toggleClass("active");
+                    event.stopPropagation();
+                });
+            },
+        };
+        $(function () {
+            var dd = new DropDown($("#dd"));
+            $(document).click(function () {
+                // all dropdowns
+                $(".wrapper-dropdown-2").removeClass("active");
+            });
+        });
+    </script>
+    <script>
+        jQuery("#myTab a").on("click", function (e) {
+            e.preventDefault();
+            jQuery(this).tab("show");
+        });
+        jQuery(".slide-btn").click(function () {
+            jQuery(".sliding-section").toggleClass("slid-screen-wrapper");
+        });
+    </script>
+</body>
+
+</html>
