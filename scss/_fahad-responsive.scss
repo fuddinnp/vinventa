@@ -712,6 +712,12 @@
         }
     }
 
+    .guide-table th, .guide-table td {
+        min-width: 100%;
+    }
+    .table-wrapper-section table td {
+        font-size: 14px;
+    }
 }
 
 
