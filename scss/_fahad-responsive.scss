@@ -721,10 +721,12 @@
     .guide-img-border-div {
         padding:10px;
     }
-    .guide-img-border-div img {
+    .guide-img-border-div img, .guide-img-border-div .img-hieght-half {
         height: 100%;
     }
+    
 }
+
 
 
 /*767 screen end here*/

@@ -287,12 +287,6 @@
     }(jQuery));
 
 
-
-
-
-
-
-
     var navTrigger = document.getElementsByClassName('nav-trigger')[0],
     	body = document.getElementsByTagName('body')[0];
 
