@@ -721,6 +721,15 @@
     .guide-img-border-div {
         padding:10px;
     }
+    .guide-img-border-div img {
+        width: 100%;
+      }
+      .main {
+          grid-template-columns: 1fr;
+      }
+      .main #left {
+          display: none;
+      }
     .guide-img-border-div img, .guide-img-border-div .img-hieght-half {
         height: 100%;
     }
