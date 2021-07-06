@@ -5046,7 +5046,7 @@ height: 300px;
   width: 100%;
 }
 .guide-img-border-div img {
-  // width: 100%;
+  width: 100%;
   // height: 50vh;
 }
 .guide-img-border-div .img-hieght-half {
@@ -5091,6 +5091,9 @@ height: 300px;
   color: #4C4C4C;
   text-decoration: none;
 } 
+.left-guide-nav-div ul li a:hover {
+  color: #7b7b7b;
+}
 .left-guide-nav-div ul li ul {
   margin-left: 20px;
 }
