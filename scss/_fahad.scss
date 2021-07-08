@@ -5210,10 +5210,22 @@ height: 300px;
   text-decoration: none;
   cursor: pointer;
 }
+.guide-logo-text {
+  font-size: 20px; 
+  color: #9A9A9A;
+  margin-top: 15px;
+  margin-left: 15px;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
+  }
+  .guide-logo-text {
+    font-size: 16px;
+    color: #9A9A9A;
+    margin-top: 12px;
+    margin-left: 12px;
   }
 }
