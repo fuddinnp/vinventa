@@ -734,6 +734,9 @@
         position: relative !important;
         width: 100%;
       }
+      .main #left .sliding-left-section {
+          min-width: 100%;
+      }
       .main #left .sliding-left-section ul li a {
 
         display: block;
@@ -741,6 +744,12 @@
     .guide-img-border-div img, .guide-img-border-div .img-hieght-half {
         height: 100%;
     }
+    .guide-logo-text {
+        font-size: 16px;
+        color: #9A9A9A;
+        margin-top: 12px;
+        margin-left: 4px;
+      }
     
 }
 
