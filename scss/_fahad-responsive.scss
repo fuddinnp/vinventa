@@ -711,7 +711,9 @@
             }
         }
     }
-
+    .guide-table {
+        width: 100%;
+      }
     .guide-table th, .guide-table td {
         min-width: 100%;
     }
@@ -725,10 +727,16 @@
         width: 100%;
       }
       .main {
-          grid-template-columns: 1fr;
+          display: flex!important;
+          flex-direction: column!important;
       }
       .main #left {
-          display: none;
+        position: relative !important;
+        width: 100%;
+      }
+      .main #left .sliding-left-section ul li a {
+
+        display: block;
       }
     .guide-img-border-div img, .guide-img-border-div .img-hieght-half {
         height: 100%;
