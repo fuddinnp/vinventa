@@ -750,7 +750,9 @@
         margin-top: 12px;
         margin-left: 4px;
       }
-    
+    .guide-main-title {
+        padding-left: 0px !important;
+    }
 }
 
 
@@ -796,6 +798,16 @@
             }
         }
     }
+
+    .guide-logo-text {
+        font-size: 14px;
+        color: #9A9A9A;
+        margin-top: 12px;
+        margin-left: 4px;
+      }
+      .guide-table th, .guide-table td {
+        min-width: 233px;
+      }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
