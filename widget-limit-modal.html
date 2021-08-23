@@ -56,7 +56,9 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="col-lg-4 modal-wrapper-xls lets-get-width-modal  mx-auto">
+            <div class="col-lg-4 modal-wrapper-xls lets-get-width-modal  mx-auto" style="
+            max-width: 433px !important;
+        ">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="lets-get-started-modal-wrapper">
@@ -67,7 +69,7 @@
                             </div>
                             <div class="lets-get-close">
                                 <button id="btn_closeIcon" type="button" class="close no-btn modal-close-btn"
-                                    data-dismiss="modal" style="top: 15px; right: 15px;">
+                                    data-dismiss="modal" style="top: 5px; right: 15px;">
                                     <span>
                                         <img src="images/modal-close.svg" />
                                     </span>
@@ -84,12 +86,12 @@
                                         <p class="mb-1">
                                             <strong>You have reached maximum widget limits</strong>
                                         </p>
-                                        <p style="line-height: 22px;">
+                                        <p style="line-height: 22px; padding: 0px 16px;">
                                             (which is 25), you need to remove some existing widget before adding new
                                             one.
                                         </p>
-                                        <button id="btn_retry"
-                                            class="theme-btn graydient-primary-btn w-60 mt-3">Retry</button>
+                                        <button id="btn_okay"
+                                            class="theme-btn graydient-primary-btn w-60 mt-3">Ok</button>
                                     </div>
 
                                 </div>
